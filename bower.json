@@ -1,0 +1,17 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "homepage": "https://github.com",
+  "authors": [
+    "Alexsandr Chernetsciy"
+  ],
+  "description": "TEST",
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "normalize.css": "*",
+    "jquery": "1.*"
+  }
+}
