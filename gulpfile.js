@@ -65,8 +65,17 @@ gulp.task('html:build', function () {
 });
 
 gulp.task('js:build', function () {
-    gulp.src('./src/js/*.js')
-        .pipe(gulp.dest(path.build.js))
+    //gulp.src('./src/js/*.js')
+    //    .pipe(gulp.dest(path.build.js))
+
+
+    gulp.src('./src/js/script.js')
+        .pipe(rigger())
+        .pipe(sourcemaps.init())
+        .pipe(uglify())
+        .pipe(sourcemaps.write())
+        .pipe(gulp.dest('./build/js/'))
+        .pipe(reload({stream: true}));
 });
 
 gulp.task('jquery', function () {

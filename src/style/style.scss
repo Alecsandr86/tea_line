@@ -2,14 +2,13 @@
 *      ДОПОЛНИТЕЛЬНЫЕ СТИЛИ
 *********************************/
 
-@import "../../bower_components/normalize.css/normalize.css";
+@import "../../bower_components/bootstrap/scss/bootstrap";
 
 @import "partials/sprite";
+@import "partials/fonts";
 
 @include sprites($spritesheet-sprites);
 //hover спрайта
-
-
 .icon {
   @include sprite($icon);
   &:hover {
@@ -21,20 +20,19 @@ i{
   display: inline-block;
 }
 body{
-  background-color: #000;
-  text-align: center;
+  font-family: $font-family-serif;
 }
-h1{
-  color:green;
-  text-transform: uppercase;
-  font-size: 60px;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  font-family: $font-family-sans-serif;
+  font-family: 'etelka-text-pro';
+  color: #201300;
 }
-.img{
-  width:400px;
-  height: 400px;
-  margin:0 auto;
 
-}
 
 
 
