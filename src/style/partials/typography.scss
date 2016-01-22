@@ -1,0 +1,95 @@
+
+// Typography
+//
+// СЕМЕЙСТВО ШРИФТОВ
+
+$font-family-sans-serif:     "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-serif:          Georgia, "Times New Roman", Times, serif !default;
+$font-family-monospace:      Menlo, Monaco, Consolas, "Courier New", monospace !default;
+$font-family-base:           $font-family-serif !default;
+
+// РАЗМЕН ШРИФТА
+$font-size-root:             17px !default;
+
+$font-size-base:             1rem !default;
+
+$font-size-h1:               2.5rem !default;
+$font-size-h2:               2rem !default;
+$font-size-h3:               1.75rem !default;
+$font-size-h4:               1.5rem !default;
+$font-size-h5:               1.25rem !default;
+$font-size-h6:               1rem !default;
+
+
+// МЕЖ СТРОЧНЫЙ ИНТЕРВАЛ
+$line-height:                1.3 !default;
+
+
+// ЦВЕТА
+$gray-dark:                 #201300 !default;
+$gray:                      #55595c !default;
+$gray-light:                #818a91 !default;
+$gray-lighter:              #eceeef !default;
+$gray-lightest:             #f7f7f9 !default;
+
+$brand-primary:             #383023 !default;
+$brand-success:             #5cb85c !default;
+$brand-info:                #5bc0de !default;
+$brand-warning:             #f0ad4e !default;
+$brand-danger:              #d9534f !default;
+
+
+$body-bg:                    #fff !default;
+$body-color:                 $gray-dark !default;
+
+$link-color:                 $brand-primary !default;
+$link-hover-color:           darken($link-color, 15%) !default;
+
+
+
+
+
+
+
+html {
+  font-size: $font-size-root;
+}
+
+body{
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  line-height: $line-height;
+}
+
+ul{
+  list-style: none;
+  margin:0;
+  padding: 0;
+}
+
+
+a{
+  color: $link-color;
+  &:hover{
+    text-decoration: none;
+  }
+}
+
+h1{font-size:$font-size-h1;}
+h2{font-size:$font-size-h2;}
+h3{font-size:$font-size-h3;}
+h4{font-size:$font-size-h4;}
+h5{font-size:$font-size-h5;}
+h6{font-size:$font-size-h6;}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  font-family: $font-family-sans-serif;
+  font-family: 'etelka-pro';
+  color: $gray-dark;
+}
+

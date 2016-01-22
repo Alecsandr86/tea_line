@@ -3,35 +3,55 @@
 *********************************/
 
 @import "../../bower_components/bootstrap/scss/bootstrap";
+@import "../../bower_components/Swiper/dist/css/swiper.min.css";
+
+///////////////////   МОИ ДОПОЛНЕНИЯ  /////////////////////////
 
 @import "partials/sprite";
 @import "partials/fonts";
+@import "partials/typography";
+
+/********************************
+*      \ДОПОЛНИТЕЛЬНЫЕ СТИЛИ\
+*********************************/
+
+
+
+
+/********************************
+*           СПРАЙТЫ
+********************************/
+i{
+  display: inline-block;
+}
 
 @include sprites($spritesheet-sprites);
+
 //hover спрайта
+
 .icon {
   @include sprite($icon);
   &:hover {
     @include sprite($icon-hover);
   }
 }
+/********************************
+*           \СПРАЙТЫ\
+********************************/
 
-i{
-  display: inline-block;
-}
-body{
-  font-family: $font-family-serif;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6{
-  font-family: $font-family-sans-serif;
-  font-family: 'etelka-text-pro';
-  color: #201300;
-}
+
+
+
+
+/********************************
+*           ШРИФТЫ
+********************************/
+
+@include font-face("etelka-pro", "../fonts/etelka-text-pro-bold", "etelka-text-pro-bold");
+
+/********************************
+*          \ ШРИФТЫ\
+********************************/
 
 
 
@@ -39,6 +59,215 @@ h6{
 /********************************
 *       ОСНОВНЫЕ СТИЛИ
 ********************************/
+
+.top-nav{
+  background-color: #e3e3e3;
+  padding: 4px 0 6px;
+  ul{
+    margin:0 0 0 -.9375rem;
+    li{
+      display: inline-block;
+      padding: 0 17px 0 0;
+    }
+    a{
+      color: #383023;
+      font-size: 0.9rem;
+    }
+  }
+  .entrance{
+    float: right;
+    margin:0 -.9375rem 0 0;
+    li{
+      padding: 0 0 0 26px;
+    }
+  }
+}
+
+.haader-cont{
+  background: url('../images/haader-cont-bg.png') 0 5px repeat-x;
+  padding: 0 0 5px;
+}
+
+.search{
+
+}
+
+.form-search{
+  border: 2px solid #d0d0d0;
+  width:76%;
+  margin: 34px 0 0 18px;
+  background-color: #fff;
+  input{
+    border: none;
+    width: 75%;
+    padding: 9px;
+  }
+  button{
+    border: none;
+    border-left: 2px solid #d0d0d0;
+    width: 25%;
+    background-color: transparent;
+    &:focus{
+      outline:none;
+    }
+  }
+}
+
+.logo{
+  text-align: center;
+  margin: 11px 0 0;
+
+}
+
+.back-call{
+  text-align: right;
+  p{
+    padding: 10px 0 0;
+    margin:0 -.9375rem 0 0;
+    font-size: .86rem;
+  }
+  a{
+    background-color: #f0f0f0;
+    border: 1px solid #a4cf52;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    padding:0 5px;
+    font-size: 0.8rem;
+    margin: 0 0 4px;
+  }
+  strong{
+    display: block;
+    text-transform: uppercase;
+    font-family: Tahoma;
+    font-weight: bold;
+    font-size: 1.26rem;
+  }
+}
+
+.bootom-nav{
+  border-top: 1px solid #d7d7d7;
+  border-bottom: 1px solid #d7d7d7;
+}
+
+.nav-bootom-header{
+  text-align: center;
+  li{
+    display: inline-block;
+    padding:5px 15px 5px 0;
+    background:  url('../images/nav-hea-bootom.png') right center no-repeat;
+    &:last-child{
+      background-image: none;
+      padding-right:0;
+    }
+  }
+  a{
+    display: inline-block;
+    font-family: Candara;
+    font-weight: bold;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding:2px 5px;
+    &:hover{
+      background-color: #9dcd4c;
+      color: #fff;
+    }
+  }
+  .active{
+    a{
+      background-color: #e9e9e9;
+      color: #201300;
+      &:hover{
+        cursor: default;
+      }
+    }
+  }
+}
+
+.basdet-nav{
+  text-align: right;
+  font-size:0.7rem;
+  color: #4b453e;
+  padding:0;
+  i,span{
+    float: left;
+  }
+  span{
+    display: inline-block;
+    margin: 7px 0 0 7px;
+  }
+}
+
+
+
+
+/********************************
+*           SWIPER
+********************************/
+
+.b-slider-1{
+  margin-top:22px;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-pagination-bullet{
+  background: url('../images/pages-slider-1.png') 0 0 no-repeat;
+  width: 13px;
+  height: 14px;
+  margin: 0 3px!important;
+}
+
+.swiper-pagination-bullet-active{
+  background: url('../images/pages-slid-1-active.png') 0 0 no-repeat;
+}
+
+.swiper-container-horizontal{
+  >.swiper-pagination-bullets {
+    bottom:0;
+  }
+}
+
+.swiper-wrapper{
+  padding:0 0 30px;
+}
+
+
+/********************************
+*           /SWIPER/
+********************************/
+
+
+
+
+
+
+
+
 
 
 
@@ -53,3 +282,7 @@ h6{
 **************************/
 
 @import "partials/media";
+
+/*************************
+*     /КАСТОМНЫЕ СТИЛИ/
+**************************/
