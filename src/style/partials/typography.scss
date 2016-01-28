@@ -47,7 +47,16 @@ $link-hover-color:           darken($link-color, 15%) !default;
 
 
 
+// ОТСУПЫ
+$box : "border-box";
+//content-box
+//border-box
 
+*{
+  -webkit-box-sizing: $box;
+  -moz-box-sizing: $box;
+  box-sizing: $box;
+}
 
 
 
