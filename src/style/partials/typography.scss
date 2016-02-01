@@ -36,7 +36,7 @@ $gray-lights:               #d7d0ce ;
 $brand-primary:             #383023;
 $brand-success:             #00af75;
 $brand-info:                #00606d;
-$brand-info-dark:                #00313e;
+$brand-info-dark:           #00313e;
 $brand-warning:             #f0ad4e;
 $brand-danger:              #d35547;
 
@@ -44,8 +44,8 @@ $brand-danger:              #d35547;
 $body-bg:                    #fff !default;
 $body-color:                 $gray-dark !default;
 
-$link-color:                 $brand-primary !default;
-$link-hover-color:           darken($link-color, 15%) !default;
+$link-color:                 $brand-primary;
+$link-hover-color:           darken($link-color, 15%);
 
 
 

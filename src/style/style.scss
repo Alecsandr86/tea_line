@@ -482,7 +482,7 @@ i{
 .author-content{
   background-color: $gray-lights;
   padding: 0 0 32px;
-
+  overflow: hidden;
 }
 
 .china-sinvol{
@@ -774,12 +774,155 @@ i{
 
 
 
+.container-fluid{
+  position: relative;
+}
+
+footer{
+
+  &:before{
+    content: '';
+    width:100%;
+    height:416px;
+    display: block;
+  }
+}
+.footer{
+  text-align: center;
+  background-color: #1a1a18;
+  position: absolute;
+  left:0;
+  bottom:0;
+  width:100%;
+  height:380px;
+  color: #cdcdcd;
+  padding:22px 0 0;
+  div{
+    background-color: #1a1a18;
+  }
+}
+
+
+.item-footer{
+  display: inline-block;
+  min-width: 200px;
+  text-align: left;
+  margin:0 0 0 20px;
+  position: relative;
+  background-color: transparent!important;
+  strong{
+    font-family: Candara;
+    font-size: 1.2rem;
+    display: inline-block;
+    padding: 10px 0 9px;
+
+  }
+  ul{
+    margin:5px 0 23px;
+  }
+  li{
+    line-height: 1.2;
+    a{
+      color: #cdcdcd;
+      font-size: 0.87rem;
+    }
+  }
+}
+
+
+.col-1{
+  color: #9263a9;
+  a{
+    color: #9263a9;
+    &:hover{
+      color: #9263a9;
+    }
+  }
+}
+.col-2{
+  color: #d25644;
+  a{
+    color: #d25644;
+    &:hover{
+      color: #d25644;
+    }
+  }
+}
+.col-3{
+  color: #2b81b3;
+  a{
+    color: #2b81b3;
+    &:hover{
+      color: #2b81b3;
+    }
+  }
+}
+.col-4{
+  color: #00b5a2;
+  a{
+    color: #00b5a2;
+    &:hover{
+      color: #00b5a2;
+    }
+  }
+}
+.col-5{
+  color: #fead39;
+  a{
+    color: #fead39;
+    &:hover{
+      color: #fead39;
+    }
+  }
+}
+
+.col-footer{
+  position: relative;
+  &:before{
+    content: '';
+    width:100%;
+    height:40px;
+    position: absolute;
+    top:3px;
+    left:0;
+    background-color: #292d2d;
+  }
+}
+.col-f-1{
+  text-align: right;
+}
+.mar-right{
+  margin-right:50px;
+}
+.col-f-2{
+  text-align: left;
+}
+
+
+.copir-wr{
+  border-top: 7px solid #292d2d;
+  padding: 12px 0 0;
+  margin-top: 5px;
+}
+.copirait{
+  text-align: left;
+  font-size: 0.8rem;
+  padding: 0 0 0 26px;
+  line-height: 1.7;
+}
+
+
+
 
 
 
 /*************************
 *     КАСТОМНЫЕ СТИЛИ
 **************************/
+//.container-fluid{
+//  min-width:460px!important;
+//}
+
 
 @import "partials/media";
 

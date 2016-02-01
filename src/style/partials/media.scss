@@ -1,4 +1,505 @@
-@media screen and(max-width: 1200px){
+@media screen and(max-width: 1299px){
+  #slid-1,
+  #slid-2,
+  #slid-3{
+    img{
+      width:100%;
+    }
+  }
+  .china-sinvol{
+    p{
+      br{
+        display: none;
+      }
+    }
+  }
+  .list-cast {
+    margin: 12px 0 0;
+  }
+  .arrow-1,.arrow-2{
+    &:before{
+      display: none;
+    }
+
+  }
+  .col-f-1,.col-f-2{
+    text-align: center;
+  }
+  .footer {
+    height: 580px;
+  }
+  footer {
+    &:before {
+      content: '';
+      width: 100%;
+      height: 616px;
+    }
+  }
+  .brand{
+    img{
+      width:100%;
+    }
+  }
 
 }
 
+@media screen and(max-width: 1025px){
+  .map-russia-ico {
+    top: -73px;
+    left: 280px;
+  }
+  .china-1, .china-2, .china-3 {
+    position: static;
+  }
+  .brand {
+    .brend-text {
+      margin: 111px 0 0 0;
+    }
+  }
+  .product,.history{
+    img{
+      width:100%;
+    }
+  }
+
+}
+
+
+
+
+
+@media screen and(max-width: 991px){
+  .top-nav {
+    ul{
+      li {
+        padding: 0 10px 0 0;
+      }
+    }
+  }
+  .form-search {
+    width: 100%;
+    margin: 20px 0 0;
+  }
+  .logo{
+    img{
+      width:100%;
+    }
+  }
+  .nav-product{
+    margin: 18px 0 13px;
+    ul{
+      li {
+        padding: 5px;
+      }
+    }
+  }
+
+  .we{
+    .container{
+      //overflow: hidden;
+    }
+    i{
+      transform: scale(0.8,0.8);
+      margin:17px 0 0 -30px;
+    }
+    a{
+      font-size:1rem;
+    }
+  }
+  .russ-1 {
+    top: 193px;
+    left: 0;
+  }
+  .russ-2 {
+    top: 20px;
+  }
+  .russ-3 {
+    top: 466px;
+    left: 0;
+    width: 243px;
+  }
+  .russ-4 {
+    top: 521px;
+  }
+  .china-sinvol{
+    p {
+      font-size: 0.9rem;
+    }
+  }
+  .jars{
+    font-size: 7rem;
+    span {
+      font-size: 3rem;
+    }
+  }
+
+  .experience .row:nth-child(2) {
+    margin-bottom: 40px;
+  }
+  .history {
+    .b-text {
+      margin-left: 0;
+    }
+
+  }
+
+  .img-cast-2{
+    transform: scale(0.8,0.8);
+    bottom: -46px;
+    left: -67px;
+  }
+  .russ-2{
+    right: 0;
+  }
+  .item-footer {
+    min-width: 170px;
+  }
+  .copirait {
+    font-size: .7rem;
+    padding: 0;
+    br{
+      display: none;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and(max-width: 767px){
+  .top-nav{
+    ul{
+      margin: 0;
+    }
+    .entrance{
+      margin: 0;
+    }
+  }
+  .logo {
+    img {
+      width: auto;
+    }
+  }
+  .form-search {
+    margin: 10px 0;
+    input {
+      border: none;
+      width: 71%;
+      padding: 0;
+      height: 40px;
+      float: left;
+    }
+  }
+  .basdet-nav{
+    a{
+      padding: 7px 0 0 30%;
+      display: inline-block;
+      float: left;
+    }
+    span{
+      font-size: 1.2rem;
+      margin: 11px 0 0 7px;
+    }
+  }
+  .nav-bootom-header{
+    li{
+      background-image: none;
+      width: 50%;
+      float: left;
+      padding:5px 0 5px 20px;
+      text-align: left;
+      background-color: #e0dddd;
+      border-bottom: 1px solid #b5b4b4;
+      &:nth-child(odd){
+        background-color: #f0f0f0;
+      }
+    }
+    a{
+
+    }
+    .active a {
+      background-color: transparent;
+    }
+  }
+  .nav-product {
+    ul{
+      li{
+        display: block;
+      }
+    }
+  }
+  .we{
+    i {
+      transform: scale(1,1);
+      margin: 17px 0 0 0;
+    }
+  }
+
+  .russ-1,
+  .russ-2,
+  .russ-3,
+  .russ-4 {
+    position: static;
+  }
+  .russia{
+    background:  url(../images/russia-bg-img-mobail.png) 50% 50% no-repeat;
+    div{
+      margin-bottom:60px;
+    }
+  }
+  .russ-3 {
+    width: 100%;
+  }
+  .map-russia-ico {
+    top: 517px;
+    left: 367px;
+  }
+  .china {
+    background: url(../images/china-bg-img-mobail.png) 50% 20% no-repeat;
+  }
+  .china-2{
+    margin-top:300px;
+  }
+  .china-sinvol {
+    margin-top: 0;
+    div {
+      margin-bottom: 12px;
+      margin-left: 15px;
+      &:nth-child(even){
+        &:before{
+          display: none;
+        }
+      }
+    }
+    &:before,
+    &:after{
+      display: none;
+    }
+
+  }
+  .china-sinvol div:nth-child(4), .china-sinvol div:nth-child(5) {
+    margin-top: 0;
+    margin-bottom: 12px;
+  }
+  .history{
+    img{
+      width:auto;
+      float: right;
+    }
+  }
+
+  .tradition {
+    .b-text{
+      padding:50px 0 0;
+    }
+  }
+  .modernity{
+    img{
+      transform: scale(0.7,0.7);
+    }
+  }
+
+  .brand-h5 {
+    margin: 60px 0 30px 0;
+  }
+
+  .brand{
+    .mar-list{
+      float: none;
+    }
+    .list-cast {
+      margin: 28px 0 30px 0;
+    }
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+  .sociality {
+    h2 {
+      margin: 0 0 50px;
+    }
+  }
+  .item-footer {
+    min-width: 100px;
+  }
+  .col-footer{
+    background-color: #292d2d!important;
+    &:before{
+      display: none;
+    }
+  }
+  .footer {
+    height: 240px;
+
+  }
+  footer{
+    &:before{
+      height:270px;
+    }
+  }
+  .img-cast-2 {
+    transform: scale(.7,.7);
+    bottom: -72px;
+    left: -105px;
+  }
+
+
+
+
+
+}
+@media screen and(max-width: 543px){
+  .top-nav{
+    ul{
+      a {
+        font-size: .7rem;
+      }
+    }
+    .entrance {
+      li {
+         padding: 0;
+       }
+    }
+  }
+
+  .img-cast-2 {
+    transform: scale(.6,.6);
+    bottom: -96px;
+    left: -124px;
+  }
+  .back-call{
+    p{
+      margin: 0;
+    }
+  }
+  .item-footer {
+    min-width: 90px;
+  }
+
+  .russ-1{
+    width:100%;
+  }
+  .russ-2{
+    width:100%;
+  }
+  .russ-3{
+    width:100%;
+  }
+  .russ-4{
+    width:100%;
+  }
+
+  .china-1{
+    width:100%;
+  }
+  .china-2{
+    width:100%;
+  }
+  .china-3{
+    width:100%;
+  }
+.logo{
+  margin: 25px 0 23px;
+  img{
+    width:100%;
+  }
+}
+  .back-call{
+    p{
+      font-size: 0.7rem;
+      margin: 12px 0 0;
+    }
+    strong {
+       display: block;
+       font-size: 0.8rem;
+    }
+  }
+
+  .top-nav ul a {
+    font-size: .6rem;
+  }
+
+  .basdet-nav a {
+    padding: 7px 0 0 0;
+  }
+  .castum-h3 {
+    font-size: 2.7rem;
+  }
+  .geog-typography h4 {
+    font-size: 1.7rem;
+  }
+  .experience{
+    img{
+      width:100%;
+    }
+  }
+  .jars {
+    font-size: 6rem;
+    line-height: 74px;
+  }
+  .history{
+    padding:0;
+    img {
+      width: 100%;
+      float: none;
+    }
+  }
+
+  .img-cast-2 {
+    transform: scale(1,1);
+    bottom: 0;
+    left: auto;
+    width:100%;
+  }
+  .tradition {
+    min-height: 450px;
+  }
+  .item {
+    max-width: 300px;
+    h6 {
+      font-size: 1.2rem;
+    }
+  }
+  .item-footer {
+    min-width: auto;
+    text-align: center;
+    margin: 0 14px;
+  }
+
+  h4 {
+    font-size: 2rem;
+  }
+  .footer {
+    height: 350px;
+  }
+  footer:before {
+    height: 450px;
+  }
+  .mar-right{
+    margin:0;
+  }
+.container-fluid{
+  overflow: hidden;
+}
+
+
+
+}

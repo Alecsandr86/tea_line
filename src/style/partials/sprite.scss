@@ -11,17 +11,28 @@ $icon-home: x y offset_x offset_y width height total_width total_height image_pa
 At the bottom of this section, we provide information about the spritesheet itself
 $spritesheet: width height image $spritesheet-sprites;
 */
+$basket-ico-mobile-name: 'basket-ico-mobile';
+$basket-ico-mobile-x: 332px;
+$basket-ico-mobile-y: 123px;
+$basket-ico-mobile-offset-x: -332px;
+$basket-ico-mobile-offset-y: -123px;
+$basket-ico-mobile-width: 43px;
+$basket-ico-mobile-height: 42px;
+$basket-ico-mobile-total-width: 503px;
+$basket-ico-mobile-total-height: 246px;
+$basket-ico-mobile-image: '../images/sprite.png';
+$basket-ico-mobile: (332px, 123px, -332px, -123px, 43px, 42px, 503px, 246px, '../images/sprite.png', 'basket-ico-mobile', );
 $basket-ico-name: 'basket-ico';
-$basket-ico-x: 376px;
+$basket-ico-x: 419px;
 $basket-ico-y: 123px;
-$basket-ico-offset-x: -376px;
+$basket-ico-offset-x: -419px;
 $basket-ico-offset-y: -123px;
 $basket-ico-width: 28px;
 $basket-ico-height: 29px;
 $basket-ico-total-width: 503px;
 $basket-ico-total-height: 246px;
 $basket-ico-image: '../images/sprite.png';
-$basket-ico: (376px, 123px, -376px, -123px, 28px, 29px, 503px, 246px, '../images/sprite.png', 'basket-ico', );
+$basket-ico: (419px, 123px, -419px, -123px, 28px, 29px, 503px, 246px, '../images/sprite.png', 'basket-ico', );
 $map-russia-ico-name: 'map-russia-ico';
 $map-russia-ico-x: 252px;
 $map-russia-ico-y: 123px;
@@ -34,16 +45,16 @@ $map-russia-ico-total-height: 246px;
 $map-russia-ico-image: '../images/sprite.png';
 $map-russia-ico: (252px, 123px, -252px, -123px, 80px, 70px, 503px, 246px, '../images/sprite.png', 'map-russia-ico', );
 $serch-buttom-name: 'serch-buttom';
-$serch-buttom-x: 332px;
+$serch-buttom-x: 375px;
 $serch-buttom-y: 123px;
-$serch-buttom-offset-x: -332px;
+$serch-buttom-offset-x: -375px;
 $serch-buttom-offset-y: -123px;
 $serch-buttom-width: 44px;
 $serch-buttom-height: 33px;
 $serch-buttom-total-width: 503px;
 $serch-buttom-total-height: 246px;
 $serch-buttom-image: '../images/sprite.png';
-$serch-buttom: (332px, 123px, -332px, -123px, 44px, 33px, 503px, 246px, '../images/sprite.png', 'serch-buttom', );
+$serch-buttom: (375px, 123px, -375px, -123px, 44px, 33px, 503px, 246px, '../images/sprite.png', 'serch-buttom', );
 $we-ico-1-name: 'we-ico-1';
 $we-ico-1-x: 0px;
 $we-ico-1-y: 0px;
@@ -80,7 +91,7 @@ $we-ico-3: (252px, 0px, -252px, 0px, 251px, 123px, 503px, 246px, '../images/spri
 $spritesheet-width: 503px;
 $spritesheet-height: 246px;
 $spritesheet-image: '../images/sprite.png';
-$spritesheet-sprites: ($basket-ico, $map-russia-ico, $serch-buttom, $we-ico-1, $we-ico-2, $we-ico-3, );
+$spritesheet-sprites: ($basket-ico-mobile, $basket-ico, $map-russia-ico, $serch-buttom, $we-ico-1, $we-ico-2, $we-ico-3, );
 $spritesheet: (503px, 246px, '../images/sprite.png', $spritesheet-sprites, );
 
 /*
