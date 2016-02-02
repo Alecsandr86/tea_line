@@ -4,6 +4,7 @@
 
 @import "../../bower_components/bootstrap/scss/bootstrap";
 @import "../../bower_components/Swiper/dist/css/swiper.min.css";
+@import "../../bower_components/animate.css/animate.min.css";
 
 ///////////////////   МОИ ДОПОЛНЕНИЯ  /////////////////////////
 
@@ -59,8 +60,15 @@ i{
 /********************************
 *       ОСНОВНЫЕ СТИЛИ
 ********************************/
-
+header{
+  padding:30px 0 0;
+}
 .top-nav{
+  position: fixed;
+  width:100%;
+  left: 0;
+  top:0;
+  z-index:9;
   background-color: #e3e3e3;
   padding: 4px 0 6px;
   ul{
@@ -149,6 +157,10 @@ i{
 .bootom-nav{
   border-top: 1px solid #d7d7d7;
   border-bottom: 1px solid #d7d7d7;
+  width:100%;
+  top:0;
+  left:0;
+  background-color: $gray-lighter;
 }
 
 .nav-bootom-header{
@@ -170,19 +182,20 @@ i{
     -moz-border-radius: 5px;
     border-radius: 5px;
     padding:2px 5px;
+    transition: all 0.4s ease 0s;
     &:hover{
-      background-color: #9dcd4c;
-      color: #fff;
-    }
-  }
-  .active{
-    a{
       background-color: #e9e9e9;
       color: #201300;
-      &:hover{
-        cursor: default;
-      }
     }
+    &:focus{
+      background-color: #9dcd4c;
+      color: #fff;
+      outline:none;
+      text-decoration: none;
+    }
+  }
+  .activ{
+
   }
 }
 
@@ -190,7 +203,7 @@ i{
   text-align: right;
   font-size:0.7rem;
   color: #4b453e;
-  padding:0;
+  padding:4px 0 0;
   i,span{
     float: left;
   }
@@ -779,22 +792,22 @@ i{
 }
 
 footer{
-
-  &:before{
-    content: '';
-    width:100%;
-    height:416px;
-    display: block;
-  }
+  padding-top:20px;
+  //&:before{
+  //  content: '';
+  //  width:100%;
+  //  height:416px;
+  //  display: block;
+  //}
 }
 .footer{
   text-align: center;
   background-color: #1a1a18;
-  position: absolute;
-  left:0;
-  bottom:0;
-  width:100%;
-  height:380px;
+  //position: absolute;
+  //left:0;
+  //bottom:0;
+  //width:100%;
+  //height:380px;
   color: #cdcdcd;
   padding:22px 0 0;
   div{
@@ -901,8 +914,10 @@ footer{
 
 .copir-wr{
   border-top: 7px solid #292d2d;
-  padding: 12px 0 0;
-  margin-top: 5px;
+  padding: 12px 0;
+ // margin-top: 5px;
+  display: block;
+  width:100%;
 }
 .copirait{
   text-align: left;
@@ -914,6 +929,42 @@ footer{
 
 
 
+.up-button{
+  position: fixed;
+  right:20px;
+  bottom:100px;
+  z-index:9;
+  width: auto;
+  height: 42px;
+  display: inline-block;
+  background-color: #84c551;
+  display: inline-block;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  color: $gray-lighter;
+  &:hover,
+  &:focus{
+    color: $gray-lighter;
+  }
+  span{
+    display: inline-block;
+    width:0;
+    opacity:0;
+    line-height:40px;
+    text-indent:10px;
+  }
+  i{
+
+  }
+}
+
+.fixed{
+  position: fixed;
+  top:30px;
+  left:0;
+  z-index:9;
+}
 
 
 /*************************
