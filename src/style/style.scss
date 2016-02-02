@@ -25,6 +25,11 @@
 i{
   display: inline-block;
 }
+a{
+  &:focus{
+    text-decoration: none;
+  }
+}
 
 @include sprites($spritesheet-sprites);
 
@@ -49,6 +54,7 @@ i{
 ********************************/
 
 @include font-face("etelka-pro", "../fonts/etelka-text-pro-bold", "etelka-text-pro-bold");
+@include font-face("permianslabseriftypeface", "../fonts/permianslabseriftypeface", "permianslabseriftypefaceRg");
 
 /********************************
 *          \ ШРИФТЫ\
@@ -274,6 +280,7 @@ header{
 *           /SWIPER/
 ********************************/
 
+// ГЛАВНАЯ
 
 .nav-product{
   margin: 48px 0 24px;
@@ -555,7 +562,6 @@ header{
   }
 }
 
-
 .wr-experience{
   background-color: $gray-lightest;
   text-align: center;
@@ -575,9 +581,6 @@ header{
   }
 
 }
-
-
-
 .list-cast{
   text-align: left;
   margin: 12px 0 0 -27px;
@@ -926,50 +929,412 @@ footer{
   line-height: 1.7;
 }
 
+// \ГЛАВНАЯ\
 
 
+// КАТАЛОГ
 
-.up-button{
-  position: fixed;
-  right:20px;
-  bottom:100px;
-  z-index:9;
-  width: auto;
-  height: 42px;
+.filter{
+  background-color: #e8eae9;
+  border-top: 1px solid #e8e8e9;
+  border-bottom: 1px solid #d8d9da;
+  padding: 9px 0 0;
+}
+.what-coffee{
   display: inline-block;
-  background-color: #84c551;
+  background-color: #fff;
+  border: 1px solid #000;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  padding: 0 5px 1px;
+  letter-spacing: -1px;
+}
+.sort-filter{
+  margin:0 8px 0 38px;
+  li{
+    display: inline-block;
+    margin:0 2px 0 0;
+  }
+  a{
+    border: 1px solid #a6a9ac;
+    display: inline-block;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding: 0 22px 2px 5px;
+    letter-spacing: -1.4px;
+    background: #fff url(../images/sort-buttom.png) 96% -1px no-repeat;
+  }
+}
+.sort-visible{
+  margin:-3px 0 0;
+  li{
+    display: inline-block;
+    border: 4px solid transparent;
+  }
+  a{
+    display: inline-block;
+    float: left;
+    margin:3px;
+  }
+  .active{
+    border: 4px solid #a6ce39;
+  }
+}
+
+
+.aside{
+  width:20%;
+}
+
+.contents{
+  width:80%;
+  padding-top: 10px;
+}
+
+
+
+
+.list-product{
+  padding:5px 0 0;
+  margin: 0 0 0 -9px;
+  li{
+    margin: 1px 0 2px;
+    &.active{
+      >a{
+        background-color: #a6ce39;
+        color: $gray-lighter;
+        position: relative;
+        &:before{
+          content: '';
+          position: absolute;
+          top:0;
+          left:-30px;
+          width:30px;
+          height:100%;
+          display: block;
+          background-color: #a6ce39;
+        }
+      }
+    }
+  }
+  a{
+    font-weight: bold;
+    font-family:'permianslabseriftypeface';
+    font-size: 0.9rem;
+    padding:3px 10px;
+  }
+
+  .list-product-two{
+    margin:3px 0;
+    li{
+      background:  url(../images/list-product-two.png) 0 8px no-repeat;
+      margin:0 0 0 10px;
+      padding:0 0 0 3px;
+      &.active{
+        background:  url(../images/list-product-two_active.png) 0 8px no-repeat;
+      }
+      a{
+        font-size: 0.7rem;
+        background-color: transparent;
+        color: $gray-dark;
+        &:before{
+          display: none;
+        }
+      }
+    }
+  }
+
+  .list-product-three{
+    li{
+      background: url(../images/list-product-three.png) 0 8px no-repeat;
+    }
+    a{
+
+    }
+  }
+}
+
+
+.pages{
+
+}
+
+.visible-tov{
+
+  color: #58595b;
+  font-family:'permianslabseriftypeface';
+  span{
+    font-size:0.8rem;
+  }
+  ul{
+    display: inline-block;
+  }
+  li{
+    display: inline-block;
+  }
+  a{
+    display: inline-block;
+    padding: 4px 7px;
+    font-size:0.8rem;
+    font-family:'permianslabseriftypeface';
+    color: #58595b;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+  }
+  .active{
+    a{
+      background-color: #a6ce39;
+      color: $gray-lighter;
+    }
+  }
+}
+
+
+.pages-list{
+  margin:2px 0 0;
+  li{
+    display: inline-block;
+    float: left;
+    margin:0 3px;
+    &:last-child{
+      a{
+        border: none;
+        padding: 0;
+      }
+    }
+    &:first-child{
+      a{
+        border: none;
+        padding: 0;
+      }
+    }
+  }
+  a{
+    display: inline-block;
+    color: #58595b;
+    border: 1px solid #a6ce39;
+    padding: 2px 8px;
+    font-family: Tahoma;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+  }
+  .active{
+    a{
+      background-color: #a6ce39;
+      color: $gray-lighter;
+    }
+  }
+  i{
+    margin:5px 0 0;
+  }
+}
+
+
+
+.product-content{
+  margin: 10px 0;
+  .row{
+    border-bottom: 1px solid #dcddde;
+  }
+  .images{
+    border-right: 1px solid #dcddde;
+    padding:0;
+    margin-right:-1px;
+  }
+  .title{
+    border-right: 1px solid #dcddde;
+    border-left: 1px solid #dcddde;
+  }
+  .buttones{
+    border-left: 1px solid #dcddde;
+    margin-left:-1px;
+    padding:0;
+  }
+}
+.quantity{
+  padding: 7px 10px;
+}
+
+
+.buy-b{
+  background-color: #e6e7e8;
+  border-top: 1px solid #dedfe0;
+  font-family:Tahoma;
+  padding:10px;
+  b{
+    font-size:1.4rem;
+    padding:5px 0 0;
+  }
+}
+.butt-buy{
+  background-color: #ed3a23;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  display: inline-block;
+  color:$gray-lighter;
+
+  padding: 0 15px 0 5px;
+  margin: 5px 5px 0 0;
+  &:hover,
+  &:focus{
+    color:$gray-lighter;
+  }
+ span{
+   float: right;
+   display: inline-block;
+   margin:3px 0 0;
+   font-size:1.2rem;
+   font-family:'permianslabseriftypeface';
+ }
+  i{
+    margin:0 5px 0 0 ;
+  }
+}
+
+
+.stlect-cast{
+  width:130px;
+  height:39px;
+  border: 1px solid #c1c2c4;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #fff;
+  display: inline-block;
+  button{
+    background-color: #e6e7e8;
+    display: inline-block;
+    padding: 0 5px;
+    width:29px;
+    border: none;
+    color: #8e9092;
+    font-size: 1.2rem;
+    line-height: 37px;
+    &:focus{
+      outline: none;
+    }
+  }
+  .minus{
+    -webkit-border-radius: 5px 0 0 5px;
+    -moz-border-radius: 5px 0 0 5px;
+    border-radius: 5px 0 0 5px;
+    float: left;
+  }
+  .plus{
+    -webkit-border-radius:0 5px 5px 0;
+    -moz-border-radius:0 5px 5px 0;
+    border-radius:0 5px 5px 0;
+    float: right;
+  }
+  .jq-selectbox__trigger{
+    display: none;
+  }
+  .jq-selectbox__select{
+    background:url(../images/select-but.png) 98% -1px no-repeat;
+    width:70px;
+    height:39px;
+    line-height:39px;
+    font-family:Tahoma;
+    text-align: center;
+  }
+  .jq-selectbox__select-text{
+    font-weight: bold;
+    text-align: center;
+    width:100%!important;
+  }
+
+  .jq-selectbox__dropdown {
+    margin: 2px 0 0;
+    padding: 0 10px;
+    left:-12px!important;
+    -webkit-border-radius: 0 0 5px 5px;
+    -moz-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+    background: #FFF;
+    border: 1px solid #bcbdc0;
+    border-top: none;
+
+    li{
+      border-bottom: 1px solid #bcbdc0;
+      padding:5px;
+      font-size: 1rem;
+      font-family:Tahoma;
+      color: #58595b;
+      font-weight: bold;
+      white-space: nowrap;
+      &:last-child{
+        border-bottom: none;
+      }
+    }
+  }
+  .jq-selectbox li.disabled {
+    color: #AAA;
+  }
+}
+
+.list-desires{
   display: inline-block;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  color: $gray-lighter;
-  &:hover,
-  &:focus{
-    color: $gray-lighter;
-  }
-  span{
-    display: inline-block;
-    width:0;
-    opacity:0;
-    line-height:40px;
-    text-indent:10px;
-  }
-  i{
-
-  }
-}
-
-.fixed{
-  position: fixed;
-  top:30px;
-  left:0;
-  z-index:9;
+  background-color: #ffe100;
+  padding:2px 10px;
+  margin:5px 10px 0 0;
 }
 
 
-/*************************
-*     КАСТОМНЫЕ СТИЛИ
-**************************/
+
+
+      // \КАТАЛОГ\
+
+
+
+
+      .up-button{
+        position: fixed;
+        right:20px;
+        bottom:100px;
+        z-index:9;
+        width: auto;
+        height: 42px;
+        display: inline-block;
+        background-color: #84c551;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        color: $gray-lighter;
+        &:hover,
+        &:focus{
+          color: $gray-lighter;
+        }
+        span{
+          display: inline-block;
+          width:0;
+          opacity:0;
+          line-height:40px;
+          text-indent:10px;
+        }
+        i{
+
+        }
+      }
+
+      .fixed{
+        position: fixed;
+        top:30px;
+        left:0;
+        z-index:9;
+      }
+
+
+      /*************************
+      *     КАСТОМНЫЕ СТИЛИ
+      **************************/
 //.container-fluid{
 //  min-width:460px!important;
 //}
