@@ -6,96 +6,96 @@ $(document).ready(function(){
 
 
 
-/********************************
-*   Слайдер-Карусель Swiper
-********************************/
+    /********************************
+    *   Слайдер-Карусель Swiper
+    ********************************/
 
-    var slider1 = '#slid-1';
-    var slider2 = '#slid-2';
-    var slider3 = '#slid-3';
-
-
-
-    var mySwiper1 = new Swiper (slider1, {
-        // Optional parameters
-        direction: 'horizontal',
-        loop: true,
-        speed: 700,
-        //autoplay: 1000,
-        followFinger:true,
-
-        // If we need pagination
-        pagination: '.slid-1-pages',
-        paginationClickable: true,
-
-        mousewheelControl: true
-
-    });
-
-    var mySwiper2 = new Swiper (slider2, {
-        // Optional parameters
-        direction: 'horizontal',
-        loop: true,
-        speed: 700,
-        //autoplay: 1000,
-        followFinger:true,
-
-        // If we need pagination
-        pagination: '.slid-2-pages',
-        paginationClickable: true,
-
-        mousewheelControl: true
-
-    });
-
-    var mySwiper3 = new Swiper (slider3, {
-        // Optional parameters
-        direction: 'horizontal',
-        loop: true,
-        speed: 700,
-        //autoplay: 1000,
-        followFinger:true,
-
-        // If we need pagination
-        pagination: '.slid-3-pages',
-        paginationClickable: true,
-
-        mousewheelControl: true
-
-    });
+        var slider1 = '#slid-1';
+        var slider2 = '#slid-2';
+        var slider3 = '#slid-3';
 
 
 
-/********************************
-*   / Слайдер-Карусель Swiper/
-********************************/
+        var mySwiper1 = new Swiper (slider1, {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+            speed: 700,
+            //autoplay: 1000,
+            followFinger:true,
+
+            // If we need pagination
+            pagination: '.slid-1-pages',
+            paginationClickable: true,
+
+            mousewheelControl: true
+
+        });
+
+        var mySwiper2 = new Swiper (slider2, {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+            speed: 700,
+            //autoplay: 1000,
+            followFinger:true,
+
+            // If we need pagination
+            pagination: '.slid-2-pages',
+            paginationClickable: true,
+
+            mousewheelControl: true
+
+        });
+
+        var mySwiper3 = new Swiper (slider3, {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+            speed: 700,
+            //autoplay: 1000,
+            followFinger:true,
+
+            // If we need pagination
+            pagination: '.slid-3-pages',
+            paginationClickable: true,
+
+            mousewheelControl: true
+
+        });
 
 
-/*******************************
-*   ПЛАВНЫЙ ПЕРЕХОД ПО ЯКОРЯМ
-*******************************/
-    $('a[href^="#"]').click(function(){
-        //Сохраняем значение атрибута href в переменной:
-        var target = $(this).attr('href');
-        $('html, body').animate({
-            scrollTop: $(target).offset().top},2000,"easeInOutExpo");
-        return false;
-    });
 
-/*******************************
- *   \ПЛАВНЫЙ ПЕРЕХОД ПО ЯКОРЯМ\
-*******************************/
+    /********************************
+    *   / Слайдер-Карусель Swiper/
+    ********************************/
 
 
+    /*******************************
+    *   ПЛАВНЫЙ ПЕРЕХОД ПО ЯКОРЯМ
+    *******************************/
+        $('a[href^="#"]').click(function(){
+            //Сохраняем значение атрибута href в переменной:
+            var target = $(this).attr('href');
+            $('html, body').animate({
+                scrollTop: $(target).offset().top},2000,"easeInOutExpo");
+            return false;
+        });
+
+    /*******************************
+     *   \ПЛАВНЫЙ ПЕРЕХОД ПО ЯКОРЯМ\
+    *******************************/
 
 
-/*******************************
-*          WAYPOINTS
-*******************************/
-//$(window).scroll(function(){
-//    if ( $(this).scrollTop() > 991  ){
-//    }
-//});
+
+
+    /*******************************
+    *          WAYPOINTS
+    *******************************/
+    //$(window).scroll(function(){
+    //    if ( $(this).scrollTop() > 991  ){
+    //    }
+    //});
 
 
 
@@ -141,23 +141,86 @@ $(document).ready(function(){
 
 
 
-/*******************************
-*       \WAYPOINTS\
-*******************************/
+    /*******************************
+    *       \WAYPOINTS\
+    *******************************/
 
 
-/*******************************
-*       СТИЛЕЗАЦИЯ ФОРМ
- ******************************/
+    /*******************************
+    *       СТИЛЕЗАЦИЯ ФОРМ
+     ******************************/
 
 
-$('select').styler();
+    $('select,input:checkbox').styler();
 
 
 
-/*******************************
-*       \СТИЛЕЗАЦИЯ ФОРМ\
-******************************/
+    /*******************************
+    *       \СТИЛЕЗАЦИЯ ФОРМ\
+    ******************************/
+
+
+
+
+
+    /*******************************
+     *       МЕНЮ
+     ******************************/
+
+    var two = $('.list-product-two');
+
+    $('.list-product > li > a').bind('click',function(){
+        $('.list-product > li').removeClass('active');
+        $(this).parent().addClass('active');
+    });
+
+
+
+    $('.list-product-two > li > a').bind('click',function(){
+        $('.list-product-two > li').removeClass('active');
+        $(this).parent().addClass('active');
+    });
+
+
+    /*******************************
+     *       /МЕНЮ/
+     ******************************/
+
+    /*******************************
+     *       ПОЛЗУНОК
+     ******************************/
+    $('.nstSlider').nstSlider({
+        "left_grip_selector": ".leftGrip",
+        "right_grip_selector": ".rightGrip",
+        "value_bar_selector": ".bar",
+        "value_changed_callback": function(cause, leftValue, rightValue) {
+            var $container = $(this).parent();
+            $container.find('.leftLabel').text(leftValue);
+            $container.find('.rightLabel').text(rightValue);
+        }
+    });
+    /*******************************
+     *       /ПОЛЗУНОК/
+     ******************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

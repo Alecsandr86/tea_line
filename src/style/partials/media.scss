@@ -40,6 +40,12 @@
       width:100%;
     }
   }
+  .filter-form{
+    span{
+      margin-top:20px;
+    }
+  }
+
 
 }
 
@@ -61,6 +67,7 @@
       width:100%;
     }
   }
+
 
 }
 
@@ -185,6 +192,33 @@
   header{
     padding:0;
   }
+
+
+  .contents,
+  .aside{
+    width:auto;
+  }
+  .images{
+    img{
+      width:100%;
+    }
+
+  }
+
+  .bootom-nav {
+    &.shadow-bottom{
+      &:before{
+        display: none;
+      }
+    }
+  }
+.fixed{
+  top:0;
+}
+  .mar-label{
+    padding-left:7rem;
+  }
+
 
 
 }
@@ -354,6 +388,84 @@
     left: -105px;
   }
 
+  .product-content {
+    .row{
+      margin-bottom:20px;
+      &:nth-child(even){
+        .title,.buttones{
+          background-color: transparent;
+        }
+      }
+    }
+    .buttones,
+    .images{
+      border: none;
+      margin:0;
+    }
+    .title{
+      border: none;
+      p{
+        font-size: 1rem;
+      }
+    }
+  }
+
+.visible-tov{
+  text-align: center;
+}
+  .pages-list{
+    float: none;
+    text-align: center;
+    margin:10px 0;
+    li{
+      float: none;
+    }
+  }
+
+  .what-coffee{
+    font-size: 0.8rem;
+    margin: 3px 0 0;
+  }
+
+  .sort-filter {
+    margin: 0 8px;
+    a{
+      font-size: 0.8rem;
+    }
+  }
+
+
+
+  .filter-form .leftLabel,
+  .filter-form .rightLabel{
+    margin:0 0 30px;
+  }
+
+  .min-col{
+    padding:0 10px;
+    .row{
+      .mar-label{
+        padding: 0 10px;
+      }
+    }
+  }
+  .filter-form label span{
+    font-size:0.7rem;
+    padding:0;
+  }
+  .filter-form span{
+    padding:0 0 0 25px;
+  }
+  .h-form{
+    &:before{
+      left:0;
+    }
+  }
+
+  .filter-form .leftLabel, .filter-form .rightLabel {
+    margin: 0 ;
+  }
+
 
 
 
@@ -361,6 +473,11 @@
 }
 
 @media screen and(max-width: 543px){
+
+
+
+
+
   .top-nav{
     ul{
       a {
@@ -490,9 +607,44 @@
   .mar-right{
     margin:0;
   }
-.container-fluid{
-  overflow: hidden;
-}
+  .container-fluid{
+    overflow: hidden;
+  }
+    .what-coffee{
+      display: none;
+    }
+  .filter{
+    text-align: center;
+    .container{
+      padding:0;
+    }
+  }
+  .sort-visible,
+  .sort-filter{
+    float: none;
+    display: inline-block;
+    height: 40px;
+    vertical-align: middle;
+  }
+
+  .sort-visible{
+    li{
+      transform: scale(0.8,0.8);
+    }
+  }
+  .sort-filter{
+    margin: 0;
+  }
+
+
+
+
+
+
+
+
+
+
 
 
 
