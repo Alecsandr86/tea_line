@@ -45,7 +45,14 @@
       margin-top:20px;
     }
   }
+  .product-content{
+    &.active {
+      .row {
+        width: 50%;
+      }
+    }
 
+  }
 
 }
 
@@ -72,6 +79,9 @@
 }
 
 @media screen and(max-width: 991px){
+  .b-asid{
+    display: block;
+  }
   .top-nav {
     ul{
       li {
@@ -219,7 +229,18 @@
     padding-left:7rem;
   }
 
+  .product-content{
+    &.active {
+      .row {
+        min-width: 500px;
+        margin: 0 auto;
+        float: none;
+        border-right: none;
+        padding:0;
+      }
+    }
 
+  }
 
 }
 
@@ -475,7 +496,14 @@
 @media screen and(max-width: 543px){
 
 
+  .product-content{
+    &.active {
+      .row {
+        min-width: 100%;
+      }
+    }
 
+  }
 
 
   .top-nav{
