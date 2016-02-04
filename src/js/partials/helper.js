@@ -64,6 +64,18 @@ $(document).ready(function(){
 
         });
 
+    var slidDouble = new Swiper('#slid-double', {
+
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        slidesPerView: 3,
+        slidesPerColumn: 2,
+        spaceBetween: 10
+    });
+
+
+
+
 
 
     /********************************

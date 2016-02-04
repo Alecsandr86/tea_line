@@ -116,6 +116,111 @@
         </div>
     </header>
 <div class="row">
+    <div class="filter">
+        <div class="container">
+            <a class="what-coffee left" href="javascript: void(0);">Что такое кофейная карта ?</a>
+            <ul class="sort-filter left">
+                <li>
+                    <a href="javascript: void(0);">Сортировать</a>
+                </li>
+                <li>
+                    <a class="btn-filter" href="javascript: void(0);">
+                        <span class="vis-but">Развернуть фильтр</span>
+                        <span class="hid-but">Свернуть фильтр</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="sort-visible left">
+                <li>
+                    <a class="section-ico" href="javascript: void(0);"></a>
+                </li>
+                <li class="active">
+                    <a class="tiles-ico" href="javascript: void(0);"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="filter-form">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-12 col-xl-4">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <span>Цена, руб. </span>
+                            <div class="nstSlider" data-range_min="0" data-range_max="13000"
+                                 data-cur_min="40"    data-cur_max="12800">
+
+                                <div class="bar"></div>
+                                <div class="leftGrip"></div>
+                                <div class="rightGrip"></div>
+                            </div>
+                            <span class="leftLabel left"></span>
+                            <span class="rightLabel right"></span>
+                        </div>
+                        <div class="col-md-6 pad-label">
+                            <span class="h-form">Местность произрастания</span>
+                            <select class="width-auto">
+                                <option>страна</option>
+                                <option disabled="">провинция</option>
+                                <option>округ</option>
+                            </select>
+                            <select class="width-auto">
+                                <option>провинция</option>
+                                <option>страна</option>
+                                <option>округ</option>
+                            </select>
+                            <select class="width-auto">
+                                <option>округ</option>
+                                <option>страна</option>
+                                <option disabled="">провинция</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="min-col col-xs-6 col-md-12 col-lg-6 col-xl-4">
+                    <div class="row">
+                        <div class="col-md-4 col-lg-6">
+                            <span class="h-form">Производство</span>
+                            <label><input type="checkbox"> <span>фермер</span></label>
+                            <label><input type="checkbox"> <span>известный завод</span></label>
+                            <label><input type="checkbox"> <span>знаменитый бренд</span></label>
+
+                        </div>
+                        <div class="col-md-4 col-lg-3">
+                            <span class="h-form">Сбор</span>
+                            <label><input type="checkbox"><span>зима</span></label>
+                            <label><input type="checkbox"><span>осень</span></label>
+                            <label><input type="checkbox"><span>лето</span></label>
+                            <label><input type="checkbox"><span>весна</span></label>
+                        </div>
+                        <div class="col-md-4 col-lg-3">
+                            <span class="h-form">Ферментация</span>
+                            <label><input type="checkbox"><span>0-25%</span></label>
+                            <label><input type="checkbox"><span>25-50%</span></label>
+                            <label><input type="checkbox"><span>50-75%</span></label>
+                            <label><input type="checkbox"><span>75-100%</span></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="min-col col-xs-6 col-md-12 col-lg-6 col-xl-4">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-7 mar-label">
+                            <span class="h-form">Тираж</span>
+                            <label><input type="checkbox"><span>эксклюзив</span></label>
+                            <label><input type="checkbox"><span>ограниченная партия</span></label>
+                            <label><input type="checkbox"><span>массовое произвосдтво</span></label>
+                        </div>
+                        <div class="col-md-5 col-lg-5">
+                            <span class="h-form">Выдержка</span>
+                            <label><input type="checkbox"><span>молодой</span></label>
+                            <label><input type="checkbox"><span>выдержанный</span></label>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="container">
         <div class="col-lg-3 aside">
                 <ul class="list-product">
@@ -264,245 +369,336 @@
             </button>
         </div>
         <div class="col-lg-9 contents">
-            <div class="lot">
-                <h2 class="h-lot">Дикий шен пуэр 2009, Т.М. "Юн Ча Тан", гора "Мен Ку"</h2>
-                <ul class="info-list">
-                    <li><a href="javascript: void(0);"><i class="info-ico-1"></i> Подробное описание</a></li>
-                    <li><a href="javascript: void(0);"><i class="info-ico-2"></i> Полезные свойства</a></li>
-                    <li><a href="javascript: void(0);"><i class="info-ico-3"></i> Правила заваривания</a></li>
-                    <li><a href="javascript: void(0);"><i class="info-ico-4"></i> Отзывы (21)</a></li>
-                </ul>
-                <div class="row lot-one">
-                    <div class="col-lg-6">
-                        <figure>
-                            <a href="javascript: void(0);">
-                                <img src="images/lot-one.jpg" alt="img">
-                            </a>
-                            <span class="figure-plash plash-green">Новинка</span>
-                            <span class="figure-plash plash-yellow">Акция</span>
-                            <span class="figure-plash plash-bur">Уценка</span>
-                            <span class="figure-plash plash-orange">Раскол</span>
-                        </figure>
-                        <div id="slid-double" class="swiper-container">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <a href="javascript: void(0);">
-                                        <img src="images/slid-doble1.jpg" alt="img">
-                                    </a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a href="javascript: void(0);">
-                                        <img src="images/slid-doble2.jpg" alt="img">
-                                    </a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a href="javascript: void(0);">
-                                        <img src="images/slid-doble3.jpg" alt="img">
-                                    </a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a href="javascript: void(0);">
-                                        <img src="images/slid-doble1.jpg" alt="img">
-                                    </a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a href="javascript: void(0);">
-                                        <img src="images/slid-doble2.jpg" alt="img">
-                                    </a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a href="javascript: void(0);">
-                                        <img src="images/slid-doble3.jpg" alt="img">
-                                    </a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a href="javascript: void(0);">
-                                        <img src="images/slid-doble1.jpg" alt="img">
-                                    </a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a href="javascript: void(0);">
-                                        <img src="images/slid-doble2.jpg" alt="img">
-                                    </a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a href="javascript: void(0);">
-                                        <img src="images/slid-doble3.jpg" alt="img">
-                                    </a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a href="javascript: void(0);">
-                                        <img src="images/slid-doble1.jpg" alt="img">
-                                    </a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a href="javascript: void(0);">
-                                        <img src="images/slid-doble2.jpg" alt="img">
-                                    </a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a href="javascript: void(0);">
-                                        <img src="images/slid-doble3.jpg" alt="img">
-                                    </a>
-                                </div>
+                <div class="pages">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="visible-tov">
+                                <span>Показывать товаров:</span>
+                                <ul>
+                                    <li><a href="javascript: void(0);">15</a></li>
+                                    <li class="active"><a href="javascript: void(0);">30</a></li>
+                                    <li><a href="javascript: void(0);">60</a></li>
+                                    <li><a href="javascript: void(0);">120</a></li>
+                                    <li><a href="javascript: void(0);">все</a></li>
+                                </ul>
                             </div>
-                            <div class="swiper-button-prev double-prev"></div>
-                            <div class="swiper-button-next double-next"></div>
+                        </div>
+                        <div class="col-md-5">
+                            <ul class="pages-list right">
+                                <li><a href="javascript: void(0);"><i class="pages-ico-1"></i></a></li>
+                                <li><a href="javascript: void(0);">1</a></li>
+                                <li><a href="javascript: void(0);">2</a></li>
+                                <li class="active"><a href="javascript: void(0);">3</a></li>
+                                <li><a href="javascript: void(0);">4</a></li>
+                                <li><a href="javascript: void(0);">5</a></li>
+                                <li><a href="javascript: void(0);"><i class="pages-ico-2"></i></a></li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="col-lg-6">
-                        <div class="buttones bg-buttones">
+                </div>
+                <div class="product-content both">
+                    <div class="row">
+                        <div class="col-xs-5 col-sm-4 col-md-2 col-lg-2 col-xl-2 images">
+                            <img class="img-tov" src="images/tov-img.jpg" alt="img">
+                            <img class="img-tov-big" src="images/tov-img-big.jpg" alt="img">
+                        </div>
+                        <div class="col-xs-7 col-sm-8 col-md-5 col-lg-5 col-xl-6 title">
+                            <p>
+                                Арабика Гватемала Марагожип (Guatemala <br>
+                                Maragogype) 140 Р гр.
+                            </p>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 col-xl-4 buttones">
                             <div class="buy-b both">
                                 <b>120 руб</b>
-                                <div class="stlect-cast">
-                                    <button class="minus">-</button>
-                                    <select class="width-70">
-                                        <option> 30 шт</option>
-                                        <option> 60 шт</option>
-                                        <option> 90 шт</option>
-                                        <option disabled=""> 120 шт</option>
-                                        <option> 150 шт</option>
-                                    </select>
-                                    <button class="plus">+</button>
-                                </div>
                                 <a href="javascript: void(0);" class="butt-buy right"> <i class="buy"></i><span>Купить</span></a>
                             </div>
                             <div class="quantity both">
+                                <div class="stlect-cast left">
+                                    <button class="minus">-</button>
+                                    <select class="width-70">
+                                        <option> <b>30</b> шт</option>
+                                        <option> <b>60</b> шт</option>
+                                        <option> <b>90</b> шт</option>
+                                        <option disabled> <b>120</b> шт</option>
+                                        <option> <b>150</b> шт</option>
+                                    </select>
+                                    <button class="plus">+</button>
+                                </div>
                                 <a href="javascript: void(0);" class="list-desires right">
                                     <i class="desires"></i>
                                 </a>
                             </div>
-                            <p class="titles-lot">
-                                Шен пуэр Лао Бань Чжан от завода Хун Чжун Хун 2013 г.,
-                                кирпич 80 г Лао Бань Чжанкит. 老班章, пиньинь Lao Ban
-                                Zhang <br>
-                                Производитель: Хун Чжун Хун (пиньинь Hóng Zhōng Hóng,
-                                кит. 鸿中鸿). <br>
-                                Происхождение: деревня Лаобаньчжан, уезд Мэнхай,
-                                Сишуанбаньна-Дайский автономный округ, провинция
-                                Юньнань.
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-5 col-sm-4 col-md-2 col-lg-2 col-xl-2 images">
+                            <img class="img-tov" src="images/tov-img.jpg" alt="img">
+                            <img class="img-tov-big" src="images/tov-img-big.jpg" alt="img">
+                        </div>
+                        <div class="col-xs-7 col-sm-8 col-md-5 col-lg-5 col-xl-6 title">
+                            <p>
+                                Арабика Гватемала Марагожип (Guatemala <br>
+                                Maragogype) 140 Р гр.
                             </p>
-                            <div class="row kartavkusa">
-                                <div class="col-lg-6">
-                                    <strong class="st-h">Карта вкуса —</strong>
-                                    <ul class="list-vkus">
-                                        <li>
-                                            <span class="progres-vkus">
-                                                <span style="width: 20%"></span>
-                                            </span>
-                                            <b>8</b>
-                                            насыщенность
-                                        </li>
-                                        <li>
-                                            <span class="progres-vkus">
-                                                <span style="width: 40%"></span>
-                                            </span>
-                                            <b>6</b>
-                                            послевкусие
-                                        </li>
-                                        <li>
-                                            <span class="progres-vkus">
-                                                <span style="width: 80%"></span>
-                                            </span>
-                                            <b>2</b>
-                                            аромат
-                                        </li>
-                                        <li>
-                                            <span class="progres-vkus">
-                                                <span style="width: 10%"></span>
-                                            </span>
-                                            <b>9</b>
-                                            эффект
-                                        </li>
-                                        <li>
-                                            <span class="progres-vkus">
-                                                <span style="width: 80%"></span>
-                                            </span>
-                                            <b>2</b>
-                                            баланс
-                                        </li>
-                                        <li>
-                                            <span class="progres-vkus">
-                                                <span style="width: 80%"></span>
-                                            </span>
-                                            <b>2</b>
-                                            тело
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="col-lg-6">
-                                    <strong class="st-h">Оценка покупателей <span>(2308)</span> —</strong>
-                                    <div class="wr-progres-bar">
-                                        <span class="big-progres">
-                                            <span style="width: 60%"></span>
-                                        </span>
-                                        <span class="big-progres-numb right">60%</span>
-                                    </div>
-                                    <div class="hint-mini">
-                                        <p>
-                                            Для того, чтобы участвовать
-                                            в голосовании, необходимо
-                                            <a href="javascript: void(0);">зарегистрироваться</a> и купить
-                                        </p>
-                                        <a href="javascript: void(0);" class="clock-hi-mini"></a>
-                                    </div>
-                                </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 col-xl-4 buttones">
+                            <div class="buy-b both">
+                                <b>120 руб</b>
+                                <a href="javascript: void(0);" class="butt-buy right"> <i class="buy"></i><span>Купить</span></a>
                             </div>
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <strong class="st-h">Поделиться —</strong>
-                                    <ul class="my-soc">
-                                        <li>
-                                            <a href="javascript: void(0);">
-                                                <i class="ico-vc"></i><br>
-                                                <span class="col-vc">225658</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript: void(0);">
-                                                <i class="ico-fb"></i><br>
-                                                <span class="col-fb">258</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript: void(0);">
-                                                <i class="ico-mail"></i><br>
-                                                <span class="col-mail">258</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript: void(0);">
-                                                <i class="ico-ok"></i><br>
-                                                <span class="col-ok">258</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript: void(0);">
-                                                <i class="ico-tw"></i><br>
-                                                <span class="col-tw">258</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript: void(0);">
-                                                <i class="ico-g"></i><br>
-                                                <span class="col-g">258</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript: void(0);">
-                                                <i class="ico-kr"></i><br>
-                                                <span class="col-kr">258</span>
-                                            </a>
-                                        </li>
-                                    </ul>
+                            <div class="quantity both">
+                                <div class="stlect-cast left">
+                                    <button class="minus">-</button>
+                                    <select class="width-70">
+                                        <option> <b>30</b> шт</option>
+                                        <option> <b>60</b> шт</option>
+                                        <option> <b>90</b> шт</option>
+                                        <option disabled> <b>120</b> шт</option>
+                                        <option> <b>150</b> шт</option>
+                                    </select>
+                                    <button class="plus">+</button>
                                 </div>
+                                <a href="javascript: void(0);" class="report right">
+                                    <i class="report-ico"></i>
+                                    <span>Сообщить <br> о появлении</span>
+                                </a>
                             </div>
-
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-5 col-sm-4 col-md-2 col-lg-2 col-xl-2 images">
+                            <img class="img-tov" src="images/tov-img.jpg" alt="img">
+                            <img class="img-tov-big" src="images/tov-img-big.jpg" alt="img">
+                        </div>
+                        <div class="col-xs-7 col-sm-8 col-md-5 col-lg-5 col-xl-6 title">
+                            <p>
+                                Арабика Гватемала Марагожип (Guatemala <br>
+                                Maragogype) 140 Р гр.
+                            </p>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 col-xl-4 buttones">
+                            <div class="buy-b both">
+                                <b>120 руб</b>
+                                <a href="javascript: void(0);" class="butt-buy right"> <i class="buy"></i><span>Купить</span></a>
+                            </div>
+                            <div class="quantity both">
+                                <div class="stlect-cast left">
+                                    <button class="minus">-</button>
+                                    <select class="width-70">
+                                        <option> <b>30</b> шт</option>
+                                        <option> <b>60</b> шт</option>
+                                        <option> <b>90</b> шт</option>
+                                        <option disabled> <b>120</b> шт</option>
+                                        <option> <b>150</b> шт</option>
+                                    </select>
+                                    <button class="plus">+</button>
+                                </div>
+                                <a href="javascript: void(0);" class="list-desires right">
+                                    <i class="desires"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-5 col-sm-4 col-md-2 col-lg-2 col-xl-2 images">
+                            <img class="img-tov" src="images/tov-img.jpg" alt="img">
+                            <img class="img-tov-big" src="images/tov-img-big.jpg" alt="img">
+                        </div>
+                        <div class="col-xs-7 col-sm-8 col-md-5 col-lg-5 col-xl-6 title">
+                            <p>
+                                Арабика Гватемала Марагожип (Guatemala <br>
+                                Maragogype) 140 Р гр.
+                            </p>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 col-xl-4 buttones">
+                            <div class="buy-b both">
+                                <b>120 руб</b>
+                                <a href="javascript: void(0);" class="butt-buy right"> <i class="buy"></i><span>Купить</span></a>
+                            </div>
+                            <div class="quantity both">
+                                <div class="stlect-cast left">
+                                    <button class="minus">-</button>
+                                    <select class="width-70">
+                                        <option> <b>30</b> шт</option>
+                                        <option> <b>60</b> шт</option>
+                                        <option> <b>90</b> шт</option>
+                                        <option disabled> <b>120</b> шт</option>
+                                        <option> <b>150</b> шт</option>
+                                    </select>
+                                    <button class="plus">+</button>
+                                </div>
+                                <a href="javascript: void(0);" class="list-desires right">
+                                    <i class="desires"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-5 col-sm-4 col-md-2 col-lg-2 col-xl-2 images">
+                            <img class="img-tov" src="images/tov-img.jpg" alt="img">
+                            <img class="img-tov-big" src="images/tov-img-big.jpg" alt="img">
+                        </div>
+                        <div class="col-xs-7 col-sm-8 col-md-5 col-lg-5 col-xl-6 title">
+                            <p>
+                                Арабика Гватемала Марагожип (Guatemala <br>
+                                Maragogype) 140 Р гр.
+                            </p>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 col-xl-4 buttones">
+                            <div class="buy-b both">
+                                <b>120 руб</b>
+                                <a href="javascript: void(0);" class="butt-buy right"> <i class="buy"></i><span>Купить</span></a>
+                            </div>
+                            <div class="quantity both">
+                                <div class="stlect-cast left">
+                                    <button class="minus">-</button>
+                                    <select class="width-70">
+                                        <option> <b>30</b> шт</option>
+                                        <option> <b>60</b> шт</option>
+                                        <option> <b>90</b> шт</option>
+                                        <option disabled> <b>120</b> шт</option>
+                                        <option> <b>150</b> шт</option>
+                                    </select>
+                                    <button class="plus">+</button>
+                                </div>
+                                <a href="javascript: void(0);" class="list-desires right">
+                                    <i class="desires"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-5 col-sm-4 col-md-2 col-lg-2 col-xl-2 images">
+                            <img class="img-tov" src="images/tov-img.jpg" alt="img">
+                            <img class="img-tov-big" src="images/tov-img-big.jpg" alt="img">
+                        </div>
+                        <div class="col-xs-7 col-sm-8 col-md-5 col-lg-5 col-xl-6 title">
+                            <p>
+                                Арабика Гватемала Марагожип (Guatemala <br>
+                                Maragogype) 140 Р гр.
+                            </p>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 col-xl-4 buttones">
+                            <div class="buy-b both">
+                                <b>120 руб</b>
+                                <a href="javascript: void(0);" class="butt-buy right"> <i class="buy"></i><span>Купить</span></a>
+                            </div>
+                            <div class="quantity both">
+                                <div class="stlect-cast left">
+                                    <button class="minus">-</button>
+                                    <select class="width-70">
+                                        <option> <b>30</b> шт</option>
+                                        <option> <b>60</b> шт</option>
+                                        <option> <b>90</b> шт</option>
+                                        <option disabled> <b>120</b> шт</option>
+                                        <option> <b>150</b> шт</option>
+                                    </select>
+                                    <button class="plus">+</button>
+                                </div>
+                                <a href="javascript: void(0);" class="list-desires right">
+                                    <i class="desires"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-5 col-sm-4 col-md-2 col-lg-2 col-xl-2 images">
+                            <img class="img-tov" src="images/tov-img.jpg" alt="img">
+                            <img class="img-tov-big" src="images/tov-img-big.jpg" alt="img">
+                        </div>
+                        <div class="col-xs-7 col-sm-8 col-md-5 col-lg-5 col-xl-6 title">
+                            <p>
+                                Арабика Гватемала Марагожип (Guatemala <br>
+                                Maragogype) 140 Р гр.
+                            </p>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 col-xl-4 buttones">
+                            <div class="buy-b both">
+                                <b>120 руб</b>
+                                <a href="javascript: void(0);" class="butt-buy right"> <i class="buy"></i><span>Купить</span></a>
+                            </div>
+                            <div class="quantity both">
+                                <div class="stlect-cast left">
+                                    <button class="minus">-</button>
+                                    <select class="width-70">
+                                        <option> <b>30</b> шт</option>
+                                        <option> <b>60</b> шт</option>
+                                        <option> <b>90</b> шт</option>
+                                        <option disabled> <b>120</b> шт</option>
+                                        <option> <b>150</b> шт</option>
+                                    </select>
+                                    <button class="plus">+</button>
+                                </div>
+                                <a href="javascript: void(0);" class="list-desires right">
+                                    <i class="desires"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-5 col-sm-4 col-md-2 col-lg-2 col-xl-2 images">
+                            <img class="img-tov" src="images/tov-img.jpg" alt="img">
+                            <img class="img-tov-big" src="images/tov-img-big.jpg" alt="img">
+                        </div>
+                        <div class="col-xs-7 col-sm-8 col-md-5 col-lg-5 col-xl-6 title">
+                            <p>
+                                Арабика Гватемала Марагожип (Guatemala <br>
+                                Maragogype) 140 Р гр.
+                            </p>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 col-xl-4 buttones">
+                            <div class="buy-b both">
+                                <b>120 руб</b>
+                                <a href="javascript: void(0);" class="butt-buy right"> <i class="buy"></i><span>Купить</span></a>
+                            </div>
+                            <div class="quantity both">
+                                <div class="stlect-cast left">
+                                    <button class="minus">-</button>
+                                    <select class="width-70">
+                                        <option> <b>30</b> шт</option>
+                                        <option> <b>60</b> шт</option>
+                                        <option> <b>90</b> шт</option>
+                                        <option disabled> <b>120</b> шт</option>
+                                        <option> <b>150</b> шт</option>
+                                    </select>
+                                    <button class="plus">+</button>
+                                </div>
+                                <a href="javascript: void(0);" class="list-desires right">
+                                    <i class="desires"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pages">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="visible-tov">
+                                <span>Показывать товаров:</span>
+                                <ul>
+                                    <li><a href="javascript: void(0);">15</a></li>
+                                    <li class="active"><a href="javascript: void(0);">30</a></li>
+                                    <li><a href="javascript: void(0);">60</a></li>
+                                    <li><a href="javascript: void(0);">120</a></li>
+                                    <li><a href="javascript: void(0);">все</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <ul class="pages-list right">
+                                <li><a href="javascript: void(0);"><i class="pages-ico-1"></i></a></li>
+                                <li><a href="javascript: void(0);">1</a></li>
+                                <li><a href="javascript: void(0);">2</a></li>
+                                <li class="active"><a href="javascript: void(0);">3</a></li>
+                                <li><a href="javascript: void(0);">4</a></li>
+                                <li><a href="javascript: void(0);">5</a></li>
+                                <li><a href="javascript: void(0);"><i class="pages-ico-2"></i></a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
     </div>
     <div class="description-section">
         <div class="container">

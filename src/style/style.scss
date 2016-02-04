@@ -1561,25 +1561,383 @@ footer{
 
 // ЛОТ
 .lot{
-
+  .h-lot{
+    margin-bottom:43px;
+  }
 }
 
 .h-lot{
   font-size:1.3rem;
   text-align: left;
+
 }
 
 .info-list{
   border-top: 1px solid #e1e1e1;
   border-bottom: 1px solid #c4c4c4;
-  padding:5px 0;
+  padding:2px 0;
+  i{
+    margin:0 5px 0 0;
+  }
   li{
     display: inline-block;
+    margin:0 5px 0 0;
   }
   a{
     display: inline-block;
   }
 }
+
+.info-ico-1{
+  background: url('../images/info-ico-1.png') 0 0 no-repeat;
+  width: 11px;
+  height: 14px;
+}
+.info-ico-2{
+  background: url('../images/info-ico-2.png') 0 0 no-repeat;
+  width: 12px;
+  height: 12px;
+}
+.info-ico-3{
+  background: url('../images/info-ico-3.png') 0 0 no-repeat;
+  width: 15px;
+  height: 13px;
+}
+.info-ico-4{
+  background: url('../images/info-ico-4.png') 0 0 no-repeat;
+  width: 19px;
+  height: 19px;
+}
+
+
+.lot-one{
+  figure{
+    position: relative;
+    border-bottom: 1px solid #d7d7d7;
+  }
+}
+.figure-plash{
+  font-family:Calibri;
+  font-weight: bold;
+  color: #9e5a1e;
+  font-size: 1.3rem;
+  display: inline-block;
+  padding:0 5px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  position: absolute;
+}
+
+.plash-green{
+  background:url('../images/plash-green.png') 0 0 repeat-x;
+  top:15px;
+  left:-3px;
+  &:before{
+    content: '';
+    background: url('../images/plash-green-bef.png') 0 0 no-repeat;
+    width: 5px;
+    height: 33px;
+    position: absolute;
+    top:0;
+    left: -3px;
+  }
+}
+
+.plash-yellow{
+  background:url('../images/plash-yellow.png') 0 0 repeat-x;
+  top: 15px;
+  right: -3px;
+  &:before{
+    content: '';
+    background: url('../images/plash-yellow-bef.png') 0 0 no-repeat;
+    width: 5px;
+    height: 33px;
+    position: absolute;
+    top:0;
+    right: -3px;
+  }
+}
+.plash-bur{
+  background:url('../images/plash-bur.png') 0 0 repeat-x;
+  bottom:15px;
+  left:-3px;
+  &:before{
+    content: '';
+    background: url('../images/plash-bur-bef.png') 0 0 no-repeat;
+    width: 5px;
+    height: 33px;
+    position: absolute;
+    top:0;
+    left: -3px;
+  }
+}
+.plash-orange{
+  background:url('../images/plash-orange.png') 0 0 repeat-x;
+  right:-3px;
+  bottom:15px;
+  &:before{
+    content: '';
+    background: url('../images/plash-orange-bef.png') 0 0 no-repeat;
+    width: 5px;
+    height: 33px;
+    position: absolute;
+    top:0;
+    right: -3px;
+  }
+}
+
+#slid-double {
+
+  &.swiper-container{
+    padding:0 35px;
+  }
+  .swiper-slide{
+    img{
+      width:100%;
+    }
+  }
+
+}
+
+.double-next{
+  background: #fff url('../images/double-next.png')0 50% no-repeat;
+  width: 26px;
+  height: 100%;
+  position: absolute;
+  top:0;
+  right:0;
+  z-index:999;
+}
+
+.double-prev{
+  background: #fff url('../images/double-prev.png') 0 50% no-repeat;
+  width: 26px;
+  height: 100%;
+  position: absolute;
+  top:0;
+  left:0;
+}
+
+
+.bg-buttones{
+  .buy-b{
+    background-color: transparent;
+    border: none;
+    padding-bottom:4px;
+    b{
+      padding: 5px 25px 0 0;
+    }
+  }
+  .quantity{
+    padding-top: 3px;
+  }
+  .list-desires{
+    margin-top: 0;
+  }
+}
+.titles-lot{
+  color: #000;
+}
+
+
+
+.kartavkusa{
+  background-color: #f5f5f5;
+  margin-bottom:10px;
+}
+
+.st-h{
+  font-size: 0.7rem;
+  font-family: Tahoma;
+  span {
+    color: #817f7e;
+  }
+}
+
+.list-vkus{
+  li{
+
+  }
+  b{
+    font-family: Calibri;
+    display: inline-block;
+    margin:0 5px;
+  }
+
+}
+.progres-vkus{
+  background-color: #6bc179;
+  display: inline-block;
+  width:43px;
+  height:8px;
+  padding:0;
+  margin:0;
+  span{
+    background-color: #d2d2d2;
+    display: inline-block;
+    height:8px;
+    float: left;
+  }
+}
+
+
+.wr-progres-bar{
+  height:60px;
+  vertical-align: middle;
+  .big-progres{
+    margin-top:12px;
+  }
+}
+
+.big-progres{
+  background: #f24944 url('../images/big-progres.png') 0 0 repeat-x;
+  display: inline-block;
+  width:144px;
+  height:11px;
+
+  span{
+    background: #00ad5e url('../images/big-progres.png') 0 0 repeat-x;
+    display: inline-block;
+    height:11px;
+    float: left;
+  }
+}
+.big-progres-numb{
+  font-size: 1.4rem;
+  color: #4b453e;
+  font-family:Tahoma;
+  font-weight: bold;
+}
+
+.hint-mini{
+  position: relative;
+  background-color: #38b65a;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  color: $gray-lighter;
+  padding:5px 5px 7px;
+  font-size: 0.8rem;
+  line-height: 0.9rem;
+  p{
+    padding:0;
+    margin: 0;
+  }
+  a{
+    color: $gray-lighter;
+    text-decoration: underline;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+}
+
+.clock-hi-mini{
+  background: url('../images/clock-hi-mini.png') 0 0 no-repeat;
+  width: 9px;
+  height: 9px;
+  display: inline-block;
+  position: absolute;
+  top:3px;
+  right:3px;
+}
+
+
+
+
+
+.my-soc{
+  background: url('../images/my-soc-bg.png') 0 7px repeat-x;
+  text-align: center;
+  li{
+    display: inline-block;
+  }
+  i{
+
+  }
+  span{
+    min-width:55px;
+    padding:5px 10px;
+    display: inline-block;
+    color: $gray-lighter;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    font-family:Tahoma;
+    font-size: 0.8rem;
+  }
+}
+
+.ico-vc{
+  background: #fff url('../images/ico-vc.png') 50% 0 no-repeat;
+  width: 40px;
+  height: 30px;
+ 
+}
+.ico-fb{
+  background: #fff url('../images/ico-fb.png') 50% 0 no-repeat;
+  width: 40px;
+  height: 30px;
+}
+.ico-mail{
+  background: #fff url('../images/ico-mail.png') 50% 0 no-repeat;
+  width: 40px;
+  height: 30px;
+}
+.ico-g{
+  background: #fff url('../images/ico-g.png') 50% 0 no-repeat;
+  width: 40px;
+  height: 31px;
+}
+.ico-ok{
+  background: #fff url('../images/ico-ok.png') 50% 0 no-repeat;
+  width: 40px;
+  height: 30px;
+}
+
+.ico-kr{
+  background: #fff url('../images/ico-kr.png') 50% 0 no-repeat;
+  width: 40px;
+  height: 31px;
+}
+
+.ico-tw{
+  background: #fff url('../images/ico-tw.png') 50% 0 no-repeat;
+  width: 40px;
+  height: 31px;
+}
+
+
+
+.col-vc{
+  background-color: #0686b0;
+}
+.col-fb{
+  background-color: #3c6dae;
+}
+.col-mail{
+  background-color: #1c82c4;
+}
+.col-ok{
+  background-color: #f7883e;
+}
+.col-tw{
+  background-color: #00b8f1;
+}
+.col-g{
+  background-color: #e94b43;
+}
+.col-kr{
+  background-color: #15323e;
+}
+
+
+
+
+
+
+
 // \ЛОТ\
 
 
