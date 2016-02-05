@@ -960,6 +960,7 @@ footer{
     margin:0 2px 0 0;
   }
   a{
+    min-width:170px;
     border: 1px solid #a6a9ac;
     display: inline-block;
     -webkit-border-radius: 5px;
@@ -1071,7 +1072,7 @@ footer{
       font-family:Candara;
       font-weight: bold;
       font-size: 0.9rem;
-      margin: -3px 0 0 5px;
+      margin: -5px 0 0 5px;
       float: left;
       color: #5b5552;
     }
@@ -1529,6 +1530,16 @@ footer{
     .img-tov-big{
       display: inline-block;
     }
+
+    .list-desires{
+      margin-right: 0;
+    }
+    .report{
+      margin-right: 0;
+      padding: 0 5px 0 5px;
+      width: 120px;
+    }
+
   }
 }
 
@@ -1614,6 +1625,9 @@ footer{
   figure{
     position: relative;
     border-bottom: 1px solid #d7d7d7;
+    img{
+      width:100%;
+    }
   }
 }
 .figure-plash{
@@ -1721,6 +1735,7 @@ footer{
 
 
 .bg-buttones{
+  margin-bottom:13px;
   .buy-b{
     background-color: transparent;
     border: none;
@@ -1850,8 +1865,10 @@ footer{
 .my-soc{
   background: url('../images/my-soc-bg.png') 0 7px repeat-x;
   text-align: center;
+  //padding:0;
   li{
     display: inline-block;
+    //margin:0 3px;
   }
   i{
 
@@ -1932,9 +1949,122 @@ footer{
   background-color: #15323e;
 }
 
+.lot-text{
+  border-top: 1px solid #e5e5e5;
+  padding:14px 0;
+  h5{
+    font-family:Candara;
+    font-weight: bold;
+    font-size: 1.9rem;
+    padding:0 0 6px 8px;
+  }
+  p{
+    padding-left: 33px;
+  }
+}
+
+#slid-tovar{
+  padding:0 35px;
+  .swiper-slide{
+    img{
+      //width:100%;
+      display: block;
+    }
+    p{
+      padding:0 0 0 20px;
+      width:100%;
+      font-family:Candara;
+      font-weight: bold;
+      color: #231f1d;
+      text-align: left;
+    }
+  }
+}
+
+
+.otziv{
+  display: inline-block;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  color: $gray-lighter;
+  background-color: #9dcd4c;
+  font-size: 0.9rem;
+  padding: 7px 7px;
+  margin: 0 0 0 25px;
+  position: relative;
+  top: -3px;
+  &:hover{
+    color: $gray-lighter;
+  }
+}
+
+
+.comments-user{
+  border-left: 6px solid #f9f9f9;
+  font-size: 0.7rem;
+  ul{
+    margin:0 0 0 40px;
+  }
+  li{
+    div{
+      border-bottom: 1px solid #efeff0;
+      padding:5px 0 9px;
+    }
+
+  }
+  img{
+    width:50px;
+    height:50px;
+    float: left;
+    margin: 5px 15px 5px 0px;
+  }
+  p{
+    font-family:Tahoma;
+    padding: 4px 0 0;
+    margin:0;
+    i{
+      margin-right:5px;
+    }
+    a{
+      color: #367dc1;
+      text-decoration: underline;
+      font-size:0.7rem;
+      &:hover{
+        text-decoration: none;
+      }
+    }
+  }
+}
+.h-cast{
+  h5{
+    border-bottom: 1px solid #e5e5e5;
+    padding: 0 0 10px 49px;
+  }
+}
 
 
 
+.soc-fb{
+  background: url('../images/soc-fb.png') 0 0 no-repeat;
+  width: 16px;
+  height: 16px;
+}
+.soc-tw{
+  background: url('../images/soc-tv.png') 0 0 no-repeat;
+  width: 16px;
+  height: 16px;
+}
+
+
+
+
+.comments-text{
+
+}
+.comments-footer{
+  text-align: right;
+}
 
 
 

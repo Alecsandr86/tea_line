@@ -66,14 +66,22 @@ $(document).ready(function(){
 
     var slidDouble = new Swiper('#slid-double', {
 
-        nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev',
+        nextButton: '.slid-next',
+        prevButton: '.slid-prev',
         slidesPerView: 3,
         slidesPerColumn: 2,
         spaceBetween: 10
     });
 
+    var slidTovar = new Swiper('#slid-tovar', {
+        nextButton: '.slid-next-1',
+        prevButton: '.slid-prev-1',
+        slidesPerView: 4,
+        slidesPerColumn: 2,
+        spaceBetween: 10,
 
+
+    });
 
 
 
