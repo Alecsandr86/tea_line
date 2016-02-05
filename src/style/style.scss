@@ -1091,18 +1091,17 @@ footer{
 }
 .h-form{
   position: relative;
-  &:before{
-    content: '';
-    background:  url(../images/h-form.png) 0 0 no-repeat;
-    width: 17px;
-    height: 17px;
-    position: absolute;
-    top:0;
-    left:-20px;
-    display: block;
-  }
 }
-
+.hit-ico{
+  background:  url(../images/h-form.png) 0 0 no-repeat;
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  top:0;
+  left:-20px;
+  display: block;
+  cursor: pointer;
+}
 
 
 
@@ -1566,6 +1565,32 @@ footer{
   }
 
 }
+.wr-hit{
+  position: relative;
+}
+.filter-form{
+  .hit-form{
+    position: absolute;
+    top: -230%;
+    left:-20px;
+    display: none;
+    background-color: #fff;
+    border: 1px solid #77787a;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding: 5px;
+    color: #414142;
+    width:250px;
+    line-height:15px;
+  }
+
+}
+
+
+
+
+
 
 // \КАТАЛОГ\
 
@@ -2071,12 +2096,27 @@ footer{
 
 
 
+//  КАТАЛОГ РАЗДЕЛ
+.catalog-section{
+  .row{
+    //border-bottom: 1px solid #a7a9ac;
+    div{
+      min-height:390px;
+      img{
+        width:100%;
+      }
+      a{
+        font-size:1.7rem;
+        font-weight: bold;
+      }
+    }
+  }
+}
 
 
 
 
-
-
+//  \КАТАЛОГ РАЗДЕЛ\
 
 
 

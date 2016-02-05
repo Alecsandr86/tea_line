@@ -556,8 +556,13 @@
       float: none;
     }
   }
-  .bg-buttones .buy-b b {
-    padding: 5px 0 0;
+  .bg-buttones{
+    .buy-b{
+      padding:10px 0;
+      b {
+        padding: 5px 18px 0 0;
+      }
+    }
   }
   .product-content{
     &.active {
@@ -751,16 +756,6 @@
   .sort-filter{
     margin: 0;
   }
-
-
-
-
-
-
-
-
-
-
 
 
 

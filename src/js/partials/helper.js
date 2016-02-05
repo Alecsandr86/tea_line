@@ -189,32 +189,35 @@ $(document).ready(function(){
 
 
 
+    //$('.list-product > li > a').bind('click',function(){
+    //    $('.list-product > li').removeClass('active');
+    //    $(this).parent().addClass('active');
+    //});
+    //
+    //
+    //
+    //$('.list-product-two > li > a').bind('click',function(){
+    //    $('.list-product-two > li').removeClass('active');
+    //    $(this).parent().addClass('active');
+    //});
+
+
     $('.list-product > li > a').bind('click',function(){
-        $('.list-product > li').removeClass('active');
-        $(this).parent().addClass('active');
+        $(this).parent().toggleClass('active');
     });
 
 
 
     $('.list-product-two > li > a').bind('click',function(){
-        $('.list-product-two > li').removeClass('active');
-        $(this).parent().addClass('active');
+        $(this).parent().toggleClass('active');
     });
 
 
-    //
-    //$('.list-product > li > a').bind('click',function(){
-    //    $('.list-product > li').toggleClass('active');
-    //});
 
 
-
-    //$('.list-product-two > li > a').bind('click',function(){
-    //    $('.list-product-two > li').removeClass('active');
-    //    $(this).parent().addClass('active');
-    //});
-    //
-
+    $('.hit-ico').bind('mouseenter mouseleave',function(){
+       $(this).prev('.hit-form').fadeToggle(1000)
+    });
 
 
     /*******************************
