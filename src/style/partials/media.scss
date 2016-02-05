@@ -54,14 +54,26 @@
 
   }
   .bg-buttones .buy-b b {
-    padding: 5px 73px 0 0;
+    padding: 5px 100px 0 0;
   }
+  .item-footer {
+    min-width: 170px;
+    margin: 0 0 0 13px;
+  }
+  .my-soc {
+    li {
+      width: 47px;
+    }
+    span{
+      min-width: 40px;
+      padding: 5px;
+    }
 
-
+  }
 
 }
 
-@media screen and(max-width: 1025px){
+@media screen and(max-width: 1029px){
   .map-russia-ico {
     top: -73px;
     left: 280px;
@@ -79,11 +91,30 @@
       width:100%;
     }
   }
+.footer{
+  .right{
+    float: none;
+  }
+}
+  .item-footer ul {
+    margin: 5px 36px 26px 0;
+  }
+
+  .bg-buttones .buy-b b {
+    padding: 5px 20px 0 0;
+  }
+  .info-list{
+    li{
+      width:48%;
+      float: left;
+    }
+  }
+
 
 
 }
 
-@media screen and(max-width: 991px){
+@media screen and(max-width: 1029px){
   .b-asid{
     display: block;
   }
@@ -190,12 +221,7 @@
   //  }
   //}
 
-  .col-footer{
-    background-color: #292d2d!important;
-    &:before{
-      display: none;
-    }
-  }
+
 
   .up-button{
     display: none!important;
@@ -234,6 +260,12 @@
     padding-left:7rem;
   }
 
+
+
+}
+
+@media screen and(max-width: 767px){
+
   .product-content{
     &.active {
       .row {
@@ -247,9 +279,6 @@
 
   }
 
-}
-
-@media screen and(max-width: 767px){
   .top-nav{
     ul{
       margin: 0;
@@ -325,7 +354,7 @@
     position: static;
   }
   .russia{
-    background:  url(../images/russia-bg-img-mobail.png) 50% 50% no-repeat;
+    background:  url('../images/russia-bg-img-mobail.png') 50% 50% no-repeat;
     div{
       margin-bottom:60px;
     }
@@ -338,7 +367,7 @@
     left: 367px;
   }
   .china {
-    background: url(../images/china-bg-img-mobail.png) 50% 20% no-repeat;
+    background: url('../images/china-bg-img-mobail.png') 50% 20% no-repeat;
   }
   .china-2{
     margin-top:300px;
@@ -494,13 +523,42 @@
 
 
 
-
+  .col-footer{
+    background-color: #292d2d!important;
+    &:before{
+      display: none;
+    }
+  }
 
 }
 
 @media screen and(max-width: 543px){
 
+  .product-content.active .report {
+    margin-right: 0;
+    padding: 0 3px;
+    width: 100px;
+    span{
+      font-size: 0.6rem;
+    }
+  }
 
+
+  .comments-user{
+    ul {
+      margin: 0 0 0 20px;
+    }
+  }
+  .info-list{
+
+    li{
+      width:100%;
+      float: none;
+    }
+  }
+  .bg-buttones .buy-b b {
+    padding: 5px 0 0;
+  }
   .product-content{
     &.active {
       .row {
@@ -509,7 +567,32 @@
     }
 
   }
+  .my-soc{
+    li {
+      width: 31px;
+    }
+    span{
+      padding: 5px 3px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      min-width: auto;
+      width: 34px;
+      overflow: hidden;
+    }
+  }
 
+  .h-cast{
+    h5 {
+      padding: 0 0 10px 0;
+    }
+  }
+
+  .lot-text {
+    p {
+      padding-left: 0;
+    }
+
+  }
 
   .top-nav{
     ul{
@@ -656,7 +739,7 @@
   .sort-filter{
     float: none;
     display: inline-block;
-    height: 40px;
+    height: 60px;
     vertical-align: middle;
   }
 
