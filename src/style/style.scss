@@ -5,6 +5,9 @@
 @import "../../bower_components/bootstrap/scss/bootstrap";
 @import "../../bower_components/Swiper/dist/css/swiper.min.css";
 @import "../../bower_components/animate.css/animate.min.css";
+@import "../js/source/jquery.fancybox.css";
+@import "../js/source/helpers/jquery.fancybox-buttons.css";
+@import "../js/source/helpers/jquery.fancybox-thumbs.css";
 
 ///////////////////   МОИ ДОПОЛНЕНИЯ  /////////////////////////
 
@@ -211,13 +214,30 @@ header{
   text-align: right;
   font-size:0.7rem;
   color: #4b453e;
-  padding:4px 0 0;
+  padding:5px;
+  margin:0 0 -1px;
   i,span{
     float: left;
   }
   span{
     display: inline-block;
     margin: 7px 0 0 7px;
+  }
+  .buy{
+    display: none;
+  }
+  &.active{
+    background-color: #f15441;
+    color: $gray-lighter;
+    span{
+      color: $gray-lighter;
+    }
+    .basket-ico{
+      display: none;
+    }
+    .buy{
+      display: inline-block;
+    }
   }
 }
 
@@ -663,16 +683,20 @@ header{
 
 .shadow-bottom{
   position: relative;
-  &:before{
-    content: '';
-    background: url(../images/shadow-bottom.png) 0 0 repeat-x;
-    width: 100%;
-    height: 18px;
-    display: block;
-    position: absolute;
-    bottom:-17px;
-    left:0;
-  }
+  -webkit-box-shadow: 4px 4px 5px 0px rgba(50, 50, 50, 0.7);
+  -moz-box-shadow:    4px 4px 5px 0px rgba(50, 50, 50, 0.7);
+  box-shadow:         4px 4px 5px 0px rgba(50, 50, 50, 0.7);
+
+  //&:before{
+  //  content: '';
+  //  background: url(../images/shadow-bottom.png) 0 0 repeat-x;
+  //  width: 100%;
+  //  height: 18px;
+  //  display: block;
+  //  position: absolute;
+  //  bottom:-17px;
+  //  left:0;
+  //}
 
 }
 
@@ -1043,6 +1067,7 @@ footer{
   }
 }
 .filter-form{
+  display: none;
   background-color: #f0f0f0;
   padding:11px 0 30px;
   .row{
@@ -1451,13 +1476,31 @@ footer{
   }
 }
 .list-desires{
+  position: relative;
   display: inline-block;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
   background-color: #ffe100;
   padding:2px 10px;
-  margin:5px 10px 0 0;
+  margin:5px 5px 0 0;
+  font-size: 0.7rem;
+  font-family:"Times New Roman";
+  font-weight: bold;
+  height: 30px;
+  width:auto;
+  line-height: 27px;
+  span{
+    float: left;
+    width:0;
+    display: inline-block;
+    opacity: 0;
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin:0 0 0 -7px;
+
+  }
 }
 .description-section{
   background-color: #eaebec;
@@ -2118,7 +2161,36 @@ footer{
 
 //  \КАТАЛОГ РАЗДЕЛ\
 
+// POPAP
 
+//.wr-popap{
+//
+//}
+//
+//#gallery{
+//
+//}
+//.gallery-top {
+//  height: 80%;
+//  width: 100%;
+//}
+//.gallery-thumbs {
+//  height: 20%;
+//  box-sizing: border-box;
+//  padding: 10px 0;
+//}
+//.gallery-thumbs .swiper-slide {
+//  width: 25%;
+//  height: 100%;
+//  opacity: 0.4;
+//}
+//.gallery-thumbs .swiper-slide-active {
+//  opacity: 1;
+//}
+
+
+
+// \POPAP\
 
 
 
@@ -2158,7 +2230,41 @@ footer{
   z-index: 999;
 }
 
-
+.window{
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  top:80px;
+  left:0;
+  background-color: #eeeeee;
+  width:190px;
+  -webkit-box-shadow: 2px 2px 10px 0 rgba(50, 50, 50, 0.5);
+  -moz-box-shadow:    2px 2px 10px 0 rgba(50, 50, 50, 0.5);
+  box-shadow:         2px 2px 10px 0 rgba(50, 50, 50, 0.5);
+  .buy-b{
+    padding:18px 0;
+    b{
+      display: block;
+      background-color: #fff;
+      padding:10px 0;
+      text-align: center;
+    }
+    .stlect-cast{
+      margin: 14px 0 7px 26px;
+    }
+    .butt-buy{
+      margin: 5px 5px 0 27px
+    }
+    .list-desires{
+      margin:10px 0 0 27px;
+      padding:2px 16px;
+    }
+  }
+}
+.visible{
+  visibility: visible;
+  opacity:1;
+}
 /*************************
 *     КАСТОМНЫЕ СТИЛИ
 *************************/

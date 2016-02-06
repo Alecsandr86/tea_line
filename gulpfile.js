@@ -24,7 +24,7 @@ var path = {
     },
     src: {
         html: 'src/*.html',
-        js: 'src/js/main.js',
+        js: 'src/js/script.js',
         style: 'src/style/style.scss',
         img: 'src/images/*.*',
         fonts: 'src/fonts/**/*.*'
@@ -65,10 +65,6 @@ gulp.task('html:build', function () {
 });
 
 gulp.task('js:build', function () {
-    //gulp.src('./src/js/*.js')
-    //    .pipe(gulp.dest(path.build.js))
-
-
     gulp.src('./src/js/script.js')
         .pipe(rigger())
         .pipe(sourcemaps.init())
@@ -78,15 +74,15 @@ gulp.task('js:build', function () {
         .pipe(reload({stream: true}));
 });
 
-gulp.task('jquery', function () {
-    gulp.src('./bower_components/jquery/dist/*.min.js')
-        .pipe(gulp.dest(path.build.js))
-});
+//gulp.task('jquery', function () {
+//    gulp.src('./bower_components/jquery/dist/*.min.js')
+//        .pipe(gulp.dest(path.build.js))
+//});
 
-gulp.task('fincss', function(){
-    gulp.src('./src/*.css')
-        .pipe(gulp.dest('build/'));
-});
+//gulp.task('fincss', function(){
+//    gulp.src('./src/*.css')
+//        .pipe(gulp.dest('build/'));
+//});
 
 gulp.task('style:build', function () {
     gulp.src('./src/style/*.css')
@@ -150,8 +146,8 @@ gulp.task('build', [
     'js:build',
     'style:build',
     'fonts:build',
-    'image:build',
-    'fincss'
+    'image:build'
+
 
 ]);
 
