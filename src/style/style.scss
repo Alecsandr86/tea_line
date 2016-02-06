@@ -1169,6 +1169,7 @@ footer{
       }
       .list-product-two{
         display: block;
+        overflow: hidden;
       }
     }
   }
@@ -1358,7 +1359,7 @@ footer{
   }
 }
 .stlect-cast{
-  width:130px;
+  width:135px;
   height:39px;
   border: 1px solid #c1c2c4;
   -webkit-border-radius: 5px;
@@ -1456,8 +1457,8 @@ footer{
   -moz-border-radius: 5px;
   border-radius: 5px;
   display: inline-block;
-  padding: 0 15px 0 5px;
-  margin: 5px 5px 0 0;
+  padding: 0 6px 0 5px;
+  margin: 5px 4px 0 0;
   width: 130px;
   height:32px;
   color: $gray-lighter;
@@ -1614,7 +1615,7 @@ footer{
 .filter-form{
   .hit-form{
     position: absolute;
-    top: -230%;
+    top: -45px;
     left:-20px;
     display: none;
     background-color: #fff;
@@ -1626,6 +1627,7 @@ footer{
     color: #414142;
     width:250px;
     line-height:15px;
+    z-index:999;
   }
 
 }
