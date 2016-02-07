@@ -25,7 +25,7 @@ var path = {
     src: {
         html: 'src/*.html',
         js: 'src/js/script.js',
-        style: 'src/style/style.scss',
+        style: 'src/style/style.min.scss',
         img: 'src/images/*.*',
         fonts: 'src/fonts/**/*.*'
     },
@@ -65,7 +65,7 @@ gulp.task('html:build', function () {
 });
 
 gulp.task('js:build', function () {
-    gulp.src('./src/js/script.js')
+    gulp.src('./src/js/*.*')
         .pipe(rigger())
         .pipe(sourcemaps.init())
         .pipe(uglify())
@@ -74,10 +74,10 @@ gulp.task('js:build', function () {
         .pipe(reload({stream: true}));
 });
 
-//gulp.task('jquery', function () {
-//    gulp.src('./bower_components/jquery/dist/*.min.js')
-//        .pipe(gulp.dest(path.build.js))
-//});
+gulp.task('script', function () {
+    gulp.src('./src/js/partials/*.js')
+        .pipe(gulp.dest(path.build.js))
+});
 
 //gulp.task('fincss', function(){
 //    gulp.src('./src/*.css')
@@ -146,7 +146,8 @@ gulp.task('build', [
     'js:build',
     'style:build',
     'fonts:build',
-    'image:build'
+    'image:build',
+    'script'
 
 
 ]);
@@ -159,7 +160,7 @@ gulp.task('watch', function(){
         gulp.start('style:build');
     });
     watch([path.watch.js], function(event, cb) {
-        gulp.start('js:build');
+        gulp.start('js:build','script');
     });
     watch([path.watch.img], function(event, cb) {
         gulp.start('image:build');

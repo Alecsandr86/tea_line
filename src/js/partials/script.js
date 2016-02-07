@@ -83,21 +83,6 @@ $(document).ready(function(){
 
     });
 
-    //var galleryTop = new Swiper('.gallery-top', {
-    //    nextButton: '.swiper-button-next',
-    //    prevButton: '.swiper-button-prev',
-    //    spaceBetween: 10,
-    //});
-    //var galleryThumbs = new Swiper('.gallery-thumbs', {
-    //    spaceBetween: 10,
-    //    centeredSlides: true,
-    //    slidesPerView: 5,
-    //    touchRatio: 0.2,
-    //    slideToClickedSlide: true
-    //});
-    //galleryTop.params.control = galleryThumbs;
-    //galleryThumbs.params.control = galleryTop;
-
 
     /********************************
     *   / Слайдер-Карусель Swiper/
@@ -108,7 +93,6 @@ $(document).ready(function(){
     *   ПЛАВНЫЙ ПЕРЕХОД ПО ЯКОРЯМ
     *******************************/
         $('a[href^="#"]').click(function(){
-            //Сохраняем значение атрибута href в переменной:
             var target = $(this).attr('href');
             $('html, body').animate({
                 scrollTop: $(target).offset().top},2000,"easeInOutExpo");
@@ -219,20 +203,6 @@ $(document).ready(function(){
      ******************************/
 
 
-
-    //$('.list-product > li > a').bind('click',function(){
-    //    $('.list-product > li').removeClass('active');
-    //    $(this).parent().addClass('active');
-    //});
-    //
-    //
-    //
-    //$('.list-product-two > li > a').bind('click',function(){
-    //    $('.list-product-two > li').removeClass('active');
-    //    $(this).parent().addClass('active');
-    //});
-
-
     $('.list-product > li > a').bind('click',function(){
         $(this).parent().toggleClass('active');
     });
@@ -290,7 +260,6 @@ $('.btn-filter').bind('click', function(){
     });
 });
 
-    //$('.filter-form').slideUp();
     $('.b-asid').bind('click', function(){
         $(this).toggleClass('active');
         $('.aside').slideToggle({
@@ -312,39 +281,27 @@ $('.section-ico').bind('click',function(){
         $('.product-content').removeClass('active');
     });
 
+    /*******************************
+     *       fancybox
+     ******************************/
+    $(".fancybox").fancybox({
+        prevEffect	: 'none',
+        nextEffect	: 'none',
+        helpers	: {
+            title	: {
+                type: 'outside'
+            },
+            thumbs	: {
+                width	: 50,
+                height	: 50
+            },
+            buttons	: {}
+        }
+    });
 
-
-
-
-
-
-
-
-
-
-
-
+    /*******************************
+     *       /fancybox/
+     ******************************/
 
 });
 
-/*******************************
- *       fancybox
- ******************************/
-$(".fancybox").fancybox({
-    prevEffect	: 'none',
-    nextEffect	: 'none',
-    helpers	: {
-        title	: {
-            type: 'outside'
-        },
-        thumbs	: {
-            width	: 50,
-            height	: 50
-        },
-        buttons	: {}
-    }
-});
-
-/*******************************
- *       /fancybox/
- ******************************/
