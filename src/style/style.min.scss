@@ -34,6 +34,7 @@ a,button{
     text-decoration: none;
     outline: none;
   }
+  //visibility: hidden;
 }
 
 @include sprites($spritesheet-sprites);
@@ -1156,16 +1157,16 @@ footer{
         background-color: #a6ce39;
         color: $gray-lighter;
         position: relative;
-        &:before{
-          content: '';
-          position: absolute;
-          top:0;
-          left:-30px;
-          width:30px;
-          height:100%;
-          display: block;
-          background-color: #a6ce39;
-        }
+        //&:before{
+        //  content: '';
+        //  position: absolute;
+        //  top:0;
+        //  left:-30px;
+        //  width:30px;
+        //  height:100%;
+        //  display: block;
+        //  background-color: #a6ce39;
+        //}
       }
       .list-product-two{
         display: block;
@@ -1197,6 +1198,7 @@ footer{
       a{
         font-size: 0.7rem;
         background-color: transparent;
+        font-weight: normal;
         color: $gray-dark;
         &:before{
           display: none;
@@ -2234,7 +2236,7 @@ footer{
 
 .window{
   visibility: hidden;
-  opacity: 0;
+  //opacity: 0;
   position: fixed;
   top:80px;
   left:0;

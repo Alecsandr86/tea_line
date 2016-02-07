@@ -5,6 +5,92 @@
 $(document).ready(function(){
 
 
+    /*******************************
+     *          WAYPOINTS
+     *******************************/
+    //$(window).scroll(function(){
+    //    if ( $(this).scrollTop() > 991  ){
+    //    }
+    //});
+
+$(document).ready(function(){
+    var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+
+// окно
+    $('#header')
+        .waypoint(function(dir){
+            if (dir === 'down') {
+                $('.window').css({'visibility':'visible'}).addClass('animated fadeInLeft').one(animationEnd,function(){
+                    $(this).removeClass('animated fadeInLeft');
+                });
+            }
+            else {
+                $('.window').addClass('animated fadeOutLeft').one(animationEnd,function(){
+                    $(this).removeClass('animated fadeOutLeft').css({'visibility':'hidden'});
+                });
+
+            }
+        }, {
+            offset: -100
+        });
+
+});
+
+$(document).ready(function(){
+// меню
+    $('.bootom-nav')
+        .waypoint(function(dire){
+            if (dire === 'down') {
+                $('.bootom-nav').addClass('fixed shadow-bottom');
+            }
+            else {
+                $('.bootom-nav').removeClass('fixed shadow-bottom');
+
+            }
+        }, {
+            offset: 32
+        });
+
+
+});
+
+$(document).ready(function(){
+
+    // кнопка
+    var UpButton = $('.up-button');
+
+    UpButton.css('opacity', 0);
+
+    UpButton.hover(function () {
+        $(this).find('span').animate({'width': '70px','opacity':'1'},700);
+    }, function () {
+        $(this).find('span').animate({'width': '0','opacity':'0'},700);
+
+    });
+
+
+
+
+    $('#header').waypoint(function(direction){
+        if (direction === 'down') {
+            UpButton.removeClass('animated fadeOutDown').css('opacity', 0);
+            UpButton.css('opacity', 1).addClass('animated fadeInUp');
+        }
+        else {
+            UpButton.removeClass('animated fadeInUp');
+            UpButton.addClass('animated fadeOutDown').css('opacity', 0);
+        }
+    }, {
+        offset: '-15%'
+    });
+
+
+
+});
+
+    /*******************************
+     *       \WAYPOINTS\
+     *******************************/
 
     /********************************
     *   Слайдер-Карусель Swiper
@@ -106,79 +192,6 @@ $(document).ready(function(){
 
 
 
-    /*******************************
-    *          WAYPOINTS
-    *******************************/
-    //$(window).scroll(function(){
-    //    if ( $(this).scrollTop() > 991  ){
-    //    }
-    //});
-    var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-
-
-    $('#header')
-        .waypoint(function(direction){
-            if (direction === 'down') {
-                $('.window').addClass('visible animated fadeInLeft').one(animationEnd,function(){
-                    $(this).removeClass('animated fadeInLeft');
-                });
-            }
-            else {
-                $('.window').addClass('animated fadeOutLeft').one(animationEnd,function(){
-                    $(this).removeClass('visible animated fadeOutLeft');
-                });
-
-            }
-        }, {
-            offset: '-10%'
-        });
-
-
-
-    $('.bootom-nav')
-        .waypoint(function(direction){
-            if (direction === 'down') {
-                $('.bootom-nav').addClass('fixed shadow-bottom');
-            }
-            else {
-                $('.bootom-nav').removeClass('fixed shadow-bottom');
-
-            }
-        }, {
-            offset: 32
-        });
-
-    var UpButton = $('.up-button');
-
-    UpButton.css('opacity', 0);
-
-        UpButton.hover(function () {
-            $(this).find('span').animate({'width': '70px','opacity':'1'},700);
-        }, function () {
-            $(this).find('span').animate({'width': '0','opacity':'0'},700);
-
-        });
-
-        $('#header').waypoint(function(direction){
-            if (direction === 'down') {
-                UpButton.removeClass('animated fadeOutDown').css('opacity', 0);
-                UpButton.css('opacity', 1).addClass('animated fadeInUp');
-            }
-            else {
-                UpButton.removeClass('animated fadeInUp');
-                UpButton.addClass('animated fadeOutDown').css('opacity', 0);
-            }
-        }, {
-            offset: '-100%'
-        });
-
-
-
-
-
-    /*******************************
-    *       \WAYPOINTS\
-    *******************************/
 
 
     /*******************************
