@@ -267,11 +267,19 @@ $(document).ready(function(){
 //$('.filter-form').slideUp();
 $('.btn-filter').bind('click', function(){
     $(this).toggleClass('active');
-    $('.filter-form').slideToggle({
+    $('#filter-form').slideToggle({
         easing:'jswing',
         duration: 1000
     });
 });
+
+    $('.btn-filter-2').bind('click', function(){
+        $(this).toggleClass('active');
+        $('#filter-form-2').slideToggle({
+            easing:'jswing',
+            duration: 1000
+        });
+    });
 
     $('.b-asid').bind('click', function(){
         $(this).toggleClass('active');

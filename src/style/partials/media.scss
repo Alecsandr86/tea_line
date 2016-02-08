@@ -85,6 +85,11 @@
 }
 
 @media screen and(max-width: 1029px){
+  .bootom-nav{
+    &.shadow-bottom{
+      box-shadow: none;
+    }
+  }
   .map-russia-ico {
     top: -73px;
     left: 280px;
