@@ -122,7 +122,14 @@
             <a class="what-coffee left" href="javascript: void(0);">Что такое кофейная карта ?</a>
             <ul class="sort-filter left">
                 <li>
-                    <a class="btn-filter-2" href="javascript: void(0);">Сортировать</a>
+                    <!--<a class="btn-filter-2" href="javascript: void(0);">Сортировать</a>-->
+                    <select class="width-auto filter-select">
+                        <option>Сортировать</option>
+                        <option>Сортировать1</option>
+                        <option>Сортировать2</option>
+                        <option>Сортировать3</option>
+                        <option>Сортировать4</option>
+                    </select>
                 </li>
                 <li>
                     <a class="btn-filter" href="javascript: void(0);">
@@ -274,15 +281,22 @@
                     <div class="row">
                         <div class="col-md-6">
                             <span>Цена, руб. </span>
-                            <div class="nstSlider" data-range_min="0" data-range_max="13000"
-                                 data-cur_min="40"    data-cur_max="12800">
 
-                                <div class="bar"></div>
-                                <div class="leftGrip"></div>
-                                <div class="rightGrip"></div>
-                            </div>
-                            <span class="leftLabel left"></span>
-                            <span class="rightLabel right"></span>
+                            <select class="width-auto">
+                                <option>страна</option>
+                                <option disabled="">провинция</option>
+                                <option>округ</option>
+                            </select>
+                            <select class="width-auto">
+                                <option>провинция</option>
+                                <option>страна</option>
+                                <option>округ</option>
+                            </select>
+                            <select class="width-auto">
+                                <option>округ</option>
+                                <option>страна</option>
+                                <option disabled="">провинция</option>
+                            </select>
                         </div>
                         <div class="col-md-6 pad-label">
 
@@ -325,9 +339,21 @@
                                     <i class="hit-ico"></i>
                                 Производство
                             </span>
-                            <label><input type="checkbox"> <span>фермер</span></label>
-                            <label><input type="checkbox"> <span>известный завод</span></label>
-                            <label><input type="checkbox"> <span>знаменитый бренд</span></label>
+                            <select class="width-auto">
+                                <option>страна</option>
+                                <option disabled="">провинция</option>
+                                <option>округ</option>
+                            </select>
+                            <select class="width-auto">
+                                <option>провинция</option>
+                                <option>страна</option>
+                                <option>округ</option>
+                            </select>
+                            <select class="width-auto">
+                                <option>округ</option>
+                                <option>страна</option>
+                                <option disabled="">провинция</option>
+                            </select>
 
                         </div>
                         <div class="col-md-4 col-lg-3">
@@ -339,10 +365,21 @@
                                     <i class="hit-ico"></i>
                                 Сбор
                             </span>
-                            <label><input type="checkbox"><span>зима</span></label>
-                            <label><input type="checkbox"><span>осень</span></label>
-                            <label><input type="checkbox"><span>лето</span></label>
-                            <label><input type="checkbox"><span>весна</span></label>
+                            <select class="width-auto">
+                                <option>страна</option>
+                                <option disabled="">провинция</option>
+                                <option>округ</option>
+                            </select>
+                            <select class="width-auto">
+                                <option>провинция</option>
+                                <option>страна</option>
+                                <option>округ</option>
+                            </select>
+                            <select class="width-auto">
+                                <option>округ</option>
+                                <option>страна</option>
+                                <option disabled="">провинция</option>
+                            </select>
                         </div>
                         <div class="col-md-4 col-lg-3">
                             <span class="h-form">
@@ -353,10 +390,21 @@
                                     <i class="hit-ico"></i>
                                 Ферментация
                             </span>
-                            <label><input type="checkbox"><span>0-25%</span></label>
-                            <label><input type="checkbox"><span>25-50%</span></label>
-                            <label><input type="checkbox"><span>50-75%</span></label>
-                            <label><input type="checkbox"><span>75-100%</span></label>
+                            <select class="width-auto">
+                                <option>страна</option>
+                                <option disabled="">провинция</option>
+                                <option>округ</option>
+                            </select>
+                            <select class="width-auto">
+                                <option>провинция</option>
+                                <option>страна</option>
+                                <option>округ</option>
+                            </select>
+                            <select class="width-auto">
+                                <option>округ</option>
+                                <option>страна</option>
+                                <option disabled="">провинция</option>
+                            </select>
                         </div>
                     </div>
                 </div>
@@ -371,9 +419,21 @@
                                     <i class="hit-ico"></i>
                                 Тираж
                             </span>
-                            <label><input type="checkbox"><span>эксклюзив</span></label>
-                            <label><input type="checkbox"><span>ограниченная партия</span></label>
-                            <label><input type="checkbox"><span>массовое произвосдтво</span></label>
+                            <select class="width-auto">
+                                <option>страна</option>
+                                <option disabled="">провинция</option>
+                                <option>округ</option>
+                            </select>
+                            <select class="width-auto">
+                                <option>провинция</option>
+                                <option>страна</option>
+                                <option>округ</option>
+                            </select>
+                            <select class="width-auto">
+                                <option>округ</option>
+                                <option>страна</option>
+                                <option disabled="">провинция</option>
+                            </select>
                         </div>
                         <div class="col-md-5 col-lg-5">
                             <span class="h-form">
@@ -384,8 +444,21 @@
                                     <i class="hit-ico"></i>
                                 Выдержка
                             </span>
-                            <label><input type="checkbox"><span>молодой</span></label>
-                            <label><input type="checkbox"><span>выдержанный</span></label>
+                            <select class="width-auto">
+                                <option>страна</option>
+                                <option disabled="">провинция</option>
+                                <option>округ</option>
+                            </select>
+                            <select class="width-auto">
+                                <option>провинция</option>
+                                <option>страна</option>
+                                <option>округ</option>
+                            </select>
+                            <select class="width-auto">
+                                <option>округ</option>
+                                <option>страна</option>
+                                <option disabled="">провинция</option>
+                            </select>
                         </div>
                     </div>
 
@@ -1134,6 +1207,6 @@
         </a>
 
         </div>
-        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery-min.js"></script>
     </body>
 </html>

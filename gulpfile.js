@@ -1,7 +1,7 @@
 var gulp = require('gulp');
 var watch = require('gulp-watch');
 var prefixer = require('gulp-autoprefixer');
-var uglify = require('gulp-uglify');
+var minify = require('gulp-minify');
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
 var rigger = require('gulp-rigger');
@@ -68,7 +68,7 @@ gulp.task('js:build', function () {
     gulp.src('./src/js/*.*')
         .pipe(rigger())
         .pipe(sourcemaps.init())
-        .pipe(uglify())
+        .pipe(minify())
         .pipe(sourcemaps.write())
         .pipe(gulp.dest('./build/js/'))
         .pipe(reload({stream: true}));

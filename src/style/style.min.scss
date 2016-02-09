@@ -982,6 +982,7 @@ footer{
   li{
     display: inline-block;
     margin:0 2px 0 0;
+    float: left;
   }
   a{
     min-width:170px;
@@ -2195,7 +2196,47 @@ footer{
 
 // \POPAP\
 
+.filter-select{
+    margin:0 22px 0 0;
+    padding: 0 0 2px 5px;
+  &.opened{
+    .jq-selectbox__trigger-arrow{
+      background: url(../images/sort-buttom-activ.png) no-repeat;
+      width: 19px;
+      height: 16px;
+      top:6px;
+      right:6px;
+    }
+  }
 
+  .jq-selectbox__select{
+    min-width: 170px;
+    border: 1px solid #a6a9ac;
+    border-radius: 5px;
+    padding: 0 22px 2px 5px;
+    letter-spacing: -1.4px;
+
+  }
+  .jq-selectbox__dropdown{
+    ul{
+      li{
+        float: none;
+        width:100%;
+      }
+    }
+  }
+  .jq-selectbox__select-text{
+    text-align: left;
+    font-size: 1rem;
+  }
+  .jq-selectbox__trigger-arrow{
+    background: url(../images/sort-buttom.png) no-repeat;
+    width: 19px;
+    height: 16px;
+    top:-1px;
+    right:6px;
+  }
+}
 
 .up-button {
   position: fixed;

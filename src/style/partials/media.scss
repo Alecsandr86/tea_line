@@ -85,6 +85,9 @@
 }
 
 @media screen and(max-width: 1029px){
+  .sort-filter {
+    margin: 0 8px 0 9px;
+  }
   .bootom-nav{
     &.shadow-bottom{
       box-shadow: none;
@@ -310,7 +313,19 @@
 
 }
 
-@media screen and(max-width: 767px){
+@media screen and(max-width: 767px) {
+  .filter-select{
+    margin:3px;
+    padding:0;
+    .jq-selectbox__select-text{
+      font-size: 0.8rem;
+    }
+    .jq-selectbox__select{
+      height:21px;
+      min-width:130px;
+
+    }
+  }
   .hit-ico{
     left: 0;
   }
@@ -531,9 +546,10 @@
   }
 
   .sort-filter {
-    margin: 0 8px;
+    margin: 0;
     a{
       font-size: 0.8rem;
+      min-width: 130px;
     }
   }
 
@@ -799,7 +815,7 @@
   .sort-filter{
     float: none;
     display: inline-block;
-    height: 60px;
+    //height: 60px;
     vertical-align: middle;
   }
 
