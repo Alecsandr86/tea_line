@@ -699,7 +699,13 @@ header{
   //}
 
 }
+.shadow-bottom-2{
+  position: relative;
+  -webkit-box-shadow: 4px 4px 5px 0px rgba(50, 50, 50, 0.3);
+  -moz-box-shadow:    4px 4px 5px 0px rgba(50, 50, 50, 0.3);
+  box-shadow:         4px 4px 5px 0px rgba(50, 50, 50, 0.3);
 
+}
 .tradition{
   position: relative;
   width:100%;
@@ -2137,9 +2143,147 @@ footer{
   text-align: right;
 }
 
-
-
 // \ЛОТ\
+
+
+// ЖУРНАЛ
+.nav-tea{
+  border-bottom: 1px solid #d7d7d7;
+  text-align: center;
+  margin:0 0 5px;
+  ul{
+
+  }
+  li{
+    display: inline-block;
+    border-bottom: 5px solid transparent;
+    padding:0 0 7px;
+    margin:0 10px;
+  }
+  a{
+    border-bottom: 1px dashed #82807e;
+    color: #4b453e;
+    padding:3px 0;
+  }
+  .active{
+    border-bottom: 5px solid #9dcd4c;
+    a{
+      color: #000;
+    }
+  }
+}
+
+.mag-big{
+  padding:5px 0 38px;
+  .items{
+    position: relative;
+    margin-top:10px;
+    margin-bottom:10px;
+    img{
+      width:100%;
+    }
+  }
+  .content-mag{
+    position: absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    padding-left: .9375rem;
+    padding-right: .9375rem;
+    h3{
+      color: #201300;
+      font-size:1.8rem;
+      margin: 21px 19px 10px;
+      line-height: 39px;
+    }
+    .wit{
+      color: #fff;
+    }
+  }
+  .titles-mag{
+    background-color: #eeeeee;
+    padding: 5px 10px 5px 5px;
+    a{
+      font-size:0.8rem;
+      border-bottom:1px dotted #a9a8a8;
+      display: inline-block;
+    }
+  }
+  .col-green{
+    color: #72c054;
+    font-size:0.8rem;
+  }
+
+}
+
+
+
+.tape{
+  img{
+    width: 100%;
+    margin-bottom:10px;
+  }
+  .row{
+    border-bottom: 1px solid #aeadad;
+    &:last-child{
+      border: none;
+    }
+    div{
+      margin-top:10px;
+      margin-bottom:20px;
+    }
+  }
+  h4{
+    font-size:1.9rem;
+    margin-top:18px;
+    margin-left: 30px;
+    float: left;
+  }
+  i{
+    margin: 21px 0 0 10px;
+    float: left;
+  }
+  a{
+    border-bottom: 1px dashed #82807e;
+    color: #4b453e;
+  }
+  span{
+    color: #72c054;
+  }
+  p{
+    margin:20px 0 10px;
+  }
+}
+
+
+.tit-ico{
+  vertical-align: middle;
+  padding:5px 0 0;
+  margin:0;
+  font-size:0.8rem;
+
+  span{
+    display: inline-block;
+    margin:0 7px 0 0;
+    float: left;
+    line-height: 28px;
+    color: #000;
+  }
+  i{
+    float: left;
+  }
+  .mes{
+    margin:5px 5px 0 0;
+  }
+  .optic{
+    margin:7px 5px 0 0;
+  }
+}
+
+
+
+// \ЖУРНАЛ\
 
 
 
@@ -2167,30 +2311,6 @@ footer{
 
 // POPAP
 
-//.wr-popap{
-//
-//}
-//
-//#gallery{
-//
-//}
-//.gallery-top {
-//  height: 80%;
-//  width: 100%;
-//}
-//.gallery-thumbs {
-//  height: 20%;
-//  box-sizing: border-box;
-//  padding: 10px 0;
-//}
-//.gallery-thumbs .swiper-slide {
-//  width: 25%;
-//  height: 100%;
-//  opacity: 0.4;
-//}
-//.gallery-thumbs .swiper-slide-active {
-//  opacity: 1;
-//}
 
 
 
