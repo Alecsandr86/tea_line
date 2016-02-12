@@ -51,6 +51,18 @@ $(document).ready(function(){
             offset: 32
         });
 
+    $('.nav-tea').waypoint(function(dires){
+        if (dires === 'down') {
+            $(this.element).addClass('fixeds');
+
+        }
+        else {
+            $(this.element).removeClass('fixeds');
+
+        }
+    }, {
+        offset: 70
+    });
 
 });
 

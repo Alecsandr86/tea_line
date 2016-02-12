@@ -2151,6 +2151,8 @@ footer{
   border-bottom: 1px solid #d7d7d7;
   text-align: center;
   margin:0 0 5px;
+  width:100%;
+  background-color: #fff;
   ul{
 
   }
@@ -2465,7 +2467,12 @@ footer{
   left: 0;
   z-index: 999;
 }
-
+.fixeds{
+  position: fixed;
+  top:68px;
+  left: 0;
+  z-index:999;
+}
 .window{
   visibility: hidden;
   //opacity: 0;
