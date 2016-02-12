@@ -2347,17 +2347,110 @@ footer{
   max-width:300px;
 }
 
-
-
-
-
-
-
-
-
-
-
 // \ЖУРНАЛ\
+
+
+// ПОИСК
+.search-wr{
+  background-color: #ebebeb;
+  border-top: 1px solid #dadada;
+  padding:10px 0;
+}
+.searchess{
+
+}
+.big-search{
+  width:910px;
+  margin:0 auto;
+  input[type='search']{
+    border: none;
+    background: #fff url('../images/big-search-input.jpg') 0 0 no-repeat;
+    padding: 3px 0 3px 20px;
+    width:92%;
+    float: left;
+    display: block;
+  }
+}
+.search-buttom{
+  float: left;
+  border: none;
+  background: url('../images/but-big-search.png') 0 0 no-repeat;
+  display: inline-block;
+  width: 65px;
+  height: 29px;
+}
+
+.search-content{
+  position: relative;
+  min-height:2000px;
+  margin-bottom:50px;
+  .h4{
+    margin-bottom:20px;
+  }
+  &:before{
+    content: '';
+    width:1px;
+    height:100%;
+    background-color: #bebdbd;
+    position: absolute;
+    top:0;
+    left:50%;
+  }
+}
+.h4{
+  font-size:1.6rem;
+  font-family:Candara;
+  font-weight: bold;
+}
+
+.items-b{
+  img{
+    width:100%;
+  }
+}
+
+.cont-sear-one{
+  .items-b{
+    padding-left: 0;
+    border-bottom: 1px solid #dddddd;
+    min-height:470px;
+    //overflow: hidden;
+    &:nth-child(even){
+      border-left: 1px solid #dddddd;
+    }
+    p{
+      padding-left:10px;
+    }
+  }
+
+}
+.cont-sear-two{
+  .items-b{
+    border-bottom: 1px solid #dddddd;
+    min-height:365px;
+    overflow: hidden;
+    &:nth-child(even){
+      border-left: 1px solid #dddddd;
+    }
+    p{
+      margin:15px 0;
+    }
+    img{
+      margin:20px 0 10px;
+    }
+  }
+
+}
+
+
+
+
+
+// \ПОИСК\
+
+
+
+
 
 
 
