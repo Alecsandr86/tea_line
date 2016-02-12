@@ -2217,7 +2217,9 @@ footer{
 
 }
 
-
+.lent-nav{
+  margin-bottom:20px;
+}
 
 .tape{
   img{
@@ -2280,6 +2282,76 @@ footer{
     margin:7px 5px 0 0;
   }
 }
+
+
+
+
+
+.magazi-table{
+    .row{
+      border-bottom: 1px solid #a5a4a4;
+      margin-top:10px;
+      margin-bottom:10px;
+    }
+}
+
+.magazi-content{
+
+}
+
+
+.feed-content{
+  margin:25px 0 0;
+  .magazi-table{
+    .row{
+      div{
+        padding:0;
+
+      }
+    }
+  }
+  .lent-nav{
+    div{
+      padding:0;
+    }
+  }
+
+  h4{
+    font-size: 1.4rem;
+  }
+  p{
+    padding:10px 0;
+  }
+  .sort-filter{
+    margin:0;
+  }
+
+  .visible-tov{
+
+    a{
+      font-size:0.7rem;
+    }
+    span{
+      font-size:0.7rem;
+    }
+
+  }
+
+
+
+}
+
+.deites{
+  max-width:300px;
+}
+
+
+
+
+
+
+
+
 
 
 

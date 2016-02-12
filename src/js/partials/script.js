@@ -240,7 +240,15 @@ $(document).ready(function(){
         $(this).find('span').animate({'width':'0','opacity':'0'},700,'jswing')
     });
 
-
+    $('.feed-content .mag-big').css({'display':'none'});
+    $('#magazine-list li').find('.section-ico').bind('click', function(){
+        $('.mag-big').css({'display':'block'});
+        $('.magazi-table').css({'display':'none'});
+    });
+    $('#magazine-list li').find('.tiles-ico').bind('click', function(){
+        $('.magazi-table').css({'display':'block'});
+        $('.mag-big').css({'display':'none'});
+    });
 
 
     /*******************************

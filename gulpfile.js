@@ -160,7 +160,7 @@ gulp.task('watch', function(){
         gulp.start('style:build');
     });
     watch([path.watch.js], function(event, cb) {
-        gulp.start('js:build','script');
+        gulp.start('js:build');
     });
     watch([path.watch.img], function(event, cb) {
         gulp.start('image:build');
