@@ -80,6 +80,30 @@
   .report{
     margin: 5px -4px 0 0;
   }
+  .cont-sear-one{
+    .buy-b{
+      padding:10px 5px;
+      b{
+        font-size: 1.3rem;
+      }
+    }
+    .butt-buy{
+      margin:0;
+      width: 115px;
+      padding: 0 3px 0 5px;
+    }
+  }
+  .cont-sear-two{
+    .tape{
+      a,span{
+        font-size: 0.8rem;
+      }
+    }
+  }
+
+
+
+
 
 
 }
@@ -346,6 +370,37 @@
           margin: 0;
         }
       }
+    }
+  }
+
+
+  .search-content{
+    &:before{
+      display: none;
+    }
+  }
+
+  .cont-sear-one .items-b:nth-child(even),
+  .cont-sear-two .items-b:nth-child(even){
+    border-left: none;
+  }
+
+  .cont-sear-one{
+    .items-b{
+      min-height: 420px;
+    }
+    .buy-b {
+      b {
+        font-size: 1.1rem;
+      }
+
+    }
+  }
+
+  .big-search {
+    width: 500px;
+    input[type=search]{
+      width:85%;
     }
   }
 
@@ -1024,5 +1079,19 @@
     }
 
   }
+  .h4 {
+    font-size: 1.2rem;
+  }
+  .cont-sear-one{
+    .buy-b{
+      padding:10px;
+    }
+    .butt-buy {
+      padding: 0 10px 0 5px;
+    }
+  }
+
+
+
 
 }
