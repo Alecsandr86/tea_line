@@ -263,6 +263,13 @@ $(document).ready(function(){
     });
 
 
+
+
+    $('.button-gender button').bind('click',function(){
+        $('.button-gender button').removeClass('active');
+        $(this).addClass('active');
+    });
+
     /*******************************
      *       /МЕНЮ/
      ******************************/
@@ -343,6 +350,21 @@ $('.section-ico').bind('click',function(){
     /*******************************
      *       /fancybox/
      ******************************/
+
+    /*******************************
+     *            tab
+     ******************************/
+    $('ul.tabs__caption').on('click', 'li:not(.active)', function() {
+        $(this)
+            .addClass('active').siblings().removeClass('active')
+            .closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
+    });
+
+    /*******************************
+     *           /tab/
+     ******************************/
+
+
 
 });
 
