@@ -360,11 +360,25 @@ $('.section-ico').bind('click',function(){
             .closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
     });
 
+
+    $('.cabinet-big-nav ul').on('click', 'li:not(.active)', function() {
+        $(this)
+            .addClass('active').siblings().removeClass('active')
+            .closest('.container').find('div.wish-content').removeClass('active').eq($(this).index()).addClass('active');
+    });
     /*******************************
      *           /tab/
      ******************************/
 
-
-
+    /********************************
+     *           Аккордеона
+     ********************************/
+    $(".content-accord").hide().prev().click(function () {
+        $(this).parents(".accordion").find(".content-accord").not(this).slideUp().prev().removeClass("active");
+        $(this).next().not(":visible").slideDown().prev().addClass("active");
+    });
+    /********************************
+     *           \Аккордеона\
+     ********************************/
 });
 

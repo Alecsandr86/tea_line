@@ -108,7 +108,27 @@
     }
   }
 
+  .cabinet-big-nav{
+    li{
+      p {
+        font-size: 0.5rem;
+      }
+    }
+  }
+  .prices{
+    margin:0;
+  }
 
+
+  .wish-content-2 {
+    .butt-buy {
+      padding: 3px 1px 2px 4px;
+      margin: 17px 0 0 3px;
+    }
+    .report {
+      margin: 17px 0 0 2px;
+    }
+  }
 
 
 }
@@ -423,6 +443,57 @@
   .wr-timezone{
     height:100px;
   }
+
+  .cabinet-big-nav{
+    li {
+      width: 32.8%;
+      margin:0 0 5px;
+      p{
+        font-size: 0.6rem;
+      }
+    }
+  }
+
+  .wish-content-2 {
+    .row{
+      >div{
+        &:last-child {
+          width: 16.66667%!important;
+        }
+      }
+    }
+    .stlect-cast {
+      -webkit-transform: scale(0.9, 0.9);
+      -moz-transform: scale(0.9, 0.9);
+      -ms-transform: scale(0.9, 0.9);
+      -o-transform: scale(0.9, 0.9);
+      transform: scale(0.9, 0.9);
+    }
+    .report,
+    .butt-buy{
+      -webkit-transform: scale(0.9, 0.9);
+      -moz-transform: scale(0.9, 0.9);
+      -ms-transform: scale(0.9, 0.9);
+      -o-transform: scale(0.9, 0.9);
+      transform: scale(0.9, 0.9);
+      margin: 17px 0 0 -5px;
+    }
+  }
+
+  .table-castum{
+    tr{
+
+    }
+    th{
+      font-size:0.9rem;
+      padding: 5px 20px;
+    }
+    td{
+
+    }
+
+  }
+
 
 
 }
@@ -783,6 +854,62 @@
   .wr-timezone {
     height: 100%;
   }
+
+  .cabinet-big-nav{
+    ul{
+      margin-left: -.9375rem;
+      margin-right: -.9375rem;
+    }
+    li{
+      width: 49%;
+      strong{
+        font-size: 0.7rem;
+      }
+      p{
+        overflow: hidden;
+        br{
+          display: none;
+        }
+      }
+    }
+  }
+
+
+  .wish-content-2{
+    .stlect-cast {
+      -webkit-transform: scale(0.8, 0.8);
+      -moz-transform: scale(0.8, 0.8);
+      -ms-transform: scale(0.8, 0.8);
+      -o-transform: scale(0.8, 0.8);
+      transform: scale(0.8, 0.8);
+    }
+    .report,
+    .butt-buy {
+      -webkit-transform: scale(0.8, 0.8);
+      -moz-transform: scale(0.8, 0.8);
+      -ms-transform: scale(0.8, 0.8);
+      -o-transform: scale(0.8, 0.8);
+      transform: scale(0.8, 0.8);
+
+      margin: 17px 0 0 -8px;
+    }
+    .row{
+      >div{
+        border-bottom: 1px solid #e1e2e3;
+        &:last-child{
+          width: 33.33333%!important;
+        }
+      }
+
+    }
+
+  }
+
+  .in-stock,
+  .notes{
+    padding:5px;
+  }
+
 
 
 }
