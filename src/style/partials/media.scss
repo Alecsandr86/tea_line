@@ -129,7 +129,27 @@
       margin: 17px 0 0 2px;
     }
   }
+.pages-two{
+  .list-pages-two{
+    li{
+      font-size:0.6rem;
+    }
 
+  }
+  .pages{
+    .row{
+      >div{
+        padding:0;
+        .pages-list{
+          a{
+            font-size: 0.9rem;
+          }
+        }
+
+      }
+    }
+  }
+}
 
 }
 
@@ -504,11 +524,27 @@
   }
 
 
+  .wr-comments{
+    img{
+      width:100%;
+    }
+  }
+.list-pages-two{
+  margin-bottom:20px;
+}
 
 
 
+  .pages-two{
+    .list-pages-two{
+      text-align: center;
+      li{
+        font-size:0.9rem;
+      }
 
+    }
 
+  }
 
 
 
@@ -980,6 +1016,40 @@
     display: inline-block!important;
   }
 }
+
+
+
+  .pages-two {
+    text-align: left;
+  }
+
+.wr-comments{
+  .row{
+    >div{
+      padding:0;
+      p{
+        padding:0;
+      }
+      a{
+        font-size: 0.7rem;
+      }
+    }
+  }
+}
+  .pages-two{
+    .list-pages-two {
+      text-align: left;
+    }
+  }
+
+  .butt-two {
+    a {
+      padding: 2px 6px;
+    }
+  }
+
+
+
 
 
 }

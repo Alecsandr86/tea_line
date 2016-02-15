@@ -211,7 +211,9 @@ $(document).ready(function(){
      ******************************/
 
 
-    $('select,input:checkbox').styler();
+    $("select,input:checkbox ,input[type='number']").styler({
+        selectSearch: true
+    });
 
 
 
