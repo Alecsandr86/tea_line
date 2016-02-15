@@ -3030,6 +3030,148 @@ footer{
     padding:5px;
   }
 }
+
+.orders-one{
+
+}
+.list-orders-one{
+  li{
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin:0 10px;
+  }
+  a{
+    text-decoration: underline;
+    font-size: 0.9rem;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+}
+
+.orders-info{
+  background-color: #e8e8e8;
+  padding:20px 10px 14px;
+  margin:10px 0 5px;
+  li{
+    display: inline-block;
+    font-size: 0.6rem;
+    font-weight: bold;
+    font-family:Tahoma;
+    &:first-child{
+      margin:0 20px 0 10px;
+    }
+    &:last-child{
+      margin:0 10px 0 20px;
+    }
+    span{
+      display: block;
+      text-align: center;
+      padding:2px 0;
+      width:130px;
+      font-size: 0.8rem;;
+      font-family:Georgia, "Times New Roman", Times, serif;
+      font-weight: normal;
+    }
+  }
+
+}
+.table-castum-two{
+  width:100%;
+  margin: 0 0 10px;
+  tr{
+
+  }
+  th{
+    border: 1px solid #bcbbbb;
+    font-size:0.8rem;
+    font-weight: normal;
+    padding:5px 0 5px 20px;
+  }
+  td{
+    border: 1px solid #bcbbbb;
+    font-size:0.9rem;
+    padding:5px;
+    &:last-child{
+      text-align: center;
+    }
+    &:nth-child(3){
+      text-align: center;
+    }
+  }
+}
+
+.orders-3{
+  text-align: center;
+   .row{
+     background-color: #fff!important;
+     &:nth-child(even) {
+       background-color: #f0f0f0!important;
+     }
+    >div{
+      padding-top:20px;
+      min-height: 111px;
+      height: 111px;
+      font-size:0.9rem;
+      font-family:Tahoma;
+      &:first-child{
+        padding-top: 0;
+      }
+    }
+  }
+  p{
+    margin:-20px 0 0;
+  }
+
+}
+
+.header-tables{
+  font-size:0.62rem;
+  margin-top:30px;
+  strong{
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  &.row{
+    >div{
+      padding:5px 0;
+      border: none!important;
+      min-height:auto;
+      height:auto;
+      font-family:Georgia, "Times New Roman", Times, serif;
+      font-size:0.62rem;
+
+    }
+  }
+
+}
+
+.amount{
+  display: inline-block;
+  background-color: #fff;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid #b8b7b7;
+  width: 115px;
+  text-align: center;
+  padding:5px 0;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 // \КАБИНЕТ\
 
 

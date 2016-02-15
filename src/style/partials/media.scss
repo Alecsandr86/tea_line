@@ -494,6 +494,30 @@
 
   }
 
+  .orders-info{
+    padding: 20px 0 14px;
+    li{
+      span{
+        width: 120px;
+      }
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 }
@@ -910,6 +934,52 @@
     padding:5px;
   }
 
+
+  .list-orders-one{
+    li{
+      width:50%;
+      float: left;
+      margin:0;
+      a{
+        font-size:0.7rem;
+      }
+    }
+  }
+
+.orders-info{
+  li{
+    display: block;
+    margin:0 10px 10px!important;
+    position: relative;
+   .poa-list{
+     position: absolute;
+     top:-32px;
+     right:0;
+   }
+  }
+}
+
+
+  .table-castum-two {
+    th {
+      font-size: .7rem;
+      text-align: center;
+      padding: 0;
+    }
+    td{
+      font-size: .7rem;
+    }
+
+  }
+
+.orders-3{
+  span{
+    display: block;
+  }
+  .amount{
+    display: inline-block!important;
+  }
+}
 
 
 }
