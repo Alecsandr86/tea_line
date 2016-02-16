@@ -3510,6 +3510,30 @@ footer{
   }
 }
 
+.list-basket{
+  @include gradient-vertical(#f35d41, #f35d41, 60%, 100%);
+  &:before{
+    background: url('../images/basket-nav-before.png') 0 0 no-repeat;
+  }
+  &:after{
+    background: url('../images/basket-nav-after.png') 0 0 no-repeat;
+  }
+}
+
+.but-pokup{
+  display: inline-block;
+  font-family:Candara;
+  font-weight: bold;
+  padding:5px 20px;
+  background-color: #fff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  color: #433d3b;
+  -webkit-box-shadow: 0px 1px 7px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    0px 1px 7px 0px rgba(50, 50, 50, 0.75);
+  box-shadow:         0px 1px 7px 0px rgba(50, 50, 50, 0.75);
+}
 
 
 
