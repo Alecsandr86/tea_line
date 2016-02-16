@@ -1,7 +1,7 @@
 //Так приятней :)
-//window.log = function(param){
-//    console.log(param);
-//};
+window.log = function(param){
+    console.log(param);
+};
 $(document).ready(function(){
 
 
@@ -13,7 +13,7 @@ $(document).ready(function(){
     //    }
     //});
 
-$(document).ready(function(){
+
     var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
 
 // окно
@@ -34,10 +34,9 @@ $(document).ready(function(){
             offset: -100
         });
 
-});
 
-$(document).ready(function(){
-// меню
+
+//// меню
     $('.bootom-nav')
         .waypoint(function(dire){
             if (dire === 'down') {
@@ -64,11 +63,10 @@ $(document).ready(function(){
         offset: 70
     });
 
-});
 
-$(document).ready(function(){
 
-    // кнопка
+
+   // кнопка
     var UpButton = $('.up-button');
 
     UpButton.css('opacity', 0);
@@ -79,7 +77,6 @@ $(document).ready(function(){
         $(this).find('span').animate({'width': '0','opacity':'0'},700);
 
     });
-
 
 
 
@@ -97,26 +94,22 @@ $(document).ready(function(){
     });
 
 
+//// меню
+    $('.nav-big').waypoint(function (directi) {
+        if (directi === 'down') {
+            $('.nav-big').addClass('fixed-nav-big shadow-bottom');
+        }
+        else {
+            $('.nav-big').removeClass('fixed-nav-big shadow-bottom');
 
-});
-
-    $(document).ready(function(){
-// меню
-        $('.cabinet-content')
-            .waypoint(function(dire){
-                if (dire === 'down') {
-                    $('.cabinet-content').addClass('fixed-nav-big shadow-bottom');
-                }
-                else {
-                    $('.cabinet-content').removeClass('fixed-nav-big shadow-bottom');
-
-                }
-            }, {
-                offset: -100
-            });
-
-
+        }
+    }, {
+        offset: -100
     });
+
+
+
+
     /*******************************
      *       \WAYPOINTS\
      *******************************/
