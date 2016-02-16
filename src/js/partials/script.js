@@ -272,6 +272,15 @@ $(document).ready(function(){
         $(this).addClass('active');
     });
 
+    $('.but-sett-big a').bind('click', function(){
+        $(this).parent('.but-sett-big').find('a').removeClass('active');
+        $(this).addClass('active');
+    });
+    $('.but-sett-mini a').bind('click', function(){
+        $(this).parent('.but-sett-mini').find('a').removeClass('active');
+        $(this).addClass('active');
+    });
+
     /*******************************
      *       /МЕНЮ/
      ******************************/

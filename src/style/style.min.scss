@@ -2709,6 +2709,7 @@ footer{
 
   }
   li{
+    cursor: pointer;
     vertical-align: top;
     display: inline-block;
     border: 2px solid #c1de98;
@@ -2772,7 +2773,7 @@ footer{
     >div{
       padding:0;
       border-right: 1px solid #d1d1d1;
-      min-height:111px;
+      min-height:112px;
       &:last-child{
         border: none;
         width:11%!important;
@@ -2881,12 +2882,12 @@ footer{
 }
 .akc-leb{
   position: absolute;
-  top:56px;
+  top:43px;
   right:-3px;
 }
 .write-down-leb{
   position: absolute;
-  top:70px;
+  top:90px;
   left:-3px;
 }
 
@@ -2895,6 +2896,18 @@ footer{
   border-top: 1px solid #999797;
   width: 100%;
   margin:10px 0 20px;
+  .big-progres{
+    margin:10px 0 0;
+    padding:0;
+    span{
+      margin:0;
+      padding:0;
+    }
+  }
+  .big-progres-numb{
+    width:100%;
+    padding:10px 0 0;
+  }
   tr{
 
   }
@@ -2932,7 +2945,64 @@ footer{
       font-size:0.9rem;
     }
   }
+
+  .recall-mini{
+    color: #231f20;
+    font-size:0.8rem;
+    a{
+      color: #231f20;
+      text-decoration: underline;
+      &:hover{
+        text-decoration: none;
+      }
+    }
+    span{
+      font-size:0.8rem;
+      display: inline-block;
+      margin:0;
+    }
+  }
+  .recall-write{
+    color: #6d6e71;
+    font-size:0.8rem;
+  }
 }
+
+.table-castum-2{
+  tr{
+    &:nth-child(2){
+      td{
+        &:nth-child(2){
+          width:60%;
+        }
+        &:last-child{
+          width:10%;
+        }
+      }
+    }
+  }
+  td{
+    &:first-child{
+      border-right: none;
+    }
+  }
+  th{
+    &:first-child{
+      border-right: none;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 .tab-red{
   background-color: #f24c42;
@@ -3227,9 +3297,191 @@ footer{
 
 
 
+.expectation{
+  .butt-buy{
+    margin:0;
+  }
+  .stlect-cast{
+    margin-top:0;
+  }
+  .buy-b{
+    padding:10px 5px;
+    .butt-buy{
+      margin:0;
+    }
+  }
+  .quantity {
+    padding: 6px 10px 0px;
+  }
+
+}
+
+
+.discounts{
+
+}
+.item-one-desconts{
+  margin-bottom:10px;
+  span{
+    display: inline-block;
+    width:100%;
+    border: 1px solid #bed85c;
+    text-align: center;
+    line-height:90px;
+    width:100%;
+    font-size:1.3rem;
+    font-family:Tahoma;
+    font-weight: bold;
+  }
+  h4{
+    font-size:1.3rem;
+    line-height:90px;
+  }
+}
+
+
+.item-two-desconts{
+  position: relative;
+  border: 1px solid #e1e2e3;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  min-height:75px;
+  padding:10px;
+  margin-bottom:10px;
+  font-size:0.8rem;
+  ul{
+
+  }
+  li{
+
+  }
+  p{
+
+  }
+  .bord-span{
+    border-right: 1px solid #e1e2e3;
+    height:45px;
+    margin:20% 0 0;
+    display: inline-block;
+    padding:10px;
+  }
+}
+
+.b-poz-ab{
+
+}
 
 
 
+.settings{
+  padding-bottom:20px;
+}
+.settings-item{
+  background-color: #fff;
+  padding-top:10px;
+  padding-bottom:20px;
+  width:47%;
+  margin-right:3%;
+  p{
+    margin:0;
+    font-size:0.8rem;
+    margin-bottom:7px;
+  }
+}
+.but-sett-big{
+  border: 1px solid #dddddd;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  a{
+    display: inline-block;
+    width:50%;
+    text-align: center;
+    float: left;
+    vertical-align: middle;
+    i{
+      opacity:0;
+    }
+  }
+  .active{
+    @include gradient-vertical(#b5d446, #8bc750, 60%, 100%);
+    i{
+      opacity:1;
+    }
+  }
+  .on-big{
+    margin-top:5px;
+  }
+  .off-big{
+    margin: 8px 0 2px;
+  }
+}
+
+.wr-mini-but{
+  text-align: center;
+  span{
+    display: block;
+    text-align: center;
+    padding:7px 0;
+  }
+}
+.but-sett-mini{
+  border: 1px solid #dddddd;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+
+  a{
+    display: inline-block;
+    width:50%;
+    float: left;
+    text-align: center;
+    i{
+      opacity:0;
+    }
+  }
+  .active{
+    @include gradient-vertical(#b5d446, #8bc750, 60%, 100%);
+    i{
+      opacity: 1;
+    }
+  }
+  .grd-mini{
+    &.active{
+      @include gradient-vertical(#c1c0c0, #898786, 60%, 100%);
+      i{
+        opacity: 1;
+      }
+    }
+  }
+  .off-mini{
+    margin: 2px 0 -2px;
+  }
+}
+
+.but-mini-one{
+  width:48%;
+  display: inline-block;
+}
+.settings-bootom{
+  margin-top:10px;
+  margin-bottom:10px;
+  background-color: #fff;
+  padding-bottom:10px;
+  width:97%;
+  margin-right:3%;
+  p{
+    padding-top:15px;
+  }
+}
+.set-lin{
+  font-size: 0.8rem;
+  text-decoration: underline;
+  &:hover{
+    text-decoration: none;
+  }
+}
 // \КАБИНЕТ\
 
 

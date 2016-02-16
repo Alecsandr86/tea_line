@@ -151,6 +151,25 @@
   }
 }
 
+  .settings-item {
+    p {
+      font-size: 0.6rem;
+    }
+  }
+  .wr-mini-but{
+    span{
+      font-size:0.6rem;
+    }
+  }
+  .set-lin {
+    font-size: 0.7rem;
+  }
+
+
+
+
+
+
 }
 
 @media screen and(max-width: 1029px) {
@@ -547,12 +566,14 @@
   }
 
 
+  .table-castum-2{
+    border-right: 2px solid #fff;
+  }
 
-
-
-
-
-
+  .settings-item p,
+  .wr-mini-but span {
+    font-size: 0.9rem;
+  }
 
 
 
@@ -1049,6 +1070,34 @@
   }
 
 
+  .item-one-desconts {
+    h4 {
+      line-height: 26px;
+      padding-top:20px;
+    }
+
+  }
+  .item-two-desconts {
+    margin-bottom: 90px;
+
+  }
+
+.b-poz-ab{
+  position: absolute;
+  bottom:-80px;
+  right:0;
+}
+
+.settings-bootom,
+  .settings-item{
+    width:100%;
+    margin:10px 0;
+  }
+
+
+
+
+
 
 
 
@@ -1333,7 +1382,16 @@
   margin:0 -15px;
 }
 
-
+  .table-castum-2{
+    width:100%;
+    margin:0 -15px;
+    th{
+      font-size:0.3rem;
+    }
+    td{
+      font-size:0.7rem;
+    }
+  }
 
 }
 
