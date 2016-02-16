@@ -3600,6 +3600,34 @@ footer{
   left: 0;
   z-index:999;
 }
+.fixed-nav-big{
+  width:100%;
+  position: fixed;
+  top:68px;
+  left: 0;
+  z-index:999;
+  .cabinet-big-nav{
+    i{
+      display: none;
+    }
+    p{
+      display: none;
+    }
+    li{
+      height:50px;
+      &:last-child{
+        padding: 11px 0;
+        strong{
+          margin:0;
+        }
+      }
+    }
+  }
+
+}
+.wr-nav-big{
+  min-height:200px;
+}
 .window{
   visibility: hidden;
   //opacity: 0;

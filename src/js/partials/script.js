@@ -100,6 +100,23 @@ $(document).ready(function(){
 
 });
 
+    $(document).ready(function(){
+// меню
+        $('.cabinet-content')
+            .waypoint(function(dire){
+                if (dire === 'down') {
+                    $('.cabinet-content').addClass('fixed-nav-big shadow-bottom');
+                }
+                else {
+                    $('.cabinet-content').removeClass('fixed-nav-big shadow-bottom');
+
+                }
+            }, {
+                offset: -100
+            });
+
+
+    });
     /*******************************
      *       \WAYPOINTS\
      *******************************/
