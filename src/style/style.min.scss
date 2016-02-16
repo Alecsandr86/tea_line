@@ -2661,6 +2661,8 @@ footer{
 }
 
 .button-dark{
+  display: block;
+  text-align: center;
   color: #fff;
   line-height:34px;
   background-color: #75787a;
@@ -2670,6 +2672,9 @@ footer{
   font-family:Candara;
   font-weight: bold;
   margin:10px 0 0;
+  &:hover{
+    color: #fff;
+  }
 }
 .button-green{
   color: #fff;
@@ -3662,17 +3667,39 @@ footer{
 }
 
 .wr-popap{
-
+  display: none;
 }
 .keep{
+  padding:20px;
   max-width:520px;
   background-color: #ebe9e8;
+  p{
+    font-size: 0.8rem;
+  }
+}
+.wr-keep{
+  max-width:390px;
+  margin:0 auto;
 }
 .but-pop{
   display: inline-block;
   width:100%;
   text-align: center;
   color: #fff;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  padding:5px 0;
+  margin:0 0 5px;
+  &:hover{
+    color: #fff;
+  }
+}
+.green-bg{
+  background-color: #97ca3d;
+}
+.gray-bg{
+  background-color: #808285;
 }
 
 /*************************

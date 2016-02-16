@@ -144,7 +144,7 @@
                     <li>Юридическое лицо</li>
                 </ul>
                 <div class="tabs__content  active">
-                    <form class="form-castom" action="#">
+                    <form class="form-castom" action="">
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="row">
@@ -242,7 +242,7 @@
                                             <input type="text">
                                             <input type="text">
                                             <input type="text">
-                                            <button class="button-dark">Сохранить изменения</button>
+                                            <a class="button-dark link" href="#keep" >Сохранить изменения</a>
                                         </label>
                                     </div>
                                     <div class="col-md-6">
@@ -269,7 +269,7 @@
                     </form>
                 </div>
                 <div class="tabs__content">
-                    <form class="form-castom" action="#">
+                    <form class="form-castom" action="">
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="row">
@@ -328,7 +328,7 @@
                                             <input type="text">
                                             <input type="text">
                                             <input type="text">
-                                            <button class="button-dark">Сохранить изменения</button>
+                                            <a class="button-dark link" href="#keep" >Сохранить изменения</a>
                                         </label>
                                     </div>
                                     <div class="col-md-6">
@@ -363,13 +363,16 @@
             <span class="left">Наверх</span><i class="button-up"></i>
         </a>
         <div class="wr-popap">
-            <div class="keep">
-                <p>
-                    Вы изменили свои личные данные и уходите со страницы,
-                    не сохранив изменения. Сохранить изменения?
-                </p>
-                <a class="but-pop col-green" href="javascript: void(0);">Да</a>
-                <a class="but-pop" href="javascript: void(0);">Нет</a>
+            <div id="keep" class="keep">
+                <div class="wr-keep">
+                    <p>
+                        Вы изменили свои личные данные и уходите со страницы,
+                        не сохранив изменения. Сохранить изменения?
+                    </p>
+                    <a class="but-pop green-bg" href="javascript: void(0);">Да</a>
+                    <a class="but-pop gray-bg" href="javascript: void(0);">Нет</a>
+                </div>
+
             </div>
         </div>
 
