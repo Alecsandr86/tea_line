@@ -5,6 +5,23 @@ window.log = function(param){
 $(document).ready(function(){
 
 
+    //Асинхронная загрузка CSS
+    $("head").append("<link rel='stylesheet' type='text/css' href='css/style.min.css' />");
+    //
+    //function b(){
+    //    var a=document.createElement("link");
+    //    a.rel="stylesheet";
+    //    a.href="/css/style.min.css";
+    //    document.getElementsByTagName("head")[0].appendChild(a)
+    //}
+    //
+    //var c=requestAnimationFrame||mozRequestAnimationFrame||webkitRequestAnimationFrame||msRequestAnimationFrame;
+    //c?c(b):window.addEventListener("load",b);
+
+
+
+
+
     /*******************************
      *          WAYPOINTS
      *******************************/
@@ -13,9 +30,25 @@ $(document).ready(function(){
     //    }
     //});
 
+    // кнопка
+    var UpButton = $('.up-button');
+
+    UpButton.css('opacity', 0);
+
+
+    var w = $(window).innerWidth(); // Получаем ширину окна
+    if (w > 1029) {
+
 
     var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
 
+
+    UpButton.hover(function () {
+        $(this).find('span').animate({'width': '70px','opacity':'1'},700);
+    }, function () {
+        $(this).find('span').animate({'width': '0','opacity':'0'},700);
+
+    });
 // окно
     $('#header')
         .waypoint(function(dir){
@@ -65,21 +98,6 @@ $(document).ready(function(){
 
 
 
-
-   // кнопка
-    var UpButton = $('.up-button');
-
-    UpButton.css('opacity', 0);
-
-    UpButton.hover(function () {
-        $(this).find('span').animate({'width': '70px','opacity':'1'},700);
-    }, function () {
-        $(this).find('span').animate({'width': '0','opacity':'0'},700);
-
-    });
-
-
-
     $('#header').waypoint(function(direction){
         if (direction === 'down') {
             UpButton.removeClass('animated fadeOutDown').css('opacity', 0);
@@ -107,7 +125,7 @@ $(document).ready(function(){
         offset: -100
     });
 
-
+    }
 
 
     /*******************************

@@ -7,8 +7,6 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="css/style.min.css">
-
 </head>
 <body>
 <div class="container-fluid">
@@ -497,7 +495,6 @@
             </div>
 
         </div>
-
         <footer class="row">
             <div class="footer">
                 <div class="col-footer col-f-1 col-md-12 col-lg-7">
@@ -690,8 +687,12 @@
                 </div>
             </div>
         </footer>
-
         </div>
-        <script src="js/jquery-min.js"></script>
+
+
+        <script>function init() {
+            $('a').addClass('ajax');
+        }</script>
+        <script src="js/jquery-min.js" async onload="init()"></script>
     </body>
 </html>

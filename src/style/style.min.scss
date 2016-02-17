@@ -1368,6 +1368,7 @@ footer{
   }
 }
 .stlect-cast{
+  position: relative;
   width:135px;
   height:39px;
   border: 1px solid #c1c2c4;
@@ -1402,6 +1403,7 @@ footer{
     float: right;
   }
   .jq-selectbox {
+    width:70px;
     border: none;
     background-color: #fff;
     margin:0;
@@ -1422,7 +1424,6 @@ footer{
   .jq-selectbox__select-text{
     font-weight: bold;
     text-align: center;
-    width:100%!important;
     white-space: nowrap;
     text-overflow: ellipsis;
 
@@ -1430,8 +1431,7 @@ footer{
 
   .jq-selectbox__dropdown {
     box-sizing: border-box;
-    margin: 2px 0 0;
-    padding: 0 10px;
+    padding:0 6px;
     left:-12px!important;
     -webkit-border-radius: 0 0 5px 5px;
     -moz-border-radius: 0 0 5px 5px;
@@ -1439,10 +1439,11 @@ footer{
     background: #FFF;
     border: 1px solid #bcbdc0;
     border-top: none;
+    white-space: nowrap;
 
     li{
       border-bottom: 1px solid #bcbdc0;
-      padding:5px;
+      padding: 5px 10px;
       font-size: 1rem;
       font-family:Tahoma;
       color: #58595b;
@@ -3728,7 +3729,7 @@ footer{
       border: 1px solid #dbe797;
       background-color: #fff;
       font-size:0.8rem;
-      margin:5px 0;
+      margin: 17px 0 0;
       color: #4b453e;
       &.active{
         @include gradient-horizontal(#86c651, #b5d446, 0%, 30%);
