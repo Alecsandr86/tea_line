@@ -636,6 +636,14 @@
     margin:10px 0 0;
   }
 
+  .wr-but-two{
+    width:100%;
+    text-align: center;
+    .butts-two{
+      display: inline-block;
+      padding:15px 10px;
+    }
+  }
 
 }
 
@@ -1207,6 +1215,18 @@
     width:85%;
     margin:10px auto;
   }
+
+
+  .wr-but-two{
+    width:55%;
+    text-align: left;
+    .butts-two{
+      display: block;
+      padding:5px 0;
+      font-size:1.1rem;
+    }
+  }
+
 
 
 

@@ -3835,9 +3835,25 @@ footer{
   }
 }
 
-
-
-
+.but-contents{
+  color: #fff;
+  @include gradient-vertical(#f26140, #dc473b, 0%, 100%);
+  border: 1px solid #f46241;
+  &:hover{
+    color: #fff;
+  }
+}
+.butts-two{
+  display: block;
+  text-decoration: underline;
+  &:hower{
+    text-decoration: none;
+  }
+}
+.wr-but-two{
+  width:170px;
+  float: right;
+}
 //  \КАТАЛОГ РАЗДЕЛ\
 
 // POPAP
