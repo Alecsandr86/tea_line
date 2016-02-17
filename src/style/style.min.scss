@@ -3630,6 +3630,9 @@ footer{
   border-bottom: 1px solid #b3b2b2;
   color: #6c6a67;
   font-size:1.2rem;
+  br{
+    display: none;
+  }
   p{
     margin:0;
     font-family:Candara;
@@ -3648,6 +3651,9 @@ footer{
   b{
     display: inline-block;
     margin:0 0 0 45px;
+  }
+  br{
+    display: none;
   }
 }
 
