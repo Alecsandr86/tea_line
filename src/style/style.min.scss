@@ -4043,6 +4043,83 @@ footer{
   background-color: #808285;
 }
 
+
+.authorization{
+  width:820px;
+  position: relative;
+}
+.clok-castom{
+  display: inline-block;
+  position: absolute;
+  top:10px;
+  right:10px;
+  z-index:1;
+}
+
+.bg-col-1{
+  background-color: #eae8e8;
+}
+
+.bg-col-2{
+  background-color: #f3f3f3;
+}
+
+.item-popap{
+  padding-bottom:10px;
+  span{
+    display: inline-block;
+    padding: 20px 0 10px;
+  }
+  input{
+    font-size: 0.8rem;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px dashed #c3c1c1;
+    background-color: #deddde;
+    display: block;
+    padding: 17px 10px;
+    width:100%;
+    margin:10px 0;
+  }
+  p{
+    font-size:0.8rem;
+    line-height:14px;
+    min-height:40px;
+  }
+  a{
+    display: inline-block;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+  }
+}
+
+.but-popap{
+  width:100%;
+  color: #fff;
+  text-align: center;
+  padding:6px 0;
+  margin:0 0 10px;
+  &:hover{
+    color: #fff;  
+  }
+
+}
+.but-pom{
+  border: 2px solid #d1cfd0;
+  padding:2px 5px;
+  color: #383023;
+  font-size:0.9rem;
+}
+
+.bg-green{
+  background-color: #54ba58;
+}
+.bg-greens{
+  background-color: #98cb4d;
+}
+
 /*************************
 *     КАСТОМНЫЕ СТИЛИ
 *************************/

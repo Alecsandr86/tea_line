@@ -358,6 +358,7 @@ $('.section-ico').bind('click',function(){
 
     $(".link").fancybox({
         padding:0,
+        closeBtn:false,
         helpers: {
             overlay: {
                 locked: false
