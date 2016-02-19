@@ -1562,6 +1562,7 @@
     margin:0 0 10px;
     a {
       width: 132px;
+      font-size:0.9rem;
     }
   }
   .tabs__caption{
@@ -1691,5 +1692,8 @@
     }
   }
 
-
+  .footer div {
+    width: 100%;
+    margin: 0 auto;
+  }
 }
