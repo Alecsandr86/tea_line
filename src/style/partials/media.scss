@@ -62,11 +62,15 @@
   }
   .my-soc {
     li {
-      width: 47px;
+      width: 40px;
     }
     span{
-      min-width: 40px;
       padding: 5px;
+      width: 38px;
+      min-width: 38px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
     }
 
   }
@@ -185,6 +189,14 @@
   }
 
 
+  .cabinet-big-nav{
+    li{
+      strong {
+        font-size: 0.8rem;
+      }
+    }
+  }
+
 }
 
 @media screen and(max-width: 1029px) {
@@ -225,15 +237,22 @@
   .bg-buttones {
     .buy-b {
       padding: 10px 0 0;
+
       b {
         padding: 5px 0 0;
+        font-size:1rem;
       }
     }
-
+    .butt-buy {
+      width:100px;
+      span{
+        font-size:0.7rem;
+        padding:5px 0;
+      }
+    }
   }
   .butt-buy {
     margin: 5px 0 0;
-
   }
   .info-list {
     li {
@@ -660,7 +679,23 @@
 }
 
 
+  .china-sinvol{
+    &:before {
+      display: none;
+    }
+    &:after {
+      display: none;
+    }
+  }
 
+
+
+  .fixed-nav-big{
+    position: relative;
+  }
+  .shadow-bottom{
+    box-shadow: none;
+  }
 
 
 }
@@ -714,7 +749,7 @@
       border: none;
       width: 71%;
       padding: 0;
-      height: 40px;
+      height: 39px;
       float: left;
     }
   }
@@ -734,7 +769,7 @@
       background-image: none;
       width: 50%;
       float: left;
-      padding: 5px 0 5px 20px;
+      padding: 5px 0 5px 10px;
       text-align: left;
       background-color: #e0dddd;
       border-bottom: 1px solid #b5b4b4;
@@ -1163,10 +1198,11 @@
     }
 
   }
-  .item-two-desconts {
+  .items-two-discon {
     margin-bottom: 90px;
 
   }
+
 
 .b-poz-ab{
   position: absolute;
@@ -1245,7 +1281,26 @@
     }
   }
 
+  .basdet-nav{
+    padding:5px 0;
+  }
 
+  .sum-basket {
+    font-size: 1.18rem;
+  }
+
+
+
+
+
+
+  .big-search {
+    width: 100%;
+    padding:0 10px;
+     input[type=search] {
+      width: 76%;
+    }
+  }
 
 
 }
@@ -1630,7 +1685,11 @@
     }
   }
 
-
+  .bg-buttones{
+    .butt-buy {
+      width: 83px;
+    }
+  }
 
 
 }

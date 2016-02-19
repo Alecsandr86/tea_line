@@ -6,6 +6,8 @@
     <title>TITLE</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='stylesheet' type='text/css' href='css/style.min.css' />
+
 
 </head>
 <body>
@@ -87,32 +89,35 @@
                 </div>
             </div>
         </div>
-        <div class="bootom-nav">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-11 col-lg-10 col-md-12">
-                        <ul class="nav-bootom-header">
-                            <li class="hidden-md-down"><a href="javascript: void(0);">Главная</a></li>
-                            <li><a href="javascript: void(0);">Каталог чая</a></li>
-                            <li><a href="javascript: void(0);">Каталог кофе</a></li>
-                            <li><a href="javascript: void(0);">Новинки</a></li>
-                            <li class="active"><a href="javascript: void(0);">Новости</a></li>
-                            <li><a href="javascript: void(0);">Акции</a></li>
-                            <li><a href="javascript: void(0);">Журнал о чае</a></li>
-                            <li><a href="javascript: void(0);">Журнал о кофе</a></li>
-                            <li><a href="javascript: void(0);">О нас</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-xl-1 col-lg-2 hidden-md-down basdet-nav active">
-                        <a href="javascript: void(0);">
-                            <i class="basket-ico"></i>
-                            <i class="buy"></i>
-                            <span> 2 товара</span>
-                        </a>
+        <div class="wr-nav-boot">
+            <div class="bootom-nav">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-11 col-lg-10 col-md-12">
+                            <ul class="nav-bootom-header">
+                                <li class="hidden-md-down"><a href="javascript: void(0);">Главная</a></li>
+                                <li><a href="javascript: void(0);">Каталог чая</a></li>
+                                <li><a href="javascript: void(0);">Каталог кофе</a></li>
+                                <li><a href="javascript: void(0);">Новинки</a></li>
+                                <li><a href="javascript: void(0);">Новости</a></li>
+                                <li><a href="javascript: void(0);">Акции</a></li>
+                                <li><a href="javascript: void(0);">Журнал о чае</a></li>
+                                <li><a href="javascript: void(0);">Журнал о кофе</a></li>
+                                <li><a href="javascript: void(0);">О нас</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xl-1 col-lg-2 hidden-md-down basdet-nav active">
+                            <a href="javascript: void(0);">
+                                <i class="basket-ico"></i>
+                                <i class="buy"></i>
+                                <span> 2 товара</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
     </header>
 <div class="row">
     <div class="container">
@@ -132,18 +137,21 @@
                 <div class="col-lg-6">
                     <div class="row">
                         <div class="col-md-6 items">
-                            <strong>Способ доставки</strong>
-                            <button>доставка курьером (Красноярск)</button>
-                            <button>самовывоз из офиса (Краснояск)</button>
-                            <button class="active">доставка Почтой России</button>
-                            <button>доставка курьерской службой</button>
+                            <form id="itemsfild-3" action="">
+                                <strong>Способ доставки</strong>
+                                <input type="button" value="доставка курьером (Красноярск)"/>
+                                <input type="button" value="самовывоз из офиса (Краснояск)"/>
+                                <input type="button" value="доставка Почтой России" class="active"/>
+                                <input type="button" value="доставка курьерской службой"/>
+                            </form>
                         </div>
                         <div class="col-md-6 items">
-                            <strong>Способ оплаты</strong>
-                            <button>наложенный платёж</button>
-                            <button class="active">электронный платёж</button>
-                            <button>оплата на реквизиты</button>
-
+                            <form id="itemsfild-4" action="">
+                                <strong>Способ оплаты</strong>
+                                <input type="button" value="наложенный платёж"/>
+                                <input type="button" value="электронный платёж" class="active"/>
+                                <input type="button" value="оплата на реквизиты"/>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -440,9 +448,7 @@
         </div>
 
 
-        <script>function init() {
-            $('a').addClass('ajax');
-        }</script>
-        <script src="js/jquery-min.js" async onload="init()"></script>
+        <script src="js/jquery-min.js"></script>
+
     </body>
 </html>

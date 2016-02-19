@@ -963,6 +963,10 @@ footer{
   line-height: 1.7;
 }
 
+.wr-nav-boot{
+  min-height:40px;
+}
+
 // \ГЛАВНАЯ\
 
 
@@ -1093,6 +1097,7 @@ footer{
     height:12px;
     vertical-align: middle;
     display: block;
+    cursor: pointer;
     .jq-checkbox {
       float: left;
     }
@@ -2387,8 +2392,9 @@ footer{
 
 .search-content{
   position: relative;
-  min-height:2000px;
+  min-height:1500px;
   margin-bottom:50px;
+  padding-bottom: 70px;
   .h4{
     margin-bottom:20px;
   }
@@ -2591,6 +2597,8 @@ footer{
       -moz-border-radius: 3px;
       border-radius: 3px;
       background-color: #fff;
+      color: #414142;
+      font-size: 0.8rem;
     }
     textarea{
       height:100px;
@@ -3135,7 +3143,7 @@ footer{
   margin:10px 0 5px;
   li{
     display: inline-block;
-    font-size: 0.6rem;
+    font-size: 0.7rem;
     font-weight: bold;
     font-family:Tahoma;
     &:first-child{
@@ -3419,7 +3427,12 @@ footer{
       opacity:1;
     }
   }
-  .on-big{
+  .act-big{
+    &.active{
+      @include gradient-vertical(#c1c0c0, #898786, 60%, 100%);
+    }
+  }
+.on-big{
     margin-top:5px;
   }
   .off-big{
@@ -3490,6 +3503,10 @@ footer{
   &:hover{
     text-decoration: none;
   }
+}
+
+.bord-none{
+  border: none;
 }
 // \КАБИНЕТ\
 
@@ -3721,7 +3738,7 @@ footer{
       font-weight: normal;
       margin:0 0 20px;
     }
-    button{
+    input[type="button"]{
       width:100%;
       display: inline-block;
       padding:10px 5px;
@@ -3950,12 +3967,31 @@ footer{
   left: 0;
   z-index:999;
 }
+.wr-nav-big{
+  min-height:200px;
+}
+
+
+.nav-big{
+  //display: none;
+}
+.animation-delay-2{
+  animation-delay: 2s;
+}
+.duration-1{
+  animation-duration:1s;
+}
+
+
 .fixed-nav-big{
   width:100%;
   position: fixed;
   top:68px;
   left: 0;
   z-index:999;
+  //&.nav-big{
+  //  display: block;
+  //}
   .cabinet-big-nav{
     i{
       display: none;
@@ -3975,9 +4011,12 @@ footer{
   }
 
 }
-.wr-nav-big{
-  min-height:200px;
-}
+
+
+
+
+
+
 .window{
   visibility: hidden;
   //opacity: 0;

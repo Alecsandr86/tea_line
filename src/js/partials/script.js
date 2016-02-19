@@ -22,6 +22,8 @@ $(document).ready(function(){
 
 
 
+
+
     /*******************************
      *          WAYPOINTS
      *******************************/
@@ -53,14 +55,10 @@ $(document).ready(function(){
     $('#header')
         .waypoint(function(dir){
             if (dir === 'down') {
-                $('.window').css({'visibility':'visible'}).addClass('animated fadeInLeft').one(animationEnd,function(){
-                    $(this).removeClass('animated fadeInLeft');
-                });
+                $('.window').css({'visibility':'visible'});
             }
             else {
-                $('.window').addClass('animated fadeOutLeft').one(animationEnd,function(){
-                    $(this).removeClass('animated fadeOutLeft').css({'visibility':'hidden'});
-                });
+                $('.window').css({'visibility':'hidden'});
 
             }
         }, {
@@ -80,7 +78,7 @@ $(document).ready(function(){
 
             }
         }, {
-            offset: 32
+            offset: 40
         });
 
     $('.nav-tea').waypoint(function(dires){
@@ -115,14 +113,15 @@ $(document).ready(function(){
 //// меню
     $('.nav-big').waypoint(function (directi) {
         if (directi === 'down') {
-            $('.nav-big').addClass('fixed-nav-big shadow-bottom');
+            $('.nav-big').addClass('fixed-nav-big shadow-bottom duration-1 animated fadeIn').one(animationEnd,function(){
+                $(this).removeClass('animated fadeIn');
+            });
         }
         else {
-            $('.nav-big').removeClass('fixed-nav-big shadow-bottom');
-
+            $('.nav-big').removeClass('fixed-nav-big duration-1 shadow-bottom');
         }
     }, {
-        offset: -100
+        offset: "0"
     });
 
     }
@@ -419,12 +418,11 @@ $('.section-ico').bind('click',function(){
      *   \ПЛАВНЫЙ ПЕРЕХОД ПО ЯКОРЯМ\
      *******************************/
 
-
-
     /*******************************
      *       ПОЛЗУНОК
      ******************************/
-    $("#nstSlider").nstSlider({
+    $(".nstSlider").nstSlider({
+        "crossable_handles": false,
         "left_grip_selector": ".leftGrip",
         "right_grip_selector": ".rightGrip",
         "value_bar_selector": ".bar",
@@ -437,6 +435,8 @@ $('.section-ico').bind('click',function(){
     /*******************************
      *       /ПОЛЗУНОК/
      ******************************/
+
+
 
 });
 

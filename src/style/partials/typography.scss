@@ -134,3 +134,27 @@ h2{
   padding: 0;
   font-size: 0.1px;
 }
+
+
+
+//  ДЛЯ СТИЛИЗАЦИИ INPUT И TEXTAREA ТЕКСТА
+
+textarea[placeholder], input[placeholder] {
+  text-overflow: ellipsis;
+  opacity: 1;
+}
+
+textarea::-moz-placeholder, input::-moz-placeholder {
+  text-overflow: ellipsis;
+  opacity: 1;
+}
+
+textarea:-moz-placeholder, input:-moz-placeholder {
+  text-overflow: ellipsis;
+  opacity: 1;
+}
+
+textarea:-ms-input-placeholder, input:-ms-input-placeholder {
+  text-overflow: ellipsis;
+  opacity: 1;
+}
