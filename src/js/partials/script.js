@@ -301,22 +301,7 @@ $(document).ready(function(){
      *       /МЕНЮ/
      ******************************/
 
-    /*******************************
-     *       ПОЛЗУНОК
-     ******************************/
-    $('.nstSlider').nstSlider({
-        "left_grip_selector": ".leftGrip",
-        "right_grip_selector": ".rightGrip",
-        "value_bar_selector": ".bar",
-        "value_changed_callback": function(cause, leftValue, rightValue) {
-            var $container = $(this).parent();
-            $container.find('.leftLabel').text(leftValue);
-            $container.find('.rightLabel').text(rightValue);
-        }
-    });
-    /*******************************
-     *       /ПОЛЗУНОК/
-     ******************************/
+
 
 //$('.filter-form').slideUp();
 $('.btn-filter').bind('click', function(){
@@ -434,6 +419,24 @@ $('.section-ico').bind('click',function(){
      *   \ПЛАВНЫЙ ПЕРЕХОД ПО ЯКОРЯМ\
      *******************************/
 
+
+
+    /*******************************
+     *       ПОЛЗУНОК
+     ******************************/
+    $("#nstSlider").nstSlider({
+        "left_grip_selector": ".leftGrip",
+        "right_grip_selector": ".rightGrip",
+        "value_bar_selector": ".bar",
+        "value_changed_callback": function(cause, leftValue, rightValue) {
+            var $container = $(this).parent();
+            $container.find('.leftLabel').text(leftValue);
+            $container.find('.rightLabel').text(rightValue);
+        }
+    });
+    /*******************************
+     *       /ПОЛЗУНОК/
+     ******************************/
 
 });
 

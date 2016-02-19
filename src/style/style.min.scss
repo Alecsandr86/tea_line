@@ -1121,6 +1121,9 @@ footer{
 }
 .pad-label{
   padding-right: 10px;
+  .jq-selectbox__dropdown{
+    width:100%;
+  }
 }
 .h-form{
   position: relative;
