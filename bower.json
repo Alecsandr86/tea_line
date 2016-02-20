@@ -19,6 +19,7 @@
     "jquery-form-styler": "jquery.formstyler#^1.7.4",
     "fancybox": "^2.1.5",
     "bootstrap": "v4.0.0-alpha.2",
-    "animate.css": "^3.5.1"
+    "animate.css": "^3.5.1",
+    "jquery.fancyspinbox": "^0.1.1"
   }
 }

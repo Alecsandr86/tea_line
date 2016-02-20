@@ -11,6 +11,7 @@
 //= ../../bower_components/fancybox/source/helpers/jquery.fancybox-media.js
 //= ../../bower_components/fancybox/source/helpers/jquery.fancybox-thumbs.js
 //= ../../bower_components/waypoints/lib/jquery.waypoints.min.js
+//= ../../bower_components/jquery.fancyspinbox/jquery.fancyspinbox.js
 
 
 

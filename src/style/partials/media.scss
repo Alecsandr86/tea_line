@@ -197,6 +197,18 @@
     }
   }
 
+
+  .select-cast-but{
+    .spin-up{
+      left:-99px;
+    }
+  }
+
+
+
+
+
+
 }
 
 @media screen and(max-width: 1029px) {
@@ -536,11 +548,11 @@
       }
     }
     .stlect-cast {
-      -webkit-transform: scale(0.9, 0.9);
-      -moz-transform: scale(0.9, 0.9);
-      -ms-transform: scale(0.9, 0.9);
-      -o-transform: scale(0.9, 0.9);
-      transform: scale(0.9, 0.9);
+      //-webkit-transform: scale(0.9, 0.9);
+      //-moz-transform: scale(0.9, 0.9);
+      //-ms-transform: scale(0.9, 0.9);
+      //-o-transform: scale(0.9, 0.9);
+      //transform: scale(0.9, 0.9);
     }
     .report,
     .butt-buy{
@@ -549,7 +561,7 @@
       -ms-transform: scale(0.9, 0.9);
       -o-transform: scale(0.9, 0.9);
       transform: scale(0.9, 0.9);
-      margin: 17px 0 0 -5px;
+      margin: 17px 0 0 1px;
     }
   }
 
@@ -697,11 +709,30 @@
     box-shadow: none;
   }
 
+  .bg-buttones {
+    .stlect-cast {
+      .spin-up {
+        left: -100px;
+      }
+    }
+
+  }
+
+
+
+
 
 }
 
 
 @media screen and(max-width: 767px) {
+  .cont-sear-two {
+    .items-b {
+      min-height: 295px;
+    }
+
+  }
+
   .filter-select {
     margin: 3px;
     padding: 0;
@@ -1078,12 +1109,23 @@
 
 
   .wish-content-2{
-    .stlect-cast {
-      -webkit-transform: scale(0.8, 0.8);
-      -moz-transform: scale(0.8, 0.8);
-      -ms-transform: scale(0.8, 0.8);
-      -o-transform: scale(0.8, 0.8);
-      transform: scale(0.8, 0.8);
+    .fancy-spinbox {
+      padding:0 17px;
+       .crop {
+        background: url(../images/select-but.png) 90% -2px no-repeat;
+      }
+    }
+
+
+    .select-cast-but{
+      .spin-up {
+        left: -83px;
+        width:20px;
+      }
+      .spin-down{
+        width:20px;
+        right:-5px;
+      }
     }
     .report,
     .butt-buy {
@@ -1093,7 +1135,7 @@
       -o-transform: scale(0.8, 0.8);
       transform: scale(0.8, 0.8);
 
-      margin: 17px 0 0 -8px;
+      margin: 17px 0 0 0px;
     }
     .row{
       >div{

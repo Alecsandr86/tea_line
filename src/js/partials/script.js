@@ -226,11 +226,13 @@ $(document).ready(function(){
      ******************************/
 
 
-    $("select,input:checkbox ,input[type='number']").styler({
+    $(".style,input:checkbox ,input[type='number']").styler({
         selectSearch: true
     });
 
-
+    $('.select-cast-but').fancyspinbox({
+        cycle: true,
+    });
 
     /*******************************
     *       \СТИЛЕЗАЦИЯ ФОРМ\

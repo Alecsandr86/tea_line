@@ -8,6 +8,7 @@
 @import "../js/source/jquery.fancybox.css";
 @import "../js/source/helpers/jquery.fancybox-buttons.css";
 @import "../js/source/helpers/jquery.fancybox-thumbs.css";
+@import "../../bower_components/jquery.fancyspinbox/jquery.fancyspinbox.scss";
 ///////////////////   МОИ ДОПОЛНЕНИЯ  /////////////////////////
 
 @import "partials/sprite";
@@ -1082,6 +1083,7 @@ footer{
   display: none;
   background-color: #f0f0f0;
   padding:11px 0 30px;
+
   .row{
     div{
      // padding-right:0;
@@ -1306,6 +1308,11 @@ footer{
 }
 .product-content{
   margin: 10px 0;
+  .select-cast-but {
+    .spin-up {
+      left: -99px;
+    }
+  }
   .row{
     border-bottom: 1px solid #dcddde;
     &:nth-child(even){
@@ -1376,40 +1383,46 @@ footer{
   }
 }
 .stlect-cast{
-  position: relative;
-  width:135px;
-  height:39px;
-  border: 1px solid #c1c2c4;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  background-color: #fff;
-  display: inline-block;
-  button{
-    background-color: #e6e7e8;
-    display: inline-block;
-    padding: 0 5px;
-    width:29px;
-    border: none;
-    color: #8e9092;
-    font-size: 1.2rem;
-    line-height: 37px;
-    &:focus{
-      outline: none;
-    }
-  }
-  .minus{
-    -webkit-border-radius: 5px 0 0 5px;
-    -moz-border-radius: 5px 0 0 5px;
-    border-radius: 5px 0 0 5px;
-    float: left;
-  }
-  .plus{
-    -webkit-border-radius:0 5px 5px 0;
-    -moz-border-radius:0 5px 5px 0;
-    border-radius:0 5px 5px 0;
-    float: right;
-  }
+  //position: relative;
+  //width:135px;
+  //height:39px;
+  //border: 1px solid #c1c2c4;
+  //-webkit-border-radius: 5px;
+  //-moz-border-radius: 5px;
+  //border-radius: 5px;
+  //background-color: #fff;
+  //display: inline-block;
+
+
+
+  //button{
+  //  background-color: #e6e7e8;
+  //  display: inline-block;
+  //  padding: 0 5px;
+  //  width:29px;
+  //  border: none;
+  //  color: #8e9092;
+  //  font-size: 1.2rem;
+  //  line-height: 37px;
+  //  &:focus{
+  //    outline: none;
+  //  }
+  //}
+  //
+  //.minus{
+  //  -webkit-border-radius: 5px 0 0 5px;
+  //  -moz-border-radius: 5px 0 0 5px;
+  //  border-radius: 5px 0 0 5px;
+  //  float: left;
+  //}
+  //.plus{
+  //  -webkit-border-radius:0 5px 5px 0;
+  //  -moz-border-radius:0 5px 5px 0;
+  //  border-radius:0 5px 5px 0;
+  //  float: right;
+  //}
+
+
   .jq-selectbox {
     width:70px;
     border: none;
@@ -1583,6 +1596,7 @@ footer{
       border: none;
       margin:0;
       min-height:100%;
+
     }
 
     .img-tov{
@@ -1837,6 +1851,12 @@ footer{
   }
   .list-desires{
     margin-top: 0;
+  }
+  .stlect-cast{
+    display: inline-block;
+    .spin-up {
+      left: -99px;
+    }
   }
 }
 .titles-lot{
@@ -2424,7 +2444,7 @@ footer{
   .items-b{
     padding-left: 0;
     border-bottom: 1px solid #dddddd;
-    min-height:470px;
+    min-height:472px;
     //overflow: hidden;
     &:nth-child(even){
       border-left: 1px solid #dddddd;
@@ -3200,7 +3220,7 @@ footer{
       padding-top:20px;
       min-height: 111px;
       height: 111px;
-      font-size:0.9rem;
+      font-size:1.009rem;
       font-family:Tahoma;
       &:first-child{
         padding-top: 0;
