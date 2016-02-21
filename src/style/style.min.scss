@@ -8,7 +8,7 @@
 @import "../js/source/jquery.fancybox.css";
 @import "../js/source/helpers/jquery.fancybox-buttons.css";
 @import "../js/source/helpers/jquery.fancybox-thumbs.css";
-@import "../../bower_components/jquery.fancyspinbox/jquery.fancyspinbox.scss";
+
 ///////////////////   МОИ ДОПОЛНЕНИЯ  /////////////////////////
 
 @import "partials/sprite";
@@ -16,6 +16,7 @@
 @import "partials/typography";
 @import "partials/form";
 @import "partials/gradients";
+@import "partials/jquery.fancyspinbox";
 
 /********************************
 *      \ДОПОЛНИТЕЛЬНЫЕ СТИЛИ\
@@ -1310,7 +1311,7 @@ footer{
   margin: 10px 0;
   .select-cast-but {
     .spin-up {
-      left: -100px;
+      left: -99px;
     }
   }
   .row{
