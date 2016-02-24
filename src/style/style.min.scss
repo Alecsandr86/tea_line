@@ -2386,6 +2386,9 @@ footer{
   background-color: #ebebeb;
   border-top: 1px solid #dadada;
   padding:10px 0;
+  &+.filter{
+    padding:10px 0;
+  }
 }
 .searchess{
 
@@ -3897,6 +3900,193 @@ footer{
   float: right;
 }
 //  \КАТАЛОГ РАЗДЕЛ\
+
+
+
+// СТАТЬИ
+
+.articles{
+
+}
+.h6-italic{
+  font-weight: normal;
+  font-style: italic;
+  font-family:Georgia, "Times New Roman", Times, serif;
+  margin:30px 0 50px;
+}
+
+.articles-big-img{
+  position: relative;
+  img{
+    width:100%;
+  }
+  .titles{
+    position: absolute;
+    top:20px;
+    right:20px;
+    max-width:520px;
+    background-color: #eeeeee;
+    padding:20px 20px 5px;
+    font-family:Candara;
+    font-weight: bold;
+    strong{
+      font-size: 29px;
+      display: inline-block;
+      margin:0 0 10px;
+    }
+    p{
+      font-size:18px;
+      margin:0 0 20px;
+    }
+    a{
+      font-weight: normal;
+      font-family:Georgia, "Times New Roman", Times, serif;
+      font-size:0.8rem;
+      color: #4b453e;
+      border-bottom:1px dotted #4b453e;
+      &:hover{
+        border: none;
+      }
+    }
+    span{
+      font-weight: normal;
+      font-family:Georgia, "Times New Roman", Times, serif;
+      font-size:0.8rem;
+      color: #72c054;
+    }
+  }
+  .titles-footer{
+    text-align: right;
+  }
+}
+.wr-maps-b{
+  p{
+    margin:20px 0 0;
+  }
+}
+.b-map{
+  position: relative;
+  text-align: right;
+
+}
+.map-titles-big{
+  background-color: #534e49;
+  color: #ffffff;
+  max-width:280px;
+  padding:16px;
+  position: absolute;
+  top:0;
+  right: 0;
+  text-align: left;
+  font-size:0.9rem;
+}
+.map-titles-min{
+  background-color: #382f22;
+  color: #ffffff;
+  font-family:Candara;
+  font-weight: bold;
+  font-size:1.1rem;
+  max-width:160px;
+  padding:16px;
+  position: absolute;
+  bottom: 10px;
+  left: 111px;
+  text-align: left;
+}
+
+
+
+
+
+
+
+
+
+.articles-two{
+  margin: 70px 0 10px;
+  img{
+    margin:0 0 20px;
+  }
+  .h-bg-line{
+    margin:0 0 40px;
+  }
+}
+.h-bg-line{
+  position: relative;
+  text-align: center;
+  font-size:1.2rem;
+  color: #383022;
+  font-family:Candara;
+  font-weight: bold;
+  margin:0 0 40px;
+  &:before{
+    content: '';
+    position: absolute;
+    top:50%;
+    left:0;
+    width:100%;
+    display: block;
+    height:1px;
+    background-color: #dddddd;
+  }
+  span{
+    position: relative;
+    background-color: #ffffff;
+    padding:0 8px;
+    display: inline-block;
+  }
+}
+
+.articles-two-titles{
+  font-family:Candara;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 1.1rem;
+  background-color: #382f22;
+  padding:15px;
+  margin:0 0 30px;
+}
+
+
+.articles-thee{
+
+}
+
+.item-thee{
+  strong{
+    display: block;
+    background-color: #382f22;
+    padding:15px 15px 40px;
+    color: #ffffff;
+    font-family:Candara;
+    font-weight: bold;
+    font-size: 1.7rem;
+    margin:0 0 40px;
+  }
+  p{
+    font-size: 0.9rem;
+    line-height:1.5;
+  }
+}
+.item-img{
+  padding:3px;
+  margin:0 0 20px;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    0px 0px 10px 0px rgba(50, 50, 50, 0.75);
+  box-shadow:         0px 0px 10px 0px rgba(50, 50, 50, 0.75);
+  img{
+    width:100%;
+  }
+
+}
+
+
+// \СТАТЬИ\
+
+
+
+
+
 
 // POPAP
 

@@ -1344,6 +1344,49 @@
     }
   }
 
+  .expectation{
+    .stlect-cast{
+      display: inline-block;
+    }
+    .buy-b {
+
+      b {
+        font-size: 0.7rem;
+        float: left;
+        margin: 6px 5px 0 0;
+      }
+
+    }
+  }
+
+.heit-mini{
+  min-height:60px!important;
+}
+
+  .list-desires {
+    padding: 4px;
+    span{
+      display: inline-block;
+      margin:0;
+      font-size:0.6rem;
+    }
+    .desires{
+      float: right;
+    }
+  }
+
+  .item-popap {
+    input {
+      padding: 10px;
+      margin: 5px 0;
+    }
+    span{
+      padding: 10px 0;
+    }
+
+
+  }
+
 
 }
 
@@ -1637,6 +1680,20 @@
       font-size:0.7rem;
     }
   }
+
+  .filter-form {
+    .hit-form {
+      width: 160px;
+      left: -9px;
+      font-size:0.59rem;
+      padding:5px 2px;
+    }
+
+
+  }
+
+
+
 
 }
 

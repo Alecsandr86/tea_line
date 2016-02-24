@@ -4,9 +4,19 @@ window.log = function(param){
 };
 $(document).ready(function(){
 
+    //Chrome Smooth Scroll
+    try {
+        $.browserSelector();
+        if($("html").hasClass("chrome")) {
+            $.smoothScroll();
+        }
+    } catch(err) {
+
+    };
+
 
     //Асинхронная загрузка CSS
-    $("head").append("<link rel='stylesheet' type='text/css' href='css/style.min.css' />");
+    //$("head").append("<link rel='stylesheet' type='text/css' href='css/style.min.css' />");
     //
     //function b(){
     //    var a=document.createElement("link");
@@ -363,11 +373,14 @@ $('.section-ico').bind('click',function(){
     $(".link").fancybox({
         padding:0,
         closeBtn:false,
+        'scrolling'   : 'visible',
         helpers: {
             overlay: {
-                locked: false
+                locked: true
             }
         }
+
+
     });
 
     /*******************************
