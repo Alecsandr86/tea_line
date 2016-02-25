@@ -205,7 +205,23 @@
   }
 
 
+.b-map{
+  img{
+    width:100%;
+  }
+}
 
+  .articles-two{
+    img {
+      width:100%;
+    }
+  }
+
+  .articles-four{
+    img{
+      width:100%;
+    }
+  }
 
 
 
@@ -717,6 +733,50 @@
     }
 
   }
+
+  .map-titles-big{
+    top: 30px;
+  }
+
+  .map-titles-min {
+    bottom: 0;
+    left: 40px;
+  }
+
+
+  .h-bg-line {
+    span {
+      font-size: 1rem;
+    }
+
+  }
+
+  .articles-thee{
+    img{
+      width:100%;
+    }
+  }
+
+  .articles-five {
+    h3 {
+      font-size: 1.6rem;
+    }
+  }
+
+  .soz-b{
+    div{
+      padding:0;
+    }
+    p.left {
+      font-size: 0.8rem;
+    }
+  }
+
+
+
+
+
+
 
 
 
@@ -1383,9 +1443,87 @@
     span{
       padding: 10px 0;
     }
+  }
 
+
+  .h6-italic {
+    margin: 20px 10px;
+    font-size: 0.78rem;
+  }
+  .articles-big-img {
+    min-height:430px;
+    img{
+      min-height:430px;
+    }
+  }
+
+  .articles-big-img {
+    .titles {
+      right: 0;
+      left:10px;
+      strong {
+        font-size: 19px;
+      }
+      p {
+        font-size: 13px;
+        margin: 0 0 8px;
+      }
+    }
 
   }
+
+  .map-titles-big {
+    max-width: 170px;
+    font-size: 0.6rem;
+    top: 0;
+  }
+  .map-titles-min {
+    max-width: 100px;
+    left: 0;
+    bottom: -30px;
+    font-size: 0.8rem;
+    padding: 5px;
+    margin:0;
+  }
+
+  .articles-five h3 {
+    font-size: 1.4rem;
+    text-align: left;
+    padding: 20px;
+  }
+
+  .articles-five {
+    .titles-four {
+      right: 5%;
+      left:5%;
+    }
+
+  }
+
+.wr-shadows{
+  .tit-ico{
+    float: none;
+  }
+}
+
+  .comments-list{
+    ul {
+      margin: 0;
+    }
+    .jq-number {
+      margin: 5px 0 15px;
+    }
+  }
+  .content-comment {
+    padding: 0 0 0 65px;
+    small {
+      font-size: 0.7rem;
+    }
+  }
+
+
+
+
 
 
 }
