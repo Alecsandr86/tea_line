@@ -223,6 +223,22 @@
     }
   }
 
+.top-forum{
+  .big-search {
+    width: 690px;
+    input[type=search]{
+      width: 88%;
+    }
+  }
+}
+
+.button-colors {
+  padding: 3px 10px;
+}
+
+
+
+
 
 
 }
@@ -775,11 +791,17 @@
 
 
 
+  .filter-select {
+    margin: 15px 22px 0 0;
+  }
 
+  .pad-none{
+    padding:0;
+  }
 
-
-
-
+  .names-user {
+    min-width: 120px;
+  }
 
 
 }
@@ -1522,7 +1544,75 @@
   }
 
 
+  .top-forum {
+    .big-search {
+      width: 300px;
+      input[type=search] {
+        width: 75%;
+      }
+    }
+    .jq-selectbox__select-text {
+      font-size: 1rem;
+    }
+    .jq-selectbox__select {
+      height: 24px;
+      margin:10px 0 0;
+    }
+  }
+  .button-colors {
+    padding: 3px 6px;
+  }
 
+
+  .top-form {
+    .vse {
+      margin: 13px 0 0 ;
+    }
+
+  }
+
+  .tables-form {
+    padding:0;
+    strong{
+      font-size: 0.8rem;
+    }
+    td {
+      min-height: 100%;
+      height: 135px;
+      padding: 10px 5px;
+    }
+    tr{
+      td{
+        &:nth-child(2){
+          width:70%;
+        }
+      }
+    }
+
+    .pages-tr{
+      background-color: #fff!important;
+      td{
+        height:40px;
+        padding:5px 0;
+      }
+    }
+
+
+  }
+  .wr-bottom-tbles {
+    position: relative;
+    padding: 15px 0 5px;
+  }
+  .names-user {
+    min-width: 60px;
+  }
+
+  .pages-mini {
+    a {
+      padding: 0 4px;
+    }
+
+  }
 
 
 

@@ -314,14 +314,14 @@ $(document).ready(function(){
 
 
 
-//$('.filter-form').slideUp();
-$('.btn-filter').bind('click', function(){
-    $(this).toggleClass('active');
-    $('#filter-form').slideToggle({
-        easing:'jswing',
-        duration: 1000
+    //$('.filter-form').slideUp();
+    $('.btn-filter').bind('click', function(){
+        $(this).toggleClass('active');
+        $('#filter-form').slideToggle({
+            easing:'jswing',
+            duration: 1000
+        });
     });
-});
 
     $('.btn-filter-2').bind('click', function(){
         $(this).toggleClass('active');
@@ -340,16 +340,24 @@ $('.btn-filter').bind('click', function(){
     });
 
 
-$('.section-ico').bind('click',function(){
-    $('.sort-visible li').removeClass('active');
-    $(this).parent().addClass('active');
-    $('.product-content').addClass('active');
-});
+    $('.section-ico').bind('click',function(){
+        $('.sort-visible li').removeClass('active');
+        $(this).parent().addClass('active');
+        $('.product-content').addClass('active');
+    });
 
     $('.tiles-ico').bind('click',function(){
         $('.sort-visible li').removeClass('active');
         $(this).parent().addClass('active');
         $('.product-content').removeClass('active');
+    });
+
+    $('.vse').bind('click',function(){
+        $(this).toggleClass('active');
+        $(this).parents('.top-form').find('.dropdown-pages').slideToggle({
+            easing:'jswing',
+            duration: 1000
+        });
     });
 
     /*******************************
