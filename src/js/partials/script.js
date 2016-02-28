@@ -385,6 +385,9 @@ $(document).ready(function(){
         helpers: {
             overlay: {
                 locked: true
+            },
+            title : {
+                type : 'float'
             }
         }
 

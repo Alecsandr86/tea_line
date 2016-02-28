@@ -18,7 +18,7 @@
                     <div class="col-md-8 col-xs-7 col-sm-6">
                         <ul>
                             <li>
-                                <a href="javascript: void(0);">Как сделать заказ?</a>
+                                <a class="link" href="#ask-question">Как сделать заказ?</a>
                             </li>
                             <li class="hidden-sm-down">
                                 <a href="javascript: void(0);">Доставка и оплата</a>
@@ -34,7 +34,7 @@
                     <div class="col-md-4 col-xs-5 col-sm-6">
                         <ul class="entrance">
                             <li>
-                                <a href="javascript: void(0);">Вход</a>
+                                <a class="link" href="#authorization">Вход</a>
                             </li>
                             <li>
                                 <a href="javascript: void(0);">Регистрация</a>
@@ -63,7 +63,7 @@
                     </div>
                     <div class="col-md-4 col-sm-6 col-xs-7 back-call">
                         <p>
-                            <a href="javascript: void(0);">Обраный звонок</a>
+                            <a class="link" href="#feedback">Обраный звонок</a>
                             <strong>8-800-200-1234</strong>
                             звонок бесплатный
                         </p>
@@ -717,9 +717,7 @@
     </div>
 </div>
 
-        <a class="up-button" href="#header">
-            <span class="left">Наверх</span><i class="button-up"></i>
-        </a>
+
         <div class="wr-popap">
             <div id="keep" class="keep">
                 <div class="wr-keep">
@@ -761,8 +759,41 @@
                     </div>
                 </div>
             </div>
+            <div id="feedback" class="feedback">
+                <ul>
+                    <li><a class="green-bg" href="javascript: void(0);">Позвонить с сайта</a></li>
+                    <li><a class="blue-bg" href="javascript: void(0);">Связатьcя по skype</a></li>
+                    <li><a class="blue-dark-bg" href="javascript: void(0);">Позвоните мне </a></li>
+                    <li><input type="text" placeholder="Номер телефона или адрес электронной почты"></li>
+                    <li><a class="ser-bg" href="javascript: void(0);">Задать вопрос</a></li>
+                </ul>
+            </div>
+            <div id="ask-question" class="ask-question">
+                <div class="row">
+                    <form action="#">
+                        <div class="col-xs-12">
+                            <textarea placeholder="Пишите свой вопрос тут"></textarea>
+                        </div>
+                        <div class="col-md-7">
+                            <input type="text" placeholder="Номер телефона или адрес электронной почты">
+                            <input type="text" placeholder="Имя">
+                        </div>
+                        <div class="col-md-5">
+                            <input type="button"value="отправить">
+                            <a href="javascript: void(0);">назад</a>
+                        </div>
 
+                    </form>
+                </div>
+
+            </div>
         </div>
+
+        <a class="UP-button" href="#header">
+            <span class="left">Наверх</span><i class="button-up"></i>
+        </a>
+
+
         <footer class="row">
             <div class="footer">
                 <div class="col-footer col-f-1 col-md-12 col-lg-7">
@@ -956,7 +987,6 @@
             </div>
         </footer>
         </div>
-
 
         <script src="js/jquery-min.js"></script>
 
