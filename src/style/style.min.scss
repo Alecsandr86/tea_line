@@ -74,17 +74,19 @@ a,button{
 /********************************
 *       ОСНОВНЫЕ СТИЛИ
 ********************************/
+
 header{
   padding:30px 0 0;
 }
 .top-nav{
   position: fixed;
-  width:100%;
   left: 0;
   top:0;
+  right:0;
   z-index:999;
   background-color: #e3e3e3;
   padding: 4px 0 6px;
+
   ul{
     margin:0 0 0 -.9375rem;
     li{
@@ -4797,7 +4799,7 @@ footer{
   }
 }
 
-.up-button {
+.UP-button {
   position: fixed;
   right: 20px;
   bottom: 100px;
@@ -4882,6 +4884,9 @@ footer{
   }
 
 }
+
+
+
 
 
 
@@ -5033,6 +5038,138 @@ footer{
 .bg-greens{
   background-color: #98cb4d;
 }
+
+
+
+.feedback{
+  background-color: #e0dddd;
+  width:520px;
+  padding:30px 50px;
+  ul{
+
+  }
+  li{
+
+  }
+  a{
+    display: block;
+    padding:10px 0;
+    text-align: center;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    font-size:1.3rem;
+    margin:15px 0;
+  }
+  input{
+    width:100%;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px dashed #bdbbbb;
+    background-color: #e0dddd;
+    font-size:0.8rem;
+    padding:10px 15px;
+  }
+  .green-bg{
+    color: #fff;
+    &:hover,
+    &:focus{
+      color: #fff;
+    }
+  }
+}
+
+.blue-bg{
+  background-color: #4cc9f7;
+  color: #fff;
+  &:hover,
+  &:focus{
+    color: #fff;
+  }
+}
+.blue-dark-bg{
+  background-color: #004555;
+  color: #fff;
+  &:hover,
+  &:focus{
+    color: #fff;
+  }
+}
+.ser-bg{
+  background-color: #bebdbd;
+  color: #63605c;
+  &:hover,
+  &:focus{
+    color: #63605c;
+  }
+}
+
+.ask-question{
+  background-color: #e0dddd;
+  width:730px;
+  padding:20px 30px 10px;
+  textarea{
+    width:100%;
+    min-height:300px;
+    resize: none;
+    border: none;
+    padding:10px;
+    margin:0 0 20px;
+    font-style: italic;
+    font-size: 0.8rem;
+  }
+  input{
+    width:100%;
+    text-align: center;
+    margin:0 0 10px;
+  }
+  input[type='text']{
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px dashed #bdbbbb;
+    background-color: #e0dddd;
+    font-size:0.8rem;
+    padding:12px 15px;
+  }
+  input[type='button']{
+    border: none;
+    background-color: #bebdbd;
+    color: #63605c;
+    font-size:1.5rem;
+    padding:5px 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+  }
+  a{
+    display: block;
+    text-align: center;
+    background-color: #fff;
+    -webkit-border-radius: 3px;
+    -moz-border-radius:35px;
+    border-radius: 3px;
+    font-size:1.5rem;
+    padding:5px 0;
+  }
+}
+
+
+
+//
+//.fancybox-lock {
+//  overflow: hidden;
+//  margin: 0 !important;
+//}
+//
+//.fancybox-margin{
+//  margin: 0!important;
+//}
+
+
+
+
 
 /*************************
 *     КАСТОМНЫЕ СТИЛИ

@@ -43,7 +43,7 @@ $(document).ready(function(){
     //});
 
     // кнопка
-    var UpButton = $('.up-button');
+    var UpButton = $('.UP-button');
 
     UpButton.css('opacity', 0);
 
