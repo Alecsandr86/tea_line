@@ -4689,26 +4689,63 @@ footer{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
 // \ФОРУМ\
 
+//  Покупателям
+
+.for-buyers{
+  position: relative;
+  padding:10px 0;
+  &:before{
+    content: '';
+    width:2px;
+    height:100%;
+    background-color: #e0e3e2;
+    position: absolute;
+    top:-2px;
+    left: 26.5%;
+  }
+  h4{
+    font-size: 1.3rem;
+  }
+  p{
+    margin:0 0 20px;
+  }
+}
+.list-nav-left{
+  text-align: center;
+  li{
+    margin:5px 0;
+  }
+  a{
+    display: inline-block;
+    width:200px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #c6dd80;
+    text-align: center;
+    padding:5px 0;
+    font-family:"permianslabseriftypeface";
+    font-size:0.8rem;
+  }
+  .active{
+    a{
+      @include gradient-vertical(#c5da41, #8cc850, 30%, 100%);
+    }
+  }
+}
+.basket-but{
+  display: inline-block;
+  margin:20px 0 0;
+}
+.size-mini{
+  font-size: 0.8rem;
+}
 
 
-
-
-
-
-
+// \Покупателям\
 
 
 // POPAP

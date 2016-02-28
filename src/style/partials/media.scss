@@ -802,6 +802,24 @@
   .names-user {
     min-width: 120px;
   }
+  .for-buyers{
+    &:before{
+      content: '';
+      display: none;
+    }
+  }
+  .list-nav-left{
+    display: inline-block;
+    width:48%;
+    margin:10px 0 20px;
+  }
+  .basket-but{
+    margin:20px 0;
+  }
+
+
+
+
 
 
 }
@@ -1613,13 +1631,27 @@
 
   }
 
-.users-cont{
-  li{
-    img{
-      width:100%;
+  .users-cont{
+    li{
+      img{
+        width:100%;
+      }
     }
   }
-}
+
+  .basket-but{
+    margin: 0 0 20px;
+  }
+
+  .list-nav-left {
+    display: block;
+    width: 100%;
+    margin: 10px 0 20px;
+  }
+
+
+
+
 
 }
 
