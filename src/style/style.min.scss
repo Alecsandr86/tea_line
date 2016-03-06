@@ -63,6 +63,7 @@ a,button{
 
 @include font-face("etelka-pro", "../fonts/etelka-text-pro-bold", "etelka-text-pro-bold");
 @include font-face("permianslabseriftypeface", "../fonts/permianslabseriftypeface", "permianslabseriftypefaceRg");
+@include font-face("permiansanstypefacebold", "../fonts/permiansanstypeface-bold", "permiansanstypefaceregular");
 
 /********************************
 *          \ ШРИФТЫ\
@@ -2654,10 +2655,12 @@ footer{
   -moz-border-radius: 3px;
   border-radius: 3px;
   background-color: #fff;
-  button{
+  a{
     border: none;
     background-color: transparent;
     width:50%;
+    display: inline-block;
+    text-align: center;
     float: left;
     padding:0;
     margin:0;
@@ -2773,7 +2776,7 @@ footer{
       margin: -4px 0 5px;
     }
     p{
-      font-size:0.68rem;
+      font-size:0.625rem;
       line-height:13px;
       margin:0;
     }
@@ -3671,10 +3674,36 @@ footer{
 .link-cho{
   font-size:0.7rem;
   border-bottom: 1px dotted #767371;
+  display: inline-block;
   &:hover{
     border: none;
+    cursor: pointer;
   }
 }
+
+
+.por{
+  position: relative;
+  .hit-form {
+    position: absolute;
+    top: -40px;
+    left: -20px;
+    display: none;
+    background-color: #fff;
+    border: 1px solid #77787a;
+    border-radius: 5px;
+    padding: 5px;
+    color: #414142;
+    width: 250px;
+    line-height: 15px;
+    z-index: 999;
+    font-size:0.8rem;
+  }
+}
+
+
+
+
 .h6-bord{
   border-bottom: 1px solid #b3b2b2;
   color: #6c6a67;
@@ -3841,9 +3870,12 @@ footer{
     font-size:1.3rem;
     padding: 5px 10px 5px 20px;
     margin:0;
+    font-family:"permiansanstypefacebold";
     b{
       display: inline-block;
       margin:0 0 0 20px;
+      font-family:"Tahoma";
+      font-size:1.5rem;
     }
   }
   hr{
@@ -3997,7 +4029,6 @@ footer{
   left: 111px;
   text-align: left;
 }
-
 
 
 
@@ -4873,6 +4904,7 @@ footer{
     }
     p{
       display: none;
+
     }
     li{
       height:50px;
@@ -5156,6 +5188,126 @@ footer{
     padding:5px 0;
   }
 }
+/*******************************
+*       Preloder
+******************************/
+
+#loading{
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 9999;
+  margin-top: 0px;
+  top: 0px;
+}
+#loading-center{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+#loading-center-absolute {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 150px;
+  width: 150px;
+  margin-top: -75px;
+  margin-left: -75px;
+}
+.object{
+  width: 20px;
+  height: 20px;
+  background-color: #84c551;
+  float: left;
+  margin-right: 20px;
+  margin-top: 65px;
+  -moz-border-radius: 50% 50% 50% 50%;
+  -webkit-border-radius: 50% 50% 50% 50%;
+  border-radius: 50% 50% 50% 50%;
+}
+
+#object_one {
+  -webkit-animation: object_one 1.5s infinite;
+  animation: object_one 1.5s infinite;
+}
+#object_two {
+  -webkit-animation: object_two 1.5s infinite;
+  animation: object_two 1.5s infinite;
+  -webkit-animation-delay: 0.25s;
+  animation-delay: 0.25s;
+}
+#object_three {
+  -webkit-animation: object_three 1.5s infinite;
+  animation: object_three 1.5s infinite;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+
+}
+
+
+
+
+
+
+
+
+@-webkit-keyframes object_one {
+  75% { -webkit-transform: scale(0); }
+}
+
+@keyframes object_one {
+
+  75% {
+    transform: scale(0);
+    -webkit-transform: scale(0);
+  }
+
+}
+
+
+
+
+
+@-webkit-keyframes object_two {
+
+
+  75% { -webkit-transform: scale(0); }
+
+
+}
+
+@keyframes object_two {
+  75% {
+    transform: scale(0);
+    -webkit-transform:  scale(0);
+  }
+
+}
+
+@-webkit-keyframes object_three {
+
+  75% { -webkit-transform: scale(0); }
+
+}
+
+@keyframes object_three {
+
+  75% {
+    transform: scale(0);
+    -webkit-transform: scale(0);
+  }
+
+}
+
+/*******************************
+*       /Preloder/
+******************************/
+
+
+
+
+
 
 
 

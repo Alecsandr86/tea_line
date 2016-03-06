@@ -101,7 +101,7 @@ $(document).ready(function(){
 
         }
     }, {
-        offset: 70
+        offset: 80
     });
 
 
@@ -270,7 +270,7 @@ $(document).ready(function(){
 
 
 
-    $('.hit-ico').bind('mouseenter mouseleave',function(){
+    $('.hit-ico,.link-cho').bind('mouseenter mouseleave',function(){
        $(this).prev('.hit-form').fadeToggle(500)
     });
 
@@ -294,8 +294,8 @@ $(document).ready(function(){
 
 
 
-    $('.button-gender button').bind('click',function(){
-        $('.button-gender button').removeClass('active');
+    $('.button-gender a').bind('click',function(){
+        $('.button-gender a').removeClass('active');
         $(this).addClass('active');
     });
 
@@ -463,6 +463,18 @@ $(document).ready(function(){
      ******************************/
 
 
-
 });
 
+/************************
+ *       preloader
+ ************************/
+$(window).on('load', function () {
+    var $preloader = $('#loading'),
+        $spinner   = $preloader.find('#loading-center');
+    $spinner.fadeOut();
+    $preloader.fadeOut('slow');
+});
+
+/************************
+ *       /preloader/
+ ************************/
